@@ -92,4 +92,35 @@ body {
           padding-top: .5em;
           font-size: .8em; }
 
+.subHeaderWrap {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  color: #aaa;
+  font-size: 15px;
+  display: inline-block;
+  background: #fff;
+  height: 50px;
+  position: absolute; }
+  .subHeaderWrap .subNavBar {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin-left: 2em; }
+  .subHeaderWrap .navbarItems {
+    font-family: "Lato", sans-serif;
+    color: #777;
+    font-size: 15px;
+    display: inline-block;
+    padding: 1.1em 0.6em; }
+    .subHeaderWrap .navbarItems:hover {
+      border-bottom: 3px solid #f56400;
+      color: #666;
+      cursor: pointer; }
+  .subHeaderWrap .clothingNavBar {
+    margin-left: 30px; }
+  .subHeaderWrap .moreNavbar {
+    display: none; }
+
 /*# sourceMappingURL=styles.css.map */

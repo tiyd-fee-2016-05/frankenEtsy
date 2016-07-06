@@ -111,3 +111,43 @@
         }
     }
 }
+.subHeaderWrap{
+  width:100%;
+  font-family: $Font-Lato;
+  color:$Light-Grey;
+  font-size:15px;
+  display:inline-block;
+  background: #fff;
+  height:50px;
+  position: absolute;
+  .subNavBar{
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin-left: 2em;
+  }
+
+
+.navbarItems{
+  font-family: $Font-Lato;
+  color: $Mid-Grey;
+  font-size:15px;
+  display:inline-block;
+  padding: 1.1em 0.6em;
+  &:hover{
+    border-bottom: 3px solid $Orange;
+    color: $Dark-Grey;
+    cursor: pointer;
+  }
+}
+
+.clothingNavBar{
+  margin-left: 30px;
+}
+
+.moreNavbar{
+  display:none;
+}
+}
