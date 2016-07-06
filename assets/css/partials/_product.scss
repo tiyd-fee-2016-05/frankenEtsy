@@ -182,7 +182,69 @@ body {
   }
 }
 
+.custom-order {
+  margin-left: 20px;
+  margin-top: 30px;
+  img {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+  }
+  .fa {
+    display: inline-block;
+    color: $Light-Blue;
+    vertical-align: top;
+    font-size: 32px;
+    margin-top: 8px;
+    margin-right: -14px;
+    margin-left: 4px;
+  }
+  p {
+    background-color: $Light-Blue;
+    color: $Dark-Grey;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    padding: 18px 25px 16px 10px;
+    margin-left: 10px;
+      .front-text {
+        color: $Darker-Blue;
+        font-weight: bold;
+      }
+  }
+}
 
+.reviews {
+  .tabs {
+    border-bottom: 1px solid $Light-Grey;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  ul {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  li {
+    display: inline-block;
+    padding: 10px;
+    border-top: 1px solid $Light-Grey;
+    border-left: 1px solid $Light-Grey;
+    color: $Blue;
+    font-weight: bold;
+  }
+  .list-right {
+    border-right: 1px solid $Light-Grey;
+  }
+  .details-content {
+    width: 540px;
+    color: $Dark-Grey;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+}
 
 .overview {
   border: 3px solid $Green;
