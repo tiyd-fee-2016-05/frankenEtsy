@@ -1,0 +1,30 @@
+@import 'https://fonts.googleapis.com/css?family=Bitter:400,700|Lato:300,400,700';
+
+$Font-Lato: 'Lato', sans-serif;
+$Font-Bitter: 'Bitter', serif;
+
+$Orange: #f56400;
+$Orange-Hover: #ff6905;
+$BackgroundGrey: #efefeb;
+$Black: #222;
+$Dark-Grey: #666;
+$Light-Grey: #aaa;
+$Darker-Blue: #34A8C4;
+$Blue: #0192B5;
+$Light-Blue: #E5F4F7;
+$Green: #78c042;
+$Cart-Green: #7AC142;
+$Cart-Green-Hover: #86c651;
+
+body {
+  background: $BackgroundGrey;
+  color: $Black;
+}
+
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/home";
+@import "partials/categories";
+@import "partials/product";
+@import "partials/trending";
