@@ -1,9 +1,95 @@
-/*
-  Simple Grid
-  Project Page - http://thisisdallas.github.com/Simple-Grid/
-  Author - Dallas Bass
-  Site - http://dallasbass.com
-*/
+
+
+footer {
+  width: 70%;
+  margin: auto;
+
+.upper {
+  border: 8px solid #ebebe6;//#EFEFEB;
+  text-align: center;
+
+  h3 {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: $Font-Bitter;
+    font-weight: 700;
+    font-size: 13px;
+    color: $Black;
+  }
+
+  button {
+    background: $Blue;
+    border: 1px solid $Blue;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 10px 50px 10px 50px;
+    font-family: $Font-Lato;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  button:hover {
+    background: $Darker-Blue;
+  }
+  button:focus {
+    outline: 0;
+  } }
+
+
+
+
+
+.col-1-5 {
+  font-family: $Font-Lato;
+  font-size: 14px;
+
+  li {
+    padding: 4px 0 4px 0;
+
+    .footer-header {
+      padding-bottom: 0;
+    }
+
+    a {
+      color: $Blue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    i {
+      margin-right: 8px;
+    }
+
+  button {
+    background: $Blue;
+    border: 1px solid $Blue;
+    border-radius: 3px;
+    padding: 5px 8px 5px 8px;
+    font-family: $Font-Lato;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  button:hover {
+    background: $Darker-Blue;
+  }
+  button:focus {
+    outline: 0;
+  }
+
+} }
+
+
+
+
+
+
+
+
 
 
 [class*='grid'],
@@ -58,32 +144,12 @@
 .col-1-1 {
 	width: 100%;
   background: $BackgroundGrey;
-  border: 2px solid purple;
+  // border: 2px solid purple;
 }
-
-.col-1-2, .col-6-12 {
-	width: 50%;
-  border: 2px solid $Orange;
-}
-
-.col-1-3, .col-4-12 {
-	width: 33.33%;
-  border: 2px solid $Dark-Grey;
-}
-
-// .col-1-4, .col-3-12 {
-// 	width: 25%;
-//   border: 2px solid $Green;
-// }
 
 .col-1-5 {
 	width: 20%;
-  border: 2px solid $Green;
-}
-
-.col-1-6, .col-2-12 {
-	width: 16.667%;
-  border: 2px solid $Blue;
+  // border: 2px solid $Green;
 }
 
 
@@ -124,33 +190,19 @@
 	.mobile-col-1-1 {
 		width: 100%;
 	}
-	.mobile-col-2-3, .mobile-col-8-12 {
-		width: 66.66%;
-	}
-
-	.mobile-col-1-2, .mobile-col-6-12 {
-		width: 50%;
-	}
-
-	.mobile-col-1-3, .mobile-col-4-12 {
-		width: 33.33%;
-	}
-
-	.mobile-col-1-4, .mobile-col-3-12 {
-		width: 25%;
-	}
 
 	.mobile-col-1-5 {
 		width: 20%;
-	}
-
-	.mobile-col-1-6, .mobile-col-2-12 {
-		width: 16.667%;
 	}
 
 	.hide-on-mobile {
 		display: none !important;
 		width: 0;
 		height: 0;
-	}
-}
+	} } }
+/*
+  Simple Grid
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - http://dallasbass.com
+*/
