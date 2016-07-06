@@ -1,0 +1,16 @@
+.rightHead{
+  display: inline-block;
+  h1{
+    color: $Orange;
+    font-size: 2em;
+  }
+}
+.leftHead{
+  display: inline-block;
+  ul{
+    display: inline-block;
+    li{
+      display: inline-block;
+    }
+  }
+}
