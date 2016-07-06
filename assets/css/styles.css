@@ -1,0 +1,49 @@
+@import "https://fonts.googleapis.com/css?family=Bitter:400,700|Lato:300,400,700";
+body {
+  background: #efefeb;
+  color: #222; }
+
+.homeHeaderWrap {
+  background: white;
+  position: relative;
+  display: block;
+  padding: 1.5em 3em 4em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .homeHeaderWrap .rightHead {
+    position: absolute;
+    display: inline-block; }
+    .homeHeaderWrap .rightHead h1 {
+      font-family: "Bitter", serif;
+      color: #f56400;
+      font-size: 2em; }
+  .homeHeaderWrap .leftHead {
+    position: absolute;
+    right: 2em;
+    display: inline-block;
+    font-family: "Lato", sans-serif; }
+    .homeHeaderWrap .leftHead ul {
+      color: #666;
+      display: inline-block;
+      padding-right: 1em; }
+      .homeHeaderWrap .leftHead ul li {
+        text-align: center;
+        display: inline-block; }
+        .homeHeaderWrap .leftHead ul li #sellLink {
+          vertical-align: super;
+          color: #0192B5;
+          text-decoration: none;
+          padding-right: 1em; }
+        .homeHeaderWrap .leftHead ul li .headerLinks, .homeHeaderWrap .leftHead ul li #homeLink {
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 0 1em; }
+        .homeHeaderWrap .leftHead ul li #homeLink {
+          border-left: 1px solid rgba(0, 0, 0, 0.1); }
+        .homeHeaderWrap .leftHead ul li #cart {
+          padding: 0 1em; }
+        .homeHeaderWrap .leftHead ul li i {
+          font-size: 1.5em; }
+        .homeHeaderWrap .leftHead ul li h4 {
+          padding-top: .5em;
+          font-size: .8em; }
+
+/*# sourceMappingURL=styles.css.map */

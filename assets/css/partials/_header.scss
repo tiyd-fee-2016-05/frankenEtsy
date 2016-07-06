@@ -2,7 +2,9 @@
     background: white;
     position: relative;
     display: block;
-    padding: 2em 2em 4em;
+    padding: 1.5em 3em 4em;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
     .rightHead {
         position: absolute;
         display: inline-block;
@@ -17,29 +19,37 @@
         right: 2em;
         display: inline-block;
         font-family: $Font-Lato;
-        font-weight: 300;
-        #sellLink{
-          vertical-align: super;
-          color: $Blue;
-          text-decoration: none;
-        }
+
         ul {
           color: $Dark-Grey;
-            display: inline-block;
+          display: inline-block;
+          padding-right: 1em;
             li {
-              font-weight: 400;
               text-align: center;
               display: inline-block;
+              #sellLink{
+                vertical-align: super;
+                color: $Blue;
+                text-decoration: none;
+                padding-right: 1em;
+              }
               .headerLinks{
                 border-right: 1px solid rgba(0,0,0,.1);
-                padding: 0 .5em;
+                padding: 0 1em;
+              }
+              #homeLink{
+                @extend .headerLinks;
+                border-left: 1px solid rgba(0,0,0,.1);
               }
               #cart{
-                padding: 0 .5em;
+                padding: 0 1em;
+              }
+              i{
+                font-size: 1.5em;
               }
               h4{
-                padding-top: .3em;
-                font-size: .9em;
+                padding-top: .5em;
+                font-size: .8em;
               }
             }
         }
