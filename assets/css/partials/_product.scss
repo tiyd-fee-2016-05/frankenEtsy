@@ -1,0 +1,190 @@
+body {
+  font-family: $Font-Lato;
+}
+
+#container {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.user-header {
+  margin-bottom: 25px;
+}
+
+.left-top {
+  display: inline-block;
+  width: 40%;
+  .user-stuffs {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-left: 20px;
+  }
+  .user-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .user-favorite {
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 135px;
+    background-color: #fff;
+    border: 1px solid $Light-Grey;
+    border-radius: 5px;
+    cursor: pointer;
+  }:hover {
+    background-color: $BackgroundGrey;
+  }
+  .user-favorite:focus {
+    border: 1px solid $Blue;
+    outline: none;
+  }
+  img {
+    border: 1px solid $Light-Grey;
+    border-radius: 5px;
+  }
+  .fa {
+    color: $Light-Grey;
+    padding-right: 5px;
+  }
+}
+
+.right-top {
+  display: inline-block;
+  width: 40%;
+  float: right;
+  img {
+    float: right;
+    margin-left: 20px;
+    border: 1px solid $Light-Grey;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .9;
+  }img:hover {
+    opacity: 1;
+  }
+  .additional-items {
+    width: 80px;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    text-align: center;
+    border: 1px solid $Light-Grey;
+    border-radius: 5px;
+    height: 58px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: -20px;
+    cursor: pointer;
+    background-color: #fff;
+      .items-number {
+        font-size: 22px;
+        color: $Blue;
+        opacity: 1;
+      }
+      .items-text {
+        font-size: 14px;
+        color: $Light-Grey;
+        padding-bottom: -20px;
+        opacity: 1;
+      }
+  }:hover {
+    background-color: $Light-Blue;
+    opacity: .75;
+  }
+}
+
+.main-content {
+  background-color: #fff;
+  border: 1px solid $Light-Grey;
+  border-radius: 3px;
+  padding: 25px;
+}
+
+.left-col {
+  display: inline-block;
+}
+
+.right-col {
+  display: inline-block;
+}
+
+.fav {
+  background-color: $Light-Blue;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  .favorite-button {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
+    font-size: 13px;
+    border: 1px solid $Light-Grey;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+  }.favorite-button:hover {
+    background-color: $BackgroundGrey;
+  }
+  .like-item {
+    display: inline-block;
+  }
+  .like-text1 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .like-text2 {
+    font-size: 15px;
+    color: $Light-Grey;
+    margin-bottom: 15px;
+  }
+  .fa {
+    color: $Light-Grey;
+  }
+}
+
+.product-images {
+  img {
+    width: 100%;
+  }
+}
+
+.more-images {
+  margin-left: 175px;
+  // margin-right: -100px;
+  width: 225px;
+  display: inline-block;
+}
+
+.thumbnail {
+  height: 30px;
+  width: 30px;
+  border: 1px solid $Light-Grey;
+  display: inline-block;
+  margin: 5px;
+}
+
+.zoom {
+  display: inline-block;
+  color: $Light-Grey;
+  width: 70px;
+  margin-left: 110px;
+  vertical-align: top;
+  margin-top: 5px;
+  p {
+    margin-left: 12px
+  }
+}
+
+
+
+.overview {
+  border: 3px solid $Green;
+  border-radius: 3px;
+}
