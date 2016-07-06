@@ -9,6 +9,10 @@ body {
   display: block;
   padding: 1.5em 3em 4em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .homeHeaderWrap .pagePaddingWrap {
+    margin: 0 auto;
+    position: relative;
+    width: 80%; }
   .homeHeaderWrap .rightHead {
     position: absolute;
     display: inline-block; }
@@ -60,10 +64,28 @@ body {
         .homeHeaderWrap .leftHead ul li .headerLinks, .homeHeaderWrap .leftHead ul li #homeLink {
           border-right: 1px solid rgba(0, 0, 0, 0.1);
           padding: 0 1em; }
+          .homeHeaderWrap .leftHead ul li .headerLinks a, .homeHeaderWrap .leftHead ul li #homeLink a {
+            color: #666;
+            text-decoration: none;
+            outline: none; }
+            .homeHeaderWrap .leftHead ul li .headerLinks a:visited, .homeHeaderWrap .leftHead ul li #homeLink a:visited {
+              color: #666; }
         .homeHeaderWrap .leftHead ul li #homeLink {
           border-left: 1px solid rgba(0, 0, 0, 0.1); }
+          .homeHeaderWrap .leftHead ul li #homeLink a {
+            color: #666;
+            text-decoration: none;
+            outline: none; }
+            .homeHeaderWrap .leftHead ul li #homeLink a:visited {
+              color: #666; }
         .homeHeaderWrap .leftHead ul li #cart {
           padding: 0 1em; }
+          .homeHeaderWrap .leftHead ul li #cart a {
+            color: #666;
+            text-decoration: none;
+            outline: none; }
+            .homeHeaderWrap .leftHead ul li #cart a:visited {
+              color: #666; }
         .homeHeaderWrap .leftHead ul li i {
           font-size: 1.5em; }
         .homeHeaderWrap .leftHead ul li h4 {
