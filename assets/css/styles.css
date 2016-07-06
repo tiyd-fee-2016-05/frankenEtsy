@@ -1,0 +1,72 @@
+@import "https://fonts.googleapis.com/css?family=Bitter:400,700|Lato:300,400,700";
+body {
+  background: #efefeb;
+  color: #222; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.grid {
+  width: 100%; }
+
+.col-3-12 {
+  width: 25%;
+  font-family: "Lato", sans-serif; }
+  .col-3-12 h1 {
+    font-family: "Bitter", serif;
+    font-size: 1.7em; }
+
+.cat-bar {
+  padding-left: 18px;
+  line-height: 1.6; }
+
+.allItems {
+  border-top: 1px solid rgba(173, 168, 168, 0.48);
+  margin-right: 18px;
+  padding-top: 10px;
+  margin-top: 20px; }
+
+.col-9-12 {
+  width: 75%; }
+
+[class*='col-'] {
+  float: left;
+  padding-right: 20px; }
+
+.content {
+  border: 1px solid rgba(173, 168, 168, 0.48);
+  background: #FAFAFA;
+  color: #444;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: .7%; }
+  .content h3 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 200;
+    margin: 0; }
+  .content img {
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    padding: 10px 0 0 10px; }
+  .content .showCase1 {
+    height: 200px;
+    width: 300px;
+    display: block; }
+
+.grid-pad {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 0px; }
+
+.grid {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 755px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/*# sourceMappingURL=styles.css.map */
