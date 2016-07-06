@@ -9,9 +9,37 @@
         position: absolute;
         display: inline-block;
         h1 {
+            display: inline-block;
             font-family: $Font-Bitter;
             color: $Orange;
-            font-size: 2em;
+            font-size: 2.5em;
+            margin-right: .5em;
+        }
+        #searchBar{
+          display: inline-block;
+          font-size: .9em;
+          padding: 0.5em;
+          width: 15em;
+          border: 1px solid $Light-Grey;
+          background-color: #fbfbfa;
+          border-radius: 3px 0px 0px 3px;
+          box-shadow: 0px 0px 2px 1px #e6e6e6 inset;
+          &:focus{
+            border: 1px solid $Blue;
+            outline: none;
+          }
+        }
+        #searchButton{
+          font-size: 0.9em;
+          background: #0192B5;
+          color: white;
+          border: 1px solid #0192B5;
+          border-radius: 0px 3px 3px 0px;
+          padding: 0.5em 1em;
+          margin-left: -0.4em;
+          &:hover{
+            background-color: $Darker-Blue;
+          }
         }
     }
     .leftHead {
