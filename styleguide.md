@@ -3,8 +3,7 @@
 
 ###Logo: *https://www.etsy.com/assets/dist/images/etsylogo.20160609191624.png*
 
-###Typefaces: (Actual typeface Etsy uses) "Graphik Web", "Arial", "Helvetica", sans-serif;
-  Weights: 500, 600;
+#####Typefaces: (Actual typeface Etsy uses) "Graphik Web", "Arial", "Helvetica", sans-serif; (weights: 500, 600)
 
     - Similar that we can use: **Lato & Bitter**
 
@@ -17,8 +16,7 @@
 
 
 ######Sass:
-@import 'https://fonts.googleapis.com/css?family=Bitter:400,700|Lato:300,400,700';
-
+- @import 'https://fonts.googleapis.com/css?family=Bitter:400,700|Lato:300,400,700';
 - font-family: 'Lato', sans-serif;
 - font-family: 'Bitter', serif;
 
