@@ -1,13 +1,45 @@
+.orangeBknd {
+  width: 100%;
+  height: 100px;
+  background: $Light-Orange;
+  position: absolute;
+  z-index: -1;
+}
+
+
 #homepage {
+  width: 95%;
+  margin: auto;
+
+  font-family: $Font-Lato;
+  font-size: 14px;
+  text-align: center;
 
 
 
+.header-link {
+  a {
+    text-decoration: none;
+    font-family: $Font-Lato;
+    font-weight: 700;
+    font-size: 24px;
+    color: $Black;
+  }
+  a:hover {
+    text-decoration: underline;
 
+  }
 
+}
 
-
-
-
+  a {
+    color: $Blue;
+    text-decoration: none;
+  }
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 
 
 
@@ -65,7 +97,7 @@
 /* Content Columns */
 
 .content {
-  margin: 10px;
+  margin: 10px 0 10px 0;
 }
 
 .col-1-1 {

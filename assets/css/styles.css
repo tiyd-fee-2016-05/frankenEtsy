@@ -49,7 +49,7 @@ footer {
         background: #0192B5;
         border: 1px solid #0192B5;
         border-radius: 3px;
-        padding: 5px 8px 5px 8px;
+        padding: 3px 8px 5px 8px;
         font-family: "Lato", sans-serif;
         font-weight: 400;
         font-size: 14px;
@@ -161,8 +161,34 @@ footer {
   Author - Dallas Bass
   Site - http://dallasbass.com
 */
+.orangeBknd {
+  width: 100%;
+  height: 100px;
+  background: #FF883E;
+  position: absolute;
+  z-index: -1; }
+
 #homepage {
+  width: 95%;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-align: center;
   /* Content Columns */ }
+  #homepage .header-link a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #222; }
+  #homepage .header-link a:hover {
+    text-decoration: underline; }
+  #homepage a {
+    color: #0192B5;
+    text-decoration: none; }
+  #homepage a:hover {
+    cursor: pointer;
+    text-decoration: underline; }
   #homepage [class*='grid'],
   #homepage [class*='col-'],
   #homepage [class*='mobile-'],
@@ -197,7 +223,7 @@ footer {
   #homepage .push-right {
     float: right; }
   #homepage .content {
-    margin: 10px; }
+    margin: 10px 0 10px 0; }
   #homepage .col-1-1 {
     width: 100%;
     background: #efefeb;
