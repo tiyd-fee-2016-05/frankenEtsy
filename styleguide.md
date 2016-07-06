@@ -25,7 +25,7 @@
 
 
 ###Font-Awesome:
-fa-angle-left, fa-angle-right, fa-shopping-cart, fa-caret-down
+fa-angle-left, fa-angle-right, fa-home, fa-heart, fa-shopping-cart, fa-caret-down
 
 ###Font-Awesome social:
 fa-facebook-official, fa-twitter, fa-pinterest-p, fa-instagram
