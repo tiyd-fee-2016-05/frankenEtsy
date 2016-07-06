@@ -36,16 +36,15 @@ footer {
     font-family: "Lato", sans-serif;
     font-size: 14px; }
     footer .col-1-5 li {
-      padding: 4px 0 4px 0; }
+      padding: 6px 0 6px 0; }
       footer .col-1-5 li .footer-header {
         padding-bottom: 0; }
       footer .col-1-5 li a {
         color: #0192B5;
         text-decoration: none; }
       footer .col-1-5 li a:hover {
+        cursor: pointer;
         text-decoration: underline; }
-      footer .col-1-5 li i {
-        margin-right: 8px; }
       footer .col-1-5 li button {
         background: #0192B5;
         border: 1px solid #0192B5;
@@ -60,6 +59,25 @@ footer {
         background: #34A8C4; }
       footer .col-1-5 li button:focus {
         outline: 0; }
+      footer .col-1-5 li i {
+        margin-right: 8px; }
+  footer .copyright {
+    border-top: 2px solid #ebebe6;
+    margin-top: 20px;
+    padding: 75px 0 25px 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center; }
+    footer .copyright a {
+      padding: 0 7px;
+      font-weight: 400;
+      color: #666;
+      text-decoration: none; }
+    footer .copyright a:hover {
+      cursor: pointer;
+      text-decoration: underline; }
   footer [class*='grid'],
   footer [class*='col-'],
   footer [class*='mobile-'],
