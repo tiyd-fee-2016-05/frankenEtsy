@@ -11,12 +11,13 @@ body {
 .grid {
   width: 100%; }
 
-.col-3-12 {
+.cole-3-12 {
   width: 25%;
   font-family: "Lato", sans-serif; }
-  .col-3-12 h1 {
+  .cole-3-12 h1 {
     font-family: "Bitter", serif;
-    font-size: 1.7em; }
+    font-size: 1.7em;
+    padding-bottom: 24px; }
 
 .cat-bar {
   padding-left: 18px;
@@ -28,10 +29,10 @@ body {
   padding-top: 10px;
   margin-top: 20px; }
 
-.col-9-12 {
+.cole-9-12 {
   width: 75%; }
 
-[class*='col-'] {
+[class*='cole-'] {
   float: left;
   padding-right: 20px; }
 
@@ -47,15 +48,24 @@ body {
     text-align: center;
     font-weight: 200;
     margin: 0; }
-  .content img {
-    display: inline-block;
-    position: relative;
-    height: 200px;
-    padding: 10px 0 0 10px; }
-  .content .showCase1 {
-    height: 200px;
-    width: 300px;
-    display: block; }
+
+.content-gallery {
+  padding-top: 51px; }
+
+.showCase1 {
+  border: 0.7px solid rgba(173, 168, 168, 0.48);
+  display: block;
+  float: left;
+  position: absolute; }
+  .showCase1 img {
+    height: 300px; }
+
+.showCase2 {
+  border: 0.7px solid rgba(173, 168, 168, 0.48);
+  display: block;
+  float: right; }
+  .showCase2 img {
+    height: 300px; }
 
 .grid-pad {
   padding-top: 20px;
@@ -66,7 +76,6 @@ body {
   width: 100%;
   max-width: 1140px;
   min-width: 755px;
-  margin: 0 auto;
-  overflow: hidden; }
+  margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */
