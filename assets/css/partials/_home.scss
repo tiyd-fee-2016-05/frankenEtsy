@@ -1,5 +1,8 @@
 #homepage {
 
+
+
+
   .banner{
   	background-image: url("https://img1.etsystatic.com/site-assets/vesta-homepage-headers-v3/lunaticart_157486339_2020x335.jpg");
   	background-position: center;
@@ -96,6 +99,27 @@
 
   }
 }
+//Column Grid Imagess
+.homepageImage{
+  width: 100%;
+  height: 10em;
+}
+​
+.homepageImage2{
+  // width: 50%;
+  // height: 100%;
+}
+​
+.homepageImage3{
+  // width: 100%;
+  // height: 20em;
+}
+​
+.homepageImage4{
+//   width: 100%;
+//   height: 15em;
+//
+}
 
 // Blue links with font-awesome right arrows
   a {
@@ -127,9 +151,10 @@
 
 
 // Orange background with white text and illustrations
+
   .orangeBknd {
     width: 100%;
-    // height: 100%;
+    height: 100%;
     padding: 10px;
     background: $Light-Orange;
     // position: absolute;
@@ -139,20 +164,37 @@
     letter-spacing: .5px;
 
     h3 {
-      margin-bottom: 18px;
+      margin: 24px 0 8px 0;
       font-family: $Font-Bitter;
       font-size: 42px;
     }
+
+
     p {
       padding-bottom: 10px;
       font-size: 16px;
     }
-    .cols-3 {
-      margin-left: 5%;
-    }
     span {
-      font-size: 14px;
+      font-size: 13px;
     }
+
+    .cols-3 {
+      margin-top: -5%;
+      width: 100%;
+
+      .safe {
+        height: 100%;
+        width: 100%;
+      }
+
+      p, span{
+        // padding: 25% 15% 5% 15%;
+        padding-top: 35%;
+        text-align: center;
+      }
+    }
+
+
     a {
       font-size: 16px;
       color: #fff;
@@ -167,6 +209,8 @@
       font-weight: bold;
     }
   }
+
+
 
 
 
@@ -231,6 +275,12 @@
   border: 2px solid purple;
 }
 
+.col-1-1-orange {
+	width: 100%;
+  background: $Light-Orange;
+  border: 2px solid purple;
+}
+
 .col-1-2, .col-6-12 {
 	width: 50%;
   border: 2px solid $Orange;
@@ -248,12 +298,22 @@
 
 .col-1-5 {
 	width: 20%;
-  border: 2px solid $Green;
+}
+
+.col-1-5-safe {
+	width: 25%;
+  height: 25%;
+  background: $Light-Orange;
 }
 
 .col-1-6, .col-2-12 {
 	width: 16.667%;
-  border: 2px solid $Blue;
+  // border: 2px solid $Blue;
+}
+
+.col-1-7  {
+	width: 12%;
+  // border: 2px solid $Blue;
 }
 
 

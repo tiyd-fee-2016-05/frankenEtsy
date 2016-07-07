@@ -353,6 +353,9 @@ footer {
     color: #222; }
   #homepage .header-link a:hover {
     text-decoration: underline; }
+  #homepage .homepageImage {
+    width: 100%;
+    height: 10em; }
   #homepage a {
     color: #0192B5;
     text-decoration: none; }
@@ -373,22 +376,30 @@ footer {
     width: 50%; }
   #homepage .orangeBknd {
     width: 100%;
+    height: 100%;
     padding: 10px;
     background: #FF883E;
     color: #fff;
     line-height: 1.2;
     letter-spacing: .5px; }
     #homepage .orangeBknd h3 {
-      margin-bottom: 18px;
+      margin: 24px 0 8px 0;
       font-family: "Bitter", serif;
       font-size: 42px; }
     #homepage .orangeBknd p {
       padding-bottom: 10px;
       font-size: 16px; }
-    #homepage .orangeBknd .cols-3 {
-      margin-left: 5%; }
     #homepage .orangeBknd span {
-      font-size: 14px; }
+      font-size: 13px; }
+    #homepage .orangeBknd .cols-3 {
+      margin-top: -5%;
+      width: 100%; }
+      #homepage .orangeBknd .cols-3 .safe {
+        height: 100%;
+        width: 100%; }
+      #homepage .orangeBknd .cols-3 p, #homepage .orangeBknd .cols-3 span {
+        padding-top: 35%;
+        text-align: center; }
     #homepage .orangeBknd a {
       font-size: 16px;
       color: #fff;
@@ -432,17 +443,25 @@ footer {
     width: 100%;
     background: #efefeb;
     border: 2px solid purple; }
+  #homepage .col-1-1-orange {
+    width: 100%;
+    background: #FF883E;
+    border: 2px solid purple; }
   #homepage .col-1-2, #homepage .col-6-12 {
     width: 50%;
     border: 2px solid #f56400; }
   #homepage .col-1-3, #homepage .col-4-12 {
     width: 32%; }
   #homepage .col-1-5 {
-    width: 20%;
-    border: 2px solid #78c042; }
+    width: 20%; }
+  #homepage .col-1-5-safe {
+    width: 25%;
+    height: 25%;
+    background: #FF883E; }
   #homepage .col-1-6, #homepage .col-2-12 {
-    width: 16.667%;
-    border: 2px solid #0192B5; }
+    width: 16.667%; }
+  #homepage .col-1-7 {
+    width: 12%; }
   @media handheld, only screen and (max-width: 767px) {
     #homepage {
       /* Mobile Layout */ }
