@@ -338,15 +338,110 @@ body {
       }
       }
   .shipping-content {
+    .payment-info {
+      border-bottom: 1px solid $Light-Grey;
+    }
     .methods-text {
       font-size: 15px;
       font-weight: bold;
+      margin-bottom: 10px;
     }
-    .paypal {
-      width: 65px;
+    .credit-cards {
+      width: 160px;
       height: auto;
+      display: inline-block;
+      margin-bottom: 7px;
     }
+    .gift-card {
+      display: inline-block;
+      vertical-align: top;
+      color: $Dark-Grey;
+      font-size: 15px;
+      margin-top: 18px;
+      margin-left: 10px;
+      .fa {
+        color: $Green;
+        font-size: 22px;
+        margin-right: 5px;
+      }
+    }
+    .money-order {
+      color: $Dark-Grey;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+    .ready-to-ship {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    .shipping-cost-title {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .shipping-info {
+      border-bottom: 1px solid $Light-Grey;
+    }
+    .shipping-line {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 10px;
+        .ship-to {
+          display: inline-block;
+          margin-right: 180px;
+        }
+        .zip {
+          display: inline-block;
+          margin-right: 75px;
+        }
+        .cost {
+          display: inline-block;
+        }
+    }
+    .button-line {
+      margin-top: 5px;
+        .country {
+          width: 220px;
+          padding: 5px;
+          text-align: left;
+          display: inline-block;
+          border: 1px solid $Light-Grey;
+          background-color: #fff;
+          border-radius: 3px;
+          cursor: pointer;
+          margin-right: 30px;
+            .fa {
+              color: $Light-Grey;
+            }
+        }
+        .zip-input {
+          display: inline-block;
+          width: 140px;
+          padding: 5px;
+          border: 1px solid $Light-Grey;
+          background-color: #fff;
+          border-radius: 3px;
+          margin-right: 33px;
+        }
+        a {
+          text-decoration: none;
+          color: $Blue;
+          font-size: 15px;
+        }
+    }
+  } .get-shipping {
+      color: $Light-Grey;
+      font-size: 15px;
+      margin-top: 25px;
+      margin-bottom: 30px;
   }
+    .policies-title {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
 }
 
 
