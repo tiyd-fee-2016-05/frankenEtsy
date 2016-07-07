@@ -250,4 +250,10 @@ body {
     display: block;
     height: 250px; }
 
+.gallery-box {
+  width: 75%; }
+  .gallery-box li {
+    display: inline-block;
+    width: 20%; }
+
 /*# sourceMappingURL=styles.css.map */

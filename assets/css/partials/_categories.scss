@@ -195,3 +195,11 @@ padding-top: 51px;
     height: 250px;
   }
 }
+
+.gallery-box {
+  width: 75%;
+  li {
+    display: inline-block;
+    width: 20%;
+  }
+}

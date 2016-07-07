@@ -16,7 +16,7 @@ mainApp.controller( "CategoriesController", [ "$scope", "dataFactory", function(
         $scope.listings = response.data;
         numGets++;
         console.log( "Here are your listings: " + $scope.listings.results ); // log all data for each listing
-        console.log( "Here is your photo: " + $scope.listings.results[0].Images[0].url_570xN ); // log photo for first listing
+        console.log( "Here is your photo: " + $scope.listings.results[0].MainImage.url_570xN ); // log photo for first listing
         console.log( "Here is your price: " + $scope.listings.results[0].price ); // log price for first listing
         console.log( "Here is your description: " + $scope.listings.results[0].description ); // log price for first listing
         console.log( "Here is your url: " + $scope.listings.results[0].url ); // log price for first listing
