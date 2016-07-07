@@ -124,95 +124,268 @@ body {
   .subHeaderWrap .moreNavbar {
     display: none; }
 
-*, *:after, *:before {
+#footer {
+  /*
+    Simple Grid
+    Project Page - http://thisisdallas.github.com/Simple-Grid/
+    Author - Dallas Bass
+    Site - http://dallasbass.com
+  */ }
+  #footer footer {
+    width: 70%;
+    margin: auto;
+    /* Content Columns */ }
+    #footer footer .upper {
+      border: 8px solid #ebebe6;
+      text-align: center; }
+      #footer footer .upper h3 {
+        margin-top: 10px;
+        padding: 10px;
+        font-family: "Bitter", serif;
+        font-weight: 700;
+        font-size: 13px;
+        color: #222; }
+      #footer footer .upper button {
+        background: #0192B5;
+        border: 1px solid #0192B5;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        padding: 10px 50px 10px 50px;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #fff; }
+      #footer footer .upper button:hover {
+        background: #34A8C4; }
+      #footer footer .upper button:focus {
+        outline: 0; }
+    #footer footer .col-1-5 {
+      font-family: "Lato", sans-serif;
+      font-size: 14px; }
+      #footer footer .col-1-5 li {
+        padding: 6px 0 6px 0; }
+        #footer footer .col-1-5 li .footer-header {
+          padding-bottom: 0; }
+        #footer footer .col-1-5 li a {
+          color: #0192B5;
+          text-decoration: none; }
+        #footer footer .col-1-5 li a:hover {
+          cursor: pointer;
+          text-decoration: underline; }
+        #footer footer .col-1-5 li button {
+          background: #0192B5;
+          border: 1px solid #0192B5;
+          border-radius: 3px;
+          padding: 3px 8px 5px 8px;
+          font-family: "Lato", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          letter-spacing: 1px;
+          color: #fff; }
+        #footer footer .col-1-5 li button:hover {
+          background: #34A8C4; }
+        #footer footer .col-1-5 li button:focus {
+          outline: 0; }
+        #footer footer .col-1-5 li i {
+          margin-right: 8px; }
+    #footer footer .copyright {
+      border-top: 2px solid #ebebe6;
+      margin-top: 20px;
+      padding: 75px 0 25px 0;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center; }
+      #footer footer .copyright a {
+        padding: 0 7px;
+        font-weight: 400;
+        color: #666;
+        text-decoration: none; }
+      #footer footer .copyright a:hover {
+        cursor: pointer;
+        text-decoration: underline; }
+    #footer footer [class*='grid'],
+    #footer footer [class*='col-'],
+    #footer footer [class*='mobile-'],
+    #footer footer .grid:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    #footer footer [class*='col-'] {
+      float: left;
+      min-height: 1px;
+      padding-right: 20px;
+      /* column-space */ }
+    #footer footer [class*='col-'] [class*='col-']:last-child {
+      padding-right: 0; }
+    #footer footer .grid {
+      width: 100%;
+      max-width: 1140px;
+      min-width: 748px;
+      /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
+      margin: 0 auto;
+      overflow: hidden; }
+    #footer footer .grid:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #footer footer .grid-pad {
+      padding-top: 20px;
+      padding-left: 20px;
+      /* grid-space to left */
+      padding-right: 0;
+      /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */ }
+    #footer footer .push-right {
+      float: right; }
+    #footer footer .content {
+      margin: 10px; }
+    #footer footer .col-1-1 {
+      width: 100%;
+      background: #efefeb; }
+    #footer footer .col-1-5 {
+      width: 20%; }
+    @media handheld, only screen and (max-width: 767px) {
+      #footer footer {
+        /* Mobile Layout */ }
+        #footer footer .grid {
+          width: 100%;
+          min-width: 0;
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 20px;
+          /* grid-space to left */
+          padding-right: 10px;
+          /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */ }
+        #footer footer [class*='col-'] {
+          width: auto;
+          float: none;
+          margin: 10px 0;
+          padding-left: 0;
+          padding-right: 10px;
+          /* column-space */ }
+        #footer footer [class*='col-'] [class*='col-'] {
+          padding-right: 0; }
+        #footer footer [class*='mobile-col-'] {
+          float: left;
+          margin: 0 0 10px;
+          padding-left: 0;
+          padding-right: 10px;
+          /* column-space */
+          padding-bottom: 0; }
+        #footer footer .mobile-col-1-1 {
+          width: 100%; }
+        #footer footer .mobile-col-1-5 {
+          width: 20%; }
+        #footer footer .hide-on-mobile {
+          display: none !important;
+          width: 0;
+          height: 0; } }
+
+#categories *, #categories *:after, #categories *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-.grid-pad {
+#categories .grid-pad {
   padding-top: 87px;
   padding-left: 20px;
   padding-right: 0px; }
-
-.grid {
+#categories .grid {
   width: 100%;
   max-width: 1140px;
   min-width: 755px;
   margin: 0 auto; }
-
-.cole-3-12 {
+#categories .cole-3-12 {
   width: 25%;
   font-family: "Lato", sans-serif; }
-  .cole-3-12 h1 {
+  #categories .cole-3-12 h1 {
     font-family: "Bitter", serif;
     font-size: 2.4em;
     padding-bottom: 24px; }
-
-.cat-bar {
+#categories .cat-bar {
   padding-left: 18px;
   line-height: 1.6; }
-  .cat-bar li:hover {
+  #categories .cat-bar li:hover {
     text-decoration: underline; }
-
-.allItems {
+#categories .allItems {
   border-top: 1px solid rgba(173, 168, 168, 0.48);
   margin-right: 18px;
   padding-top: 10px;
   margin-top: 20px; }
-
-.cole-9-12 {
-  width: 75%; }
-
-[class*='cole-'] {
+#categories .cole-9-12 {
+  width: 75%;
+  display: inline-block;
+  padding-bottom: 5em; }
+#categories [class*='cole-'] {
   float: left;
   padding-right: 20px; }
-
-.content {
+#categories .content {
   border: 1px solid rgba(173, 168, 168, 0.48);
   background: #FAFAFA;
   color: #444;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: .7%; }
-  .content h3 {
+  #categories .content h3 {
     font-size: 18px;
     text-align: center;
     font-weight: 200;
     margin: 0; }
-
-.content-gallery {
+#categories .content-gallery {
   padding-top: 51px; }
-
-.showCase1 {
+  #categories .content-gallery .gallery-box {
+    width: 105%;
+    margin-top: 7%;
+    display: inline-block;
+    position: relative; }
+    #categories .content-gallery .gallery-box li {
+      display: inline-block;
+      width: 30%;
+      border-radius: .7%; }
+      #categories .content-gallery .gallery-box li img {
+        height: 225px;
+        width: 121%;
+        padding-right: 4em;
+        padding-top: 30px; }
+      #categories .content-gallery .gallery-box li h3 {
+        font-family: "Bitter", serif;
+        font-size: 18px;
+        height: 50px;
+        width: 250px;
+        background: #FFFFFF;
+        margin-top: -3px;
+        padding-top: 16px;
+        padding-left: 20px; }
+#categories .showCase1 {
   background: #fafafa;
   border: 0.7px solid rgba(173, 168, 168, 0.48);
   display: block;
   float: left;
   position: absolute;
   line-height: 1.8; }
-  .showCase1 img {
+  #categories .showCase1 img {
     height: 300px; }
-  .showCase1 h3 {
+  #categories .showCase1 h3 {
     font-family: "Bitter", serif;
     font-size: 1.1em;
     padding-left: 10px; }
-    .showCase1 h3:hover {
+    #categories .showCase1 h3:hover {
       text-decoration: underline; }
-  .showCase1 h2 {
+  #categories .showCase1 h2 {
     font-family: "Lato", sans-serif;
     font-weight: 500;
     padding-left: 10px;
     padding-bottom: 20px; }
-    .showCase1 h2:hover {
+    #categories .showCase1 h2:hover {
       text-decoration: underline; }
-  .showCase1 ul {
+  #categories .showCase1 ul {
     font-family: "Lato", sans-serif;
     padding-left: 10px;
     font-size: 1em; }
-    .showCase1 ul li:hover {
+    #categories .showCase1 ul li:hover {
       text-decoration: underline; }
-
-.showCase2 {
+#categories .showCase2 {
   background: #fafafa;
   border: 0.7px solid rgba(173, 168, 168, 0.48);
   display: block;
@@ -220,34 +393,102 @@ body {
   position: relative;
   line-height: 1.8;
   margin-right: 40px; }
-  .showCase2 img {
+  #categories .showCase2 img {
     height: 300px; }
-  .showCase2 h3 {
+  #categories .showCase2 h3 {
     font-family: "Bitter", serif;
     font-size: 1.1em;
     padding-left: 10px; }
-    .showCase2 h3:hover {
+    #categories .showCase2 h3:hover {
       text-decoration: underline; }
-  .showCase2 h2 {
+  #categories .showCase2 h2 {
     font-family: "Lato", sans-serif;
     font-weight: 500;
     padding-left: 10px;
     padding-bottom: 20px; }
-    .showCase2 h2:hover {
+    #categories .showCase2 h2:hover {
       text-decoration: underline; }
-  .showCase2 ul {
+  #categories .showCase2 ul {
     font-family: "Lato", sans-serif;
     padding-left: 10px;
     font-size: 1em; }
-    .showCase2 ul li:hover {
+    #categories .showCase2 ul li:hover {
       text-decoration: underline; }
-
-.gallery {
-  margin-top: 65%;
+#categories .browse-more {
+  font-family: "Bitter", serif;
+  font-size: 2.2em;
+  text-align: center; }
+#categories .browse-list {
+  width: 104%;
+  padding-bottom: 2em;
   display: inline-block;
   position: relative; }
-  .gallery img {
-    display: block;
-    height: 250px; }
+  #categories .browse-list li {
+    display: inline-block;
+    width: 30%;
+    border-radius: .7%; }
+    #categories .browse-list li img {
+      height: 225px;
+      width: 100%;
+      padding-right: 4em;
+      padding-top: 22px;
+      margin-bottom: -4px; }
+    #categories .browse-list li h3 {
+      font-family: "Bitter", serif;
+      font-size: 18px;
+      height: 50px;
+      width: 285px;
+      background: #FFFFFF;
+      margin-top: -3px;
+      padding-top: 16px;
+      padding-left: 20px; }
+    #categories .browse-list li h1 {
+      font-family: "Lato", sans-serif;
+      font-size: 12px;
+      color: gray;
+      letter-spacing: 1px;
+      width: 285px;
+      background: #FFFFFF;
+      padding-top: 12px;
+      padding-left: 20px; }
+#categories .shop-more {
+  font-family: "Bitter", serif;
+  font-size: 2.2em;
+  text-align: center; }
+#categories .shop-list {
+  width: 104%;
+  padding-bottom: 2em;
+  display: inline-block;
+  position: relative; }
+  #categories .shop-list li {
+    display: inline-block;
+    width: 30%;
+    border-radius: .7%; }
+    #categories .shop-list li img {
+      height: 225px;
+      width: 100%;
+      padding-right: 4em;
+      padding-top: 22px; }
+    #categories .shop-list li h3 {
+      font-family: "Bitter", serif;
+      font-size: 18px;
+      height: 50px;
+      width: 285px;
+      background: #FFFFFF;
+      margin-top: -3px;
+      padding-top: 16px;
+      padding-left: 20px; }
+#categories .see-all {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  border-radius: 5.9%;
+  height: 45px;
+  width: 130px;
+  border: 0.7px solid rgba(173, 168, 168, 0.48);
+  background: #FFFFFF;
+  margin-left: 38%;
+  margin-top: 2%;
+  margin-bottom: 4%; }
 
 /*# sourceMappingURL=styles.css.map */
