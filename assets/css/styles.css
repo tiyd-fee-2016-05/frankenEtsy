@@ -145,6 +145,9 @@ footer {
 */
 #homepage {
   /* Content Columns */ }
+  #homepage .banner {
+    width: 964px;
+    height: 280px; }
   #homepage [class*='grid'],
   #homepage [class*='col-'],
   #homepage [class*='mobile-'],
