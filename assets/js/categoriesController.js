@@ -11,6 +11,8 @@ mainApp.controller( "CategoriesController", [ "$scope", "dataFactory", function(
   function getListings() {
     dataFactory.getListings()
       .then( function( response ) {
+
+        console.log( "Do something!!!" );
         $scope.listings = response.data;
         numGets++;
         console.log( "Here are your listings: " + $scope.listings.results ); // log all data for each listing

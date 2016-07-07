@@ -1,7 +1,99 @@
+
+<!-- TOP ETSY BAR -->
+<div class="homeHeaderWrap">
+  <div class="pagePaddingWrap">
+
+    <div class="rightHead">
+        <h1>Etsy</h1>
+
+        <input id="searchBar" type="text" name="search" value="" placeholder="Search for frends or trends">
+        <button id="searchButton" type="button" name="button"><a href="#/categories">Search</a></button>
+    </div>
+
+
+    <div class="leftHead">
+
+        <ul>
+          <li>
+            <div>
+              <a id="sellLink" href="https://www.etsy.com/sell">Sell on Etsy</a>
+            </div>
+          </li>
+            <li>
+                <div id="homeLink">
+                  <a href="https://www.etsy.com/">
+                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                    <h4>Home</h4>
+                  </a>
+                </div>
+            </li>
+            <li>
+                <div class="headerLinks">
+                  <a href="#">
+                    <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    <h4>Favorites</h4>
+                  </a>
+                </div>
+            </li>
+            <li>
+                <div class="headerLinks">
+                  <a href="#">
+                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    <h4>You</h4>
+                  </a>
+                </div>
+            </li>
+            <li>
+                <div id="cart">
+                  <a href="#">
+                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                    <h4>Cart</h4>
+                  </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!-- SUBHEADER -->
+<div>
+  <div class='subHeaderWrap'>
+    <div class="subNavBar">
+    <ul>
+      <li class='navbarItems clothingNavBar'>Clothing & Accessories</li>
+      <li class='navbarItems'>Jewelry</li>
+      <li class='navbarItems'>Craft Supplies & Tools</li>
+      <li class='navbarItems'>Weddings</li>
+      <li class='navbarItems'>Entertainment</li>
+      <li class='navbarItems'>Home & Living</li>
+      <li class='navbarItems'>Kids & Baby</li>
+      <li class='navbarItems'>Vintage</li>
+      <li class='navbarItems moreNavbar'>More</li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<!-- DROP DOWN MENU -->
+<div class="DropDownWrap">
+  <div class="LeftDropDown">
+    Trend
+  </div>
+  <div class="MidDropDown">
+    Frend
+  </div>
+  <div class="RightDropDown">
+    End
+  </div>
+</div>
+
+
+<!-- CATEGORIES! -->
 <div class="container" ng-controller="CategoriesController">
 <div class="grid grid-pad">
-    <div class="col-3-12">
-      <h1>All Categories</h1>
+    <div class="cole-3-12">
+      <h1>All categories</h1>
        <div class="content">
            <ul class="cat-bar">
              <li>Jewelry</li>
@@ -24,17 +116,71 @@
            </ul>
        </div>
     </div>
-    <div class="col-9-12">
-       <div class="content">
+    <div class="cole-9-12">
+       <div class="content-gallery">
           <div class="showCase1">
-          <img src="assets/images/sample-5.png">
-          <div>
-          <img src="assets/images/sample-6.png">
           <img src="assets/images/sample-7.png">
-          <img src="assets/images/sample-8.png">
+          <h3>Jewelry</h3>
+          <ul>
+            <li>Necklaces</li>
+            <li>Earrings</li>
+            <li>Bracelets</li>
+            <li>Rings</li>
+          </ul>
+          <h2>Shop All Jewelry</h2>
+        </div>
+          <div class="showCase2">
+          <img src="assets/images/sample-11.png">
+          <h3>Home & Living</h3>
+          <ul>
+            <li>Home Decor</li>
+            <li>Kitchen & Dining</li>
+            <li>Bedding</li>
+            <li>Spirituality & Religion</li>
+          </ul>
+          <h2>Shop All Home & Living</h2>
+
+        </div>
+        <!-- <div class="gallery">
+          <div class="gallery-box">
+            <img src="assets/images/sample-1.png">
+            <h3>Arts & Collectibles</h3>
+            <img src="assets/images/sample-2.png">
+            <h3>Arts & Collectibles</h3>
+            <img src="assets/images/sample-2.png">
+            <h3>Arts & Collectibles</h3>
+            <img src="assets/images/sample-2.png">
+            <h3>Arts & Collectibles</h3>
+            <img src="assets/images/sample-2.png">
+            <h3>Arts & Collectibles</h3>
+          </div> -->
+
+
+          <!-- <div class="gallery-box">
+            <img src="assets/images/sample-3.png">
+            <h3>Arts & Collectibles</h3>
+          </div>
+          <div class="gallery-box">
+            <img src="assets/images/sample-4.png">
+            <h3>Arts & Collectibles</h3>
+          </div>
+          <div class="gallery-box">
+            <img src="assets/images/sample-5.png">
+            <h3>Arts & Collectibles</h3>
+          </div>
+          <div class="gallery-box">
+            <img src="assets/images/sample-6.png">
+            <h3>Arts & Collectibles</h3>
+          </div> -->
+          <!-- <div class="gallery-box">
+            <img src="sample-1.png">
+            <h3>Arts & Collectibles</h3>
+          </div> -->
+        </div>
 
 
        </div>
     </div>
-</div>
+
+
 </div>
