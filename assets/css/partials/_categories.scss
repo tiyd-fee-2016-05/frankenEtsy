@@ -8,11 +8,20 @@
 //   height: 100%;
 // }
 
+.grid-pad{
+  padding-top: 87px;
+  padding-left: 20px;
+  padding-right: 0px;
+}
+
 .grid{
   width: 100%;
-  // max-width: 1140px;
-  // min-width: 748px;
+  max-width: 1140px;
+  min-width: 755px;
+  margin: 0 auto;
 }
+
+
 // "All Categories Sidebar"
 .cole-3-12{
   width: 25%;
@@ -81,41 +90,104 @@
 
 .content-gallery{
 padding-top: 51px;
+
 }
 
 
 .showCase1{
+  background: #fafafa;
   border: .7px solid rgba(173, 168, 168, 0.48);
   display: block;
   float:left;
   position: absolute;
+  line-height: 1.8;
+
+
   img{
     height: 300px;
   }
+  h3{
+    &:hover{
+      text-decoration: underline;
+    }
+    font-family: $Font-Bitter;
+    font-size: 1.1em;
+    padding-left: 10px;
 
+  }
+  h2{
+    &:hover{
+      text-decoration: underline;
+    }
+    font-family: $Font-Lato;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  ul{
+    li{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    font-family: $Font-Lato;
+    padding-left:10px;
+    font-size: 1em;
+
+  }
 }
 
 .showCase2{
+  background: #fafafa;
   border: .7px solid rgba(173, 168, 168, 0.48);
   display: block;
-  float: right;
+  float:right;
+  position: relative;
+  line-height: 1.8;
+  margin-right: 40px;
+
   img{
-    height:300px;
+    height: 300px;
+  }
+  h3{
+    &:hover{
+      text-decoration: underline;
+    }
+    font-family: $Font-Bitter;
+    font-size: 1.1em;
+    padding-left: 10px;
+
+  }
+  h2{
+    &:hover{
+      text-decoration: underline;
+    }
+    font-family: $Font-Lato;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  ul{
+    li{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    font-family: $Font-Lato;
+    padding-left:10px;
+    font-size: 1em;
 
   }
 }
 
 
-
-.grid-pad{
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 0px;
-}
-
-.grid{
-  width: 100%;
-  max-width: 1140px;
-  min-width: 755px;
-  margin: 0 auto;
+.gallery{
+  // margin-left: 26.5%;
+  margin-top: 65%;
+  display: inline-block;
+  position: relative;
+  img{
+    display: block;
+    height: 250px;
+  }
 }

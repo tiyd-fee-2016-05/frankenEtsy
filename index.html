@@ -9,9 +9,101 @@
   </head>
   <body ng-app="mainApp">
 ​
-​<div>
+<!-- ​<div>
   <ng-view> </ng-view>
+</div> -->
+
+<!-- TOP ETSY BAR -->
+<div class="homeHeaderWrap">
+  <div class="pagePaddingWrap">
+
+    <div class="rightHead">
+        <h1>Etsy</h1>
+
+        <input id="searchBar" type="text" name="search" value="" placeholder="Search for frends or trends">
+        <button id="searchButton" type="button" name="button">Search</button>
+    </div>
+
+
+    <div class="leftHead">
+
+        <ul>
+          <li>
+            <div>
+              <a id="sellLink" href="https://www.etsy.com/sell">Sell on Etsy</a>
+            </div>
+          </li>
+            <li>
+                <div id="homeLink">
+                  <a href="https://www.etsy.com/">
+                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                    <h4>Home</h4>
+                  </a>
+                </div>
+            </li>
+            <li>
+                <div class="headerLinks">
+                  <a href="#">
+                    <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                    <h4>Favorites</h4>
+                  </a>
+                </div>
+            </li>
+            <li>
+                <div class="headerLinks">
+                  <a href="#">
+                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    <h4>You</h4>
+                  </a>
+                </div>
+            </li>
+            <li>
+                <div id="cart">
+                  <a href="#">
+                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                    <h4>Cart</h4>
+                  </a>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
+</div>
+
+<!-- SUBHEADER -->
+<div>
+  <div class='subHeaderWrap'>
+    <div class="subNavBar">
+    <ul>
+      <li class='navbarItems clothingNavBar'>Clothing & Accessories</li>
+      <li class='navbarItems'>Jewelry</li>
+      <li class='navbarItems'>Craft Supplies & Tools</li>
+      <li class='navbarItems'>Weddings</li>
+      <li class='navbarItems'>Entertainment</li>
+      <li class='navbarItems'>Home & Living</li>
+      <li class='navbarItems'>Kids & Baby</li>
+      <li class='navbarItems'>Vintage</li>
+      <li class='navbarItems moreNavbar'>More</li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<!-- DROP DOWN MENU -->
+<div class="DropDownWrap">
+  <div class="LeftDropDown">
+    Trend
+  </div>
+  <div class="MidDropDown">
+    Frend
+  </div>
+  <div class="RightDropDown">
+    End
+  </div>
+</div>
+
+
+<!-- CATEGORIES! -->
 <div class="container">
 <div class="grid grid-pad">
     <div class="cole-3-12">
@@ -61,20 +153,55 @@
             <li>Spirituality & Religion</li>
           </ul>
           <h2>Shop All Home & Living</h2>
+
         </div>
         <div class="gallery">
-          
+          <div class="gallery-box">
+            <img src="assets/images/sample-1.png">
+            <h3>Arts & Collectibles</h3>
+            <img src="assets/images/sample-2.png">
+            <h3>Arts & Collectibles</h3>
+            <img src="assets/images/sample-2.png">
+            <h3>Arts & Collectibles</h3>
+            <img src="assets/images/sample-2.png">
+            <h3>Arts & Collectibles</h3>
+            <img src="assets/images/sample-2.png">
+            <h3>Arts & Collectibles</h3>
+          </div>
+
+
+          <!-- <div class="gallery-box">
+            <img src="assets/images/sample-3.png">
+            <h3>Arts & Collectibles</h3>
+          </div>
+          <div class="gallery-box">
+            <img src="assets/images/sample-4.png">
+            <h3>Arts & Collectibles</h3>
+          </div>
+          <div class="gallery-box">
+            <img src="assets/images/sample-5.png">
+            <h3>Arts & Collectibles</h3>
+          </div>
+          <div class="gallery-box">
+            <img src="assets/images/sample-6.png">
+            <h3>Arts & Collectibles</h3>
+          </div> -->
+          <!-- <div class="gallery-box">
+            <img src="sample-1.png">
+            <h3>Arts & Collectibles</h3>
+          </div> -->
         </div>
 
 
        </div>
     </div>
-</div>
+
+
 </div>
 
 ​
 ​
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
