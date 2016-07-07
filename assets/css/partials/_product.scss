@@ -213,6 +213,9 @@ body {
         font-weight: bold;
       }
   }
+  a {
+    text-decoration: none;
+  }
 }
 
 .reviews {
@@ -244,7 +247,109 @@ body {
     line-height: 1.75;
     font-size: 15px;
   }
+  .reviews-content {
+    // width: 550px;
+    margin-top: 40px;
+    .reviews-main {
+      border-bottom: 1px solid $Light-Grey;
+    }
+    .reviewer {
+      display: inline-block;
+      margin-left: 30px;
+      margin-right: 65px;
+      text-align: center;
+      vertical-align: top;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 8px;
+      }
+      .reviewed-by {
+        color: $Light-Grey;
+        font-size: 13px;
+        padding-bottom: 3px;
+      }
+      .reviewed-user {
+        color: $Blue;
+        font-size: 13px;
+          a {
+            text-decoration: none;
+            color: $Blue;
+          }
+      }
+    }
+    .review-right {
+      display: inline-block;
+      width: 405px;
+      margin-right: 0;
+      .review-stars-date {
+        margin-bottom: 10px;
+        p {
+          display: inline-block;
+          font-size: 13px;
+          width: 395px;
+          color: $Light-Grey;
+        }
+        .reviewer-stars {
+          width: 50px;
+          margin-right: 276px;
+        }
+        .reviewed-date {
+          width: 75px;
+        }
+
+      }
+      .review-par {
+        width: 380px;
+        font-size: 15px;
+        color: $Dark-Grey;
+        margin-bottom: 12.5px;
+        line-height: 1.5;
+      }
+      .reviewed-item {
+        margin-bottom: 22px;
+        img {
+          height: 45px;
+          width: 45px;
+          display: inline-block;
+          margin-right: 5px;
+        }
+        .reviewed-item-name {
+          font-size: 13px;
+          color: $Light-Grey;
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+
+      }
+      .read-all-btn {
+        font-size: 15px;
+        font-weight: 700;
+        background-color: #fff;
+        border: 1px solid $Light-Grey;
+        border-radius: 3px;
+        padding: 8px 15px;
+        margin-top: 30px;
+        cursor: pointer;
+      }.read-all-btn:hover {
+        background-color: $BackgroundGrey;
+      }
+      }
+  .shipping-content {
+    .methods-text {
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .paypal {
+      width: 65px;
+      height: auto;
+    }
+  }
 }
+
+
 
 .overview {
   border: 3px solid $Green;
