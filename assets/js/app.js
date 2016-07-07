@@ -5,7 +5,7 @@ mainApp.config(function($routeProvider){
 
   .when ('/productpage', {
     templateUrl: 'pages/product.html',
-    // controller: 'myCtrl'
+    controller: 'productCtrl'
   })
 
   .otherwise({
