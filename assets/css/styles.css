@@ -53,19 +53,62 @@ body {
   padding-top: 51px; }
 
 .showCase1 {
+  background: #fafafa;
   border: 0.7px solid rgba(173, 168, 168, 0.48);
   display: block;
   float: left;
-  position: absolute; }
+  position: absolute;
+  line-height: 1.8; }
   .showCase1 img {
     height: 300px; }
+  .showCase1 h3 {
+    font-family: "Bitter", serif;
+    font-size: 1.1em;
+    padding-left: 10px; }
+    .showCase1 h3:hover {
+      text-decoration: underline; }
+  .showCase1 h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-bottom: 20px; }
+    .showCase1 h2:hover {
+      text-decoration: underline; }
+  .showCase1 ul {
+    font-family: "Lato", sans-serif;
+    padding-left: 10px;
+    font-size: 1em; }
+    .showCase1 ul li:hover {
+      text-decoration: underline; }
 
 .showCase2 {
+  background: #fafafa;
   border: 0.7px solid rgba(173, 168, 168, 0.48);
   display: block;
-  float: right; }
+  float: right;
+  position: relative;
+  line-height: 1.8; }
   .showCase2 img {
     height: 300px; }
+  .showCase2 h3 {
+    font-family: "Bitter", serif;
+    font-size: 1.1em;
+    padding-left: 10px; }
+    .showCase2 h3:hover {
+      text-decoration: underline; }
+  .showCase2 h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-bottom: 20px; }
+    .showCase2 h2:hover {
+      text-decoration: underline; }
+  .showCase2 ul {
+    font-family: "Lato", sans-serif;
+    padding-left: 10px;
+    font-size: 1em; }
+    .showCase2 ul li:hover {
+      text-decoration: underline; }
 
 .grid-pad {
   padding-top: 20px;
