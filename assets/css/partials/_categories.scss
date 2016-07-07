@@ -29,7 +29,7 @@
 
   h1{
     font-family: $Font-Bitter;
-    font-size: 1.7em;
+    font-size: 2.4em;
     padding-bottom: 24px;
   }
 }
@@ -37,7 +37,11 @@
 .cat-bar{
   padding-left: 18px;
   line-height: 1.6;
-
+  li{
+  &:hover{
+    text-decoration: underline;
+  }
+}
 }
 
 .allItems{
