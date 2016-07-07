@@ -43,7 +43,7 @@ footer {
   font-size: 14px;
 
   li {
-    padding: 4px 0 4px 0;
+    padding: 6px 0 6px 0;
 
     .footer-header {
       padding-bottom: 0;
@@ -54,32 +54,58 @@ footer {
       text-decoration: none;
     }
     a:hover {
+      cursor: pointer;
       text-decoration: underline;
+    }
+
+    button {
+      background: $Blue;
+      border: 1px solid $Blue;
+      border-radius: 3px;
+      padding: 3px 8px 5px 8px;
+      font-family: $Font-Lato;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+    button:hover {
+      background: $Darker-Blue;
+    }
+    button:focus {
+      outline: 0;
     }
 
     i {
       margin-right: 8px;
     }
 
-  button {
-    background: $Blue;
-    border: 1px solid $Blue;
-    border-radius: 3px;
-    padding: 5px 8px 5px 8px;
-    font-family: $Font-Lato;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #fff;
-  }
-  button:hover {
-    background: $Darker-Blue;
-  }
-  button:focus {
-    outline: 0;
-  }
-
 } }
+
+
+    .copyright {
+      border-top: 2px solid #ebebe6;
+      margin-top: 20px;
+      padding: 75px 0 25px 0;
+      font-family: $Font-Lato;
+      font-weight: 300;
+      font-size: 13px;
+      color: $Light-Grey;
+      text-align: center;
+      a {
+        padding: 0 7px;
+        font-weight: 400;
+        color: $Dark-Grey;
+        text-decoration: none;
+      }
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+    }
+
+
 
 
 
