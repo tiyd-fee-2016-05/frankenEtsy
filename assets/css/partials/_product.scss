@@ -1,6 +1,9 @@
 body {
   font-family: $Font-Lato;
 }
+// .angular-with-newlines {
+//     white-space: pre-wrap;
+// }
 
 #container {
   width: 1050px;
@@ -393,6 +396,7 @@ body {
     border-left: 1px solid $Light-Grey;
     color: $Blue;
     font-weight: bold;
+    cursor: pointer;
   }
   .list-right {
     border-right: 1px solid $Light-Grey;
