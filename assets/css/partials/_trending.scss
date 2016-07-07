@@ -1,0 +1,28 @@
+.trendingItems{
+  display: block;
+  font-family: $Font-Bitter;
+  padding: 1.5em 0;
+  box-shadow: 0px 1px 3px 1px #d0d0d0 inset;
+  #trendingHeader{
+    font-size: 28px;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    color: $Black;
+    text-decoration: none;
+    font-weight: 700;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  #trendingSubHeader{
+    font-size: 16px;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: $Light-Grey;
+    font-weight: 400;
+    padding: .8em;
+  }
+}
