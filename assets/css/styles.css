@@ -144,10 +144,15 @@ footer {
   Site - http://dallasbass.com
 */
 #homepage {
+  /****  BEGINNING TO STYLE BANNER / FIRST ROW ***/
+  /********************************/
+  /****** SECOND ROW / ILLUSTRATIONS **/
   /* Content Columns */ }
-  #homepage .banner {
-    width: 964px;
-    height: 280px; }
+  #homepage * {
+    margin: 0; }
+  #homepage .picture {
+    width: 1100px;
+    height: 228px; }
   #homepage [class*='grid'],
   #homepage [class*='col-'],
   #homepage [class*='mobile-'],
