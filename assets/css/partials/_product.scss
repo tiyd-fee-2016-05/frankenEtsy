@@ -108,7 +108,9 @@ body {
 }
 
 .right-col {
+  vertical-align: top;
   display: inline-block;
+  margin-left: 25px;
 }
 
 .fav {
@@ -442,11 +444,77 @@ body {
       font-weight: bold;
       margin-bottom: 15px;
     }
+    .policies{
+      font-size: 15px;
+      margin-top: 20px;
+      color: $Dark-Grey;
+      line-height: 1.5;
+    }
+    .pol-1{
+      margin-bottom: 45px;
+    }
+    .left-pol-1{
+      display: inline-block;
+      vertical-align: top;
+
+
+    }
+    .right-pol-1{
+      display: inline-block;
+      margin-left: 150px;
+    }
+}
+.related {
+  margin-left: 150px;
+  margin-top: 50px;
+  p{
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .links{
+    margin-top: 20px;
+    a{
+      border: 1px solid $Light-Grey;
+      text-decoration: none;
+      border-radius: 3px;
+      padding: 5px 5px;
+      background-color: #fff;
+      margin-left: 8px;
+      color: black;
+      font-size: 15px;
+    }a:hover{
+      background-color: $Light-Blue;
+    }
+  }
+}
+.item-stats{
+  margin-top: 35px;
+  margin-left: 150px;
+  font-size: 13px;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    color: $Light-Grey;
+  }
+  a li{
+    color: $Blue;
+  }a li:hover{
+    border-bottom: 1px solid $Blue;
+  }
+  .right-side{
+    color: $Light-Grey;
+    margin-left: 300px;
+  }.right-side:hover{
+    border-bottom: 1px solid $Light-Grey;
+  }
 }
 
 
 
 .overview {
+  position: relative;
+  vertical-align: top;
   border: 3px solid $Green;
   border-radius: 3px;
+
 }
