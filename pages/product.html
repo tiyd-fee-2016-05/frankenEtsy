@@ -149,7 +149,11 @@
                 <p class="item-title">{{title}}</p>
                 <p class="price">{{price | currency}}</p>
                 <a href="#"><p class="question">Ask a question</p></a>
-                <p class="availability">Only 1 left</p>
+                <p class="availability" ng-show="oneOption">Only 1 left</p>
+                <p class="availability" ng-show="availOptions">Quantity</p>
+                <select class="avail-options" ng-show="availOptions">
+                  <option ng-repeat="quant in quantOptions" value="{{quant}}">{{quant}}</option>
+                </select>
                 <p class="type-of-option">D-ring for leash</p>
                 <div class="item-options">
                   <select class="selections">
