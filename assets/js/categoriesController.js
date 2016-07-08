@@ -3,10 +3,14 @@
 mainApp.controller( "CategoriesController", [ "$scope", "dataFactory", function( $scope, dataFactory ) {
 
   $scope.listings; // used to store data for "Shop all items" section
+  $scope.jewelry;
+  $scope.home;
   $scope.shops;
   var numGets = 0; // count to see if factory is caching data or not
 
   getListings();
+  getJewelry();
+  getHome();
 
   // function to get items for "Shop all items"
   function getListings() {
@@ -21,27 +25,44 @@ mainApp.controller( "CategoriesController", [ "$scope", "dataFactory", function(
         console.log( "Here is your description: " + $scope.listings[0].description ); // log price for first listing
         console.log( "Here is your url: " + $scope.listings[0].url ); // log price for first listing
         console.log( numGets );
-        getListing( $scope.listings );
       },
       function( error ) {
         console.log( "Denied!!! " + error.message );
       });
   } // end getListings()
 
-  // function to get shop names
-  function getListing( listings ) {
-    console.log( listings );
-    dataFactory.getListing( listings.listing_id )
+  // function to get jewelry
+  function getJewelry() {
+    dataFactory.getJewelry()
       .then( function( response ) {
-        $scope.shops = response.data;
-        console.log( $scope.shops );
+        $scope.jewelry = response.data.results[0].Images[0].url_75x75;
+        console.log( response.data.results[0].Images[0].url_75x75 );
+        // console.log("jewelry pic " + $scope.jewelry.results );
       },
       function( error ) {
         console.log( "Denied!!! " + error.message );
       });
-  } // end getListing()
+  } // end getJewelry()
+
+  // function to get home
+  function getHome() {
+    dataFactory.getHome()
+      .then( function( response ) {
+        $scope.home = response;
+        console.log( $scope.home.results );
+      },
+      function( error ) {
+        console.log( "Denied!!! " + error.message );
+      });
+  } // end gethome()
 
 
+  $scope.goToProduct = function( listing ) {
+        $scope.productClicked = $scope.listings.indexOf( listing );
+        console.log( JSON.stringify($scope.listings[$scope.productClicked]) );
+        localStorage.setItem( "productClicked", JSON.stringify($scope.listings[$scope.productClicked]));
+
+  } // end goToProduct()
 
 
 }]); // end mainApp.controller( "CategoriesController" );
