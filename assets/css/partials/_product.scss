@@ -309,6 +309,61 @@ body {
 }
 
 .product-images {
+  height: 725px;
+  background: $BackgroundGrey;
+  .arrow-background-left{
+    position: absolute;
+    margin-top: 350px;
+    background: #666;
+    opacity: .25;
+    height: 80px;
+    width: 40px;
+    z-index: 351;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .left-arrow{
+    position: absolute;
+    z-index: 500;
+    font-size: 3em;
+    margin-left: 5px;
+    height: 80px;
+    width: 40px;
+    font-weight: 700;
+    // background: $BackgroundGrey ;
+    opacity: .7;
+    padding-top: 18px;
+    color: $BackgroundGrey;
+    z-index: 500;
+  }
+  .arrow-background-right{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 543px;
+
+    background: #666;
+    opacity: .25;
+    height: 80px;
+    width: 40px;
+    z-index: 351;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .right-arrow{
+    position: absolute;
+    z-index: 500;
+    font-size: 3em;
+    height: 80px;
+    width: 40px;
+    font-weight: 700;
+    // background: $BackgroundGrey ;
+    opacity: .7;
+    padding-top: 18px;
+    color: $BackgroundGrey;
+    z-index: 500;
+  }
+
   img {
     width: 100%;
   }
@@ -322,11 +377,20 @@ body {
 }
 
 .thumbnail {
-  height: 30px;
-  width: 30px;
-  border: 1px solid $Light-Grey;
+  // height: 30px;
+  // width: 30px;
+  // border: 1px solid $Light-Grey;
   display: inline-block;
   margin: 5px;
+  img{
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    opacity: .5;
+    cursor: pointer;
+  }img:hover{
+    opacity: .75;
+  }
 }
 
 .zoom {
