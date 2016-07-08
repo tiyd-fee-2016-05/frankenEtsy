@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
-  <body>
+  <body ng-app="etsyApp">
+  ​
   <!-- <body ng-app="mainApp">
 ​
 ​<div>
@@ -108,13 +109,13 @@
 
 <!-- Start of homepage -->
 
-​<div id="homepage">
+​<div id="homepage" ng-controller="homepageController">
   <div class="grid grid-pad">
 <!-- Grid starts here -->
 <!-- First row, photo banner -->
     <div class="col-1-1">
       <div class="content banner">
-            <h3>Whoever you are, find<br> whatever you're into</h3>
+            <h3>{{message}}<br> whatever you're into</h3>
             <input id="searchBar" type="text" name="search" value="" placeholder="What are you shopping for?">
             <button id="searchButton" type="button" name="button">Search</button>
             <p>From the shop...</p>
@@ -545,5 +546,6 @@
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
       <script src="assets/js/app.js"></script>
+      <script src="assets/js/controller.js"></script>
   </body>
 </html>
