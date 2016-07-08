@@ -28,18 +28,21 @@
                 </div>
             </section>
 
-            <section class="product-images">
-              <div class="arrow-background-left">
+            <ul class="product-images">
+              <div class="arrow-background-left" ng-click="imgFuncDown()">
                 <div class="left-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
               </div>
-              <div class="arrow-background-right">
+              <div class="arrow-background-right" ng-click="imgFuncUp()">
                 <div class="right-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
               </div>
-                <img src="{{loadImage}}">
-            </section>
+
+                <li>
+                  <img src="{{loadImage}}">
+                </li>
+            </ul>
 
             <div class="more-images">
-              <div class="thumbnail" ng-repeat="thumb in thumbnail">
+              <div class="thumbnail" id="{{thumb}}" ng-repeat="thumb in thumbnail" ng-click="thumbImgFunc()">
                 <img src="{{thumb}}"/>
               </div>
               <!-- <div class="thumbnail">
