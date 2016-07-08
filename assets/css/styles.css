@@ -283,6 +283,7 @@ body {
           width: 0;
           height: 0; } }
 
+
 #categories *, #categories *:after, #categories *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -463,7 +464,10 @@ body {
   #categories .shop-list li {
     display: inline-block;
     width: 30%;
-    border-radius: .7%; }
+    border-radius: .7%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
     #categories .shop-list li img {
       height: 225px;
       width: 100%;
