@@ -1,4 +1,3 @@
-
 var etsyApp= angular.module("etsyApp", ['ngRoute']);
 
 etsyApp.config(function($routeProvider){

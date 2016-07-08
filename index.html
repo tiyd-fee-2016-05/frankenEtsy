@@ -115,7 +115,7 @@
 <!-- First row, photo banner -->
     <div class="col-1-1">
       <div class="content banner">
-            <h3>{{message}}<br> whatever you're into</h3>
+            <h3>{{content.image}}<br> whatever you're into</h3>
             <input id="searchBar" type="text" name="search" value="" placeholder="What are you shopping for?">
             <button id="searchButton" type="button" name="button">Search</button>
             <p>From the shop...</p>
@@ -156,37 +156,37 @@
   <div class="cols-6">
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/1.jpg">
+        <img class="homepageImage" src="assets/images/1.jpg" ng-src="{{info.image1}}"><!---  using ng-src to pull api call image into locations -->
         <h3>Home and Living</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/2.jpg">
+        <img class="homepageImage" src="assets/images/2.jpg" ng-src="{{info.image2}}">
          <h3>Jewelry</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/3.jpg">
+        <img class="homepageImage" src="assets/images/3.jpg" ng-src="{{info.image3}">
         <h3>Clothing</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/5.jpg">
+        <img class="homepageImage" src="assets/images/5.jpg" ng-src="{{info.image5}}">
         <h3>Weddings</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/4.jpg">
+        <img class="homepageImage" src="assets/images/4.jpg" ng-src="{{info.image4}}">
         <h3>Craft Supplies & Tools</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/6.jpg">
+        <img class="homepageImage" src="assets/images/6.jpg" ng-src="{{info.image6}}">
         <h3>Toys & Games</h3>
       </div>
     </div>
@@ -203,7 +203,7 @@
   <div class="cols-2 ">
     <div class="col-1-2">
       <div class="content browse-split">
-        <img class="split-left" src="assets/images/7.jpg">
+        <img class="split-left" src="assets/images/7.jpg" ng-src="{{info.image7}}">
         <div class="split-right1">
           <p>Editors' Picks</p>
           <h3>Personalized & Custom Jewelry</h3>
@@ -212,7 +212,7 @@
     </div>
     <div class="col-1-2">
       <div class="content browse-split">
-        <img class="split-left" src="assets/images/8.jpg">
+        <img class="split-left" src="assets/images/8.jpg" ng-src="{{info.image8}}">
         <div class="split-right2">
           <p>Editors' Picks</p>
           <h3>Classics never get old</h3>
@@ -239,37 +239,37 @@
   <div class="cols-6">
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/9.jpg">
+        <img class="homepageImage" src="assets/images/9.jpg" ng-src="{{info.image9}}">
         <h3>Gifts for Cyclists</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/10.jpg">
+        <img class="homepageImage" src="assets/images/10.jpg" ng-src="{{info.image10}}">
        <h3>Best of summer: Under $30</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/11.jpg">
+        <img class="homepageImage" src="assets/images/11.jpg" ng-src="{{info.image11}}">
        <h3>Summer fashion accessories</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/12.jpg">
+        <img class="homepageImage" src="assets/images/12.jpg" ng-src="{{info.image12}}">
       <h3>Little luxuries</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/13.jpg">
+        <img class="homepageImage" src="assets/images/13.jpg" ng-src="{{info.image13}}">
         <h3>Birthstone jewelry</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/14.jpg">
+        <img class="homepageImage" src="assets/images/14.jpg" ng-src="{{info.image14}}">
        <h3>Baby shower gifts</h3>
       </div>
     </div>
@@ -289,7 +289,7 @@
 
          <div class="cols-3">
            <div class="col-1-7">
-             <img class="safe" src="assets/images/safe.png">
+             <img class="safe" src="assets/images/safe.png" ng-src="{{info.imagesafe}}">
            </div>
 
          <div class="col-1-5-safe">
@@ -306,7 +306,7 @@
              </div>
 
              <div class="col-1-7">
-                <img class="safe" src="assets/images/keys.png">
+                <img class="safe" src="assets/images/keys.png" ng-src="{{info.imagekey}}">
              </div>
            </div>
          </div>
@@ -314,7 +314,7 @@
 
 <!-- Twelvth row -->
     <div class="col-1-1">
-      <div class="content header-link">
+      <div class="content header-link" >
          <h3>Shops worth exploring</h3>
       </div>
     </div>
@@ -322,19 +322,19 @@
 <!-- Thirteenth row -->
     <div class="col-1-3">
       <div class="content">
-        <img src="assets/images/26.jpg">
+        <img src="assets/images/26.jpg" ng-src="{{info.image26}}">
         <h3>WakeTheTree</h3>
       </div>
     </div>
     <div class="col-1-3">
       <div class="content">
-        <img src="assets/images/16.jpg">
+        <img src="assets/images/16.jpg" ng-src="{{info.image16}}">
         <h3>Blydesign</h3>
       </div>
     </div>
     <div class="col-1-3">
       <div class="content">
-        <img src="assets/images/17.jpg">
+        <img src="assets/images/17.jpg" ng-src="{{info.image17}}">
          <h3>ChicMonogram</h3>
       </div>
     </div>
@@ -372,10 +372,10 @@
 
          <div class="cols-3">
           <div class="col-1-3">
-            <img src="assets/images/topleft.png">
+            <img src="assets/images/topleft.png" ng-src="{{info.imagetopleft}}">
           </div>
           <div class="col-1-3">
-            <img class="safe" src="assets/images/topright.png">
+            <img class="safe" src="assets/images/topright.png" ng-src="{{info.imagetopright}}">
           </div>
          </div>
        </div>
@@ -391,7 +391,7 @@
 <!-- Eigthteenth row, blog -->
 <div class="col-1-3-blog">
   <div class="content">
-    <img src="assets/images/blog1.jpg">
+    <img src="assets/images/blog1.jpg" ng-src="{{info.imageblog1}}">
     <h3>FEATURED SHOPS</h3>
     <a href="#">Featured Shop: Ay Mujer</a>
     <p>This California native uses traditional papel picado to create
@@ -400,7 +400,7 @@
 </div>
 <div class="col-1-3-blog">
   <div class="content">
-    <img src="assets/images/blog2.jpg">
+    <img src="assets/images/blog2.jpg" ng-src="{{info.imageblog2}}">
     <h3>DIY PROJECTS</h3>
     <a href="#">Make Ice Pops for Your Pup</a>
     <p>Help your dogs keep their cool with a tasty pup pop recipe from<br> Heather Baird of Sprinkebakes.</p>
@@ -408,7 +408,7 @@
 </div>
 <div class="col-1-3-blog">
   <div class="content">
-    <img src="assets/images/blog3.jpg">
+    <img src="assets/images/blog3.jpg" ng-src="{{info.imageblog3}}">
     <h3>INSPIRATION</h3>
     <a href="#">Jewelry for Every Astrological Sign</a>
     <p>With some astrological know-how, you can pick the perfect accessory<br> for every sign.</p>
@@ -430,7 +430,7 @@
 
      <div class="cols-3">
       <div class="col-1-3">
-        <img src="assets/images/bottomleft.png">
+        <img src="assets/images/bottomleft.png" ng-src="{{info.imagebottemleft}}">
       </div>
 
       <div class="col-1-3">
@@ -439,7 +439,7 @@
       </div>
 
       <div class="col-1-3">
-        <img class="safe" src="assets/images/bottomright.png">
+        <img class="safe" src="assets/images/bottomright.png" ng-src="{{info.imagebottomright}}">
       </div>
      </div>
   </div>
