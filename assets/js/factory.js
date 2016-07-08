@@ -2,9 +2,10 @@
 
   mainApp.factory( "dataFactory", [ "$http", function( $http ) {
 
-  var listingsUrl = "https://openapi.etsy.com/v2/listings/active?includes=MainImage,about&api_key=8ehgwfe57rb8jl60hnt04nom";
-  // var listingsUrl = "https://openapi.etsy.com/v2/listings/trending&api_key=8ehgwfe57rb8jl60hnt04nom";
-  // var
+  var listingsUrl = "https://openapi.etsy.com/v2/listings/active?includes=MainImage,Shop&api_key=8ehgwfe57rb8jl60hnt04nom";
+  var listingUrl = "https://openapi.etsy.com/v2/listings/:";
+  var categoriesUrl = "https://openapi.etsy.com/v2/taxonomy/buyer/get?includes=MainImage&api_key=8ehgwfe57rb8jl60hnt04nom";
+
   var dataFactory = {};
   // var dataReceived = false;
 
@@ -12,8 +13,8 @@
     return $http.get( listingsUrl );
   };
 
-  dataFactory.getListing = function() {
-    return $http.get( listingsUrl + "/" + id );
+  dataFactory.getListing = function( id ) {
+    return $http.get( listingUrl + id + "&api_key=8ehgwfe57rb8jl60hnt04nom" );
   };
 
   return dataFactory;
