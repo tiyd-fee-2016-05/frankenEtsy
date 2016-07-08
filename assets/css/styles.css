@@ -463,6 +463,10 @@ footer {
     width: 16.667%; }
   #homepage .col-1-7 {
     width: 12%; }
+  #homepage .threerowimage {
+    width: 413px;
+    height: 275px;
+    border: 1px dashed red; }
   @media handheld, only screen and (max-width: 767px) {
     #homepage {
       /* Mobile Layout */ }

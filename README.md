@@ -1,12 +1,12 @@
 # frankenEtsy
-<<<<<<< HEAD
+
 
 
 Today: 7/06/16
 * Sinovia was the team lead.  She performed amazing directorship responsibilities.
 * Nastassia was the driver and super styling pro.
 * Rhonda was navigating and providing comic relief.
-=======
+
 Etsy Clone for TIY Durham
 
 
@@ -22,4 +22,3 @@ Etsy Clone for TIY Durham
     * Nastassia created the style guide for the entire project/ like a boss.
     * We got our api for Etsy.
     * We laughed, we rejoiced with glee.
->>>>>>> 5aab2137adb9b0a68a93740533606dc68b429e57
