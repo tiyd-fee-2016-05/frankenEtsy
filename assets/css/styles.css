@@ -21,16 +21,16 @@ body {
         font-family: "Bitter", serif;
         color: #f56400;
         font-size: 2.5em;
-        margin-right: .5em; }
+        margin-right: 0.5em; }
       .homeHeaderWrap .pagePaddingWrap .rightHead #searchBar {
         display: inline-block;
-        font-size: .9em;
+        font-size: 0.9em;
         padding: 0.5em;
         width: 15em;
         border: 1px solid #aaa;
         background-color: #fbfbfa;
-        border-radius: 3px 0px 0px 3px;
-        box-shadow: 0px 0px 2px 1px #e6e6e6 inset; }
+        border-radius: 3px 0 0 3px;
+        box-shadow: 0 0 2px 1px #e6e6e6 inset; }
         .homeHeaderWrap .pagePaddingWrap .rightHead #searchBar:focus {
           border: 1px solid #0192B5;
           outline: none; }
@@ -39,20 +39,20 @@ body {
         background: #0192B5;
         color: white;
         border: 1px solid #0192B5;
-        border-radius: 0px 3px 3px 0px;
+        border-radius: 0 3px 3px 0;
         padding: 0.5em 1em;
         margin-left: -0.4em; }
         .homeHeaderWrap .pagePaddingWrap .rightHead #searchButton:hover {
           background-color: #34A8C4; }
     .homeHeaderWrap .pagePaddingWrap .leftHead {
       position: absolute;
-      right: 0em;
+      right: 0;
       display: inline-block;
       font-family: "Lato", sans-serif; }
       .homeHeaderWrap .pagePaddingWrap .leftHead ul {
         color: #666;
         display: inline-block;
-        padding-right: 0em; }
+        padding-right: 0; }
         .homeHeaderWrap .pagePaddingWrap .leftHead ul li {
           text-align: center;
           display: inline-block; }
@@ -89,8 +89,8 @@ body {
           .homeHeaderWrap .pagePaddingWrap .leftHead ul li i {
             font-size: 1.5em; }
           .homeHeaderWrap .pagePaddingWrap .leftHead ul li h4 {
-            padding-top: .5em;
-            font-size: .8em; }
+            padding-top: 0.5em;
+            font-size: 0.8em; }
 
 .subHeaderWrap {
   width: 100%;
@@ -120,6 +120,88 @@ body {
     margin-left: 30px; }
   .subHeaderWrap .moreNavbar {
     display: none; }
+
+.DropDownWrap {
+  background-color: white;
+  position: relative;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  font-family: Lato, sans-serif;
+  box-shadow: 1px 5px 20px #aaa;
+  border-top: none;
+  padding: 1.5em 1em 1.5em 0; }
+  .DropDownWrap a {
+    color: #666;
+    text-decoration: none; }
+  .DropDownWrap .LeftDropDown, .DropDownWrap .RightDropDown {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top; }
+    .DropDownWrap .LeftDropDown li, .DropDownWrap .RightDropDown li {
+      padding: 0.45em 0;
+      font-size: 0.9em;
+      letter-spacing: 0.025em; }
+    .DropDownWrap .LeftDropDown .navHighlight, .DropDownWrap .RightDropDown .navHighlight {
+      color: #0192B5;
+      background-color: #E4F3F7;
+      padding: 0.5em 6em 0.2em 1.7em; }
+      .DropDownWrap .LeftDropDown .navHighlight #angleRightHighlight, .DropDownWrap .RightDropDown .navHighlight #angleRightHighlight {
+        margin: -.65em -.3em -.65em 0;
+        position: relative;
+        vertical-align: middle;
+        background-color: #E4F3F7;
+        font-weight: 900;
+        padding: 0.5em 0.38em 0.4em 2em; }
+    .DropDownWrap .LeftDropDown .LeftDropDown-nav, .DropDownWrap .RightDropDown .LeftDropDown-nav {
+      padding-left: 1.5em; }
+    .DropDownWrap .LeftDropDown .fa-angle-right, .DropDownWrap .RightDropDown .fa-angle-right {
+      float: right; }
+  .DropDownWrap .MidDropDown {
+    width: 47%;
+    display: inline-block;
+    position: relative; }
+    .DropDownWrap .MidDropDown li {
+      padding: 0.45em 1.5em;
+      font-size: 0.9em;
+      letter-spacing: 0.025em;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa; }
+      .DropDownWrap .MidDropDown li .midNavSubItem {
+        font-size: 0.89em;
+        color: #aaa;
+        padding-left: 1em; }
+    .DropDownWrap .MidDropDown p {
+      position: absolute;
+      right: 1em;
+      top: 0;
+      float: right;
+      border-left: none; }
+      .DropDownWrap .MidDropDown p .navAllItems {
+        display: inline-block;
+        color: #222;
+        letter-spacing: 0.03em;
+        font-size: 0.92em;
+        font-weight: 600;
+        padding-right: 2.5em; }
+  .DropDownWrap .RightDropDown {
+    display: inline-block;
+    padding-left: 1.5em; }
+    .DropDownWrap .RightDropDown li {
+      bottom: 1; }
+    .DropDownWrap .RightDropDown #editorsPicks-img {
+      position: relative;
+      width: 12em;
+      height: 10em;
+      padding-left: 0.5em; }
+    .DropDownWrap .RightDropDown #editorsPicks {
+      font-size: 0.7em;
+      letter-spacing: 0.4em;
+      color: #aaa; }
+    .DropDownWrap .RightDropDown #editorsPicks-item {
+      font-family: Bitter;
+      color: #222;
+      font-size: 1.2em; }
 
 .trendingItems {
   display: block;
