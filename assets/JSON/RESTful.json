@@ -104,32 +104,143 @@
 {
   "jewelry": [
     {
-      "body-jewelry"
+      "body-jewelry":
+          "Anklets"
+          "Arm Bands"
+          "Barbells"
+          "Belly Chains"
+          "Belly Rings"
+          "Gauge & Plug Earrings"
+          "Hair Jewelry"
+          "Lip Rings"
+          "Nipple Jewelry"
+          "Nose Rings & Studs"
+          "Pinchers & Spirals"
+          "Shoulder Jewelry"
+          "Toe Rings"
+          "All Body Jewelry"
     },
     {
-      "bracelets"
+      "bracelets":
+          "Bangles"
+          "Beaded Bracelets"
+          "Chain & Link Bracelets"
+          "Charm Bracelets"
+          "Cuff Bracelets"
+          "Id & Medical Bracelets"
+          "Woven & Braided Bracelets"
+          "All Bracelets"
     },
     {
-      "cufflinks-and-tie-tacks"
+      "cufflinks-and-tie-tacks":
+          "Cuff Links"
+          "Shirt Studs"
+          "Tie Clips & Tacks"
+          "All Cuff Links & Tie Clips"
     },
     {
-      "earrings"
+      "earrings":
+          "Chandelier Earrings"
+          "Clip On Earrings"
+          "Cluster Earrings"
+          "Cuff & Wrap Earrings"
+          "Dangle & Drop Earrings"
+          "Ear Jackets & Climbers"
+          "Ear Weights"
+          "Gauge & Plug Earrings"
+          "Hoop Earrings"
+          "Screw Back Earrings"
+          "Stud Earrings"
+          "Threader Earrings"
+          "All Earrings"
     },
     {
-      "necklaces"
+      "necklaces":
+          "Beaded Necklaces"
+          "Bib Necklaces"
+          "Cameo Necklaces"
+          "Chains"
+          "Charm Necklaces"
+          "Chokers"
+          "Crystal Necklaces"
+          "Lariat & Y Necklaces"
+          "Lockets"
+          "Monogram & Name Necklaces"
+          "Multi Strand Necklaces"
+          "Pendants"
+          "Tassel Necklaces"
+          "All Necklaces"
     },
     {
-      "rings"
+      "rings":
+          "Bands"
+          "Midi Rings"
+          "Multistone Rings"
+          "Ring Guards & Spacers"
+          "Signet Rings"
+          "Solitaire Rings"
+          "Stackable Rings"
+          "Statement Rings"
+          "Wedding & Engagement"
+              "Anniversary Rings"
+              "Bridal Sets"
+              "Claddagh Rings"
+              "Engagement Rings"
+              "Promise Rings"
+              "Wedding Bands"
+          "All Rings"
     }
   ]
 }
 {
   "craft-supplies-and-tools": [
     {
-      "fiber-and-textile-art"
+      "fiber-and-textile-art":
+          "Batik"
+          "Felting"
+          "Knitting & Crocheting"
+              "Crochet Kits"
+              "Crochet Patterns"
+              "Knitting Kits"
+              "Knitting Machines & Looms"
+              "Knitting Patterns"
+              "Stitch Markers"
+          "Macrame"
+          "Rugmaking"
+          "Spinning"
+              "Spindles"
+              "Spinning Wheels"
+          "Upholstery"
+          "Weaving"
+          "Yarn & Roving"
+          "All Fiber & Textile Art"
     },
     {
-      "food-craft-supplies"
+      "food-craft-supplies":
+          "Bakeware"
+              "Cake Pans"
+              "Cookie Sheets"
+              "Muffin & Cupcake Tins"
+              "Pie Plates"
+              "Pizza Stones & Paddles"
+          "Baking & Candy"
+              "Baking & Candy Molds"
+              "Baking Recipes"
+              "Cake Toppers & Picks"
+              "Cookie Cutters"
+              "Cupcake Liners"
+              "Decorating"
+          "Canning"
+              "Jars"
+              "Labels"
+              "Lids, Rings & Caps"
+              "Pressure Cookers"
+              "Spices & Recipes"
+          "Fermentation"
+              "Brewing"
+              "Dairy & Kombucha"
+              "Winemaking"
+          "All Food Craft Supplies"
     },
     {
       "general-supplies"
