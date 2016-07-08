@@ -46,6 +46,7 @@ footer {
 
   li {
     padding: 6px 0 6px 0;
+    text-align: left;
 
     .footer-header {
       padding-bottom: 0;
@@ -93,7 +94,6 @@ footer {
       font-weight: 300;
       font-size: 13px;
       color: $Light-Grey;
-      text-align: center;
       a {
         padding: 0 7px;
         font-weight: 400;
