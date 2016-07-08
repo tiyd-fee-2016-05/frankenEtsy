@@ -157,7 +157,8 @@ footer {
     font-family: "Lato", sans-serif;
     font-size: 14px; }
     footer .col-1-5 li {
-      padding: 6px 0 6px 0; }
+      padding: 6px 0 6px 0;
+      text-align: left; }
       footer .col-1-5 li .footer-header {
         padding-bottom: 0; }
       footer .col-1-5 li a {
@@ -189,8 +190,7 @@ footer {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 13px;
-    color: #aaa;
-    text-align: center; }
+    color: #aaa; }
     footer .copyright a {
       padding: 0 7px;
       font-weight: 400;
@@ -288,23 +288,25 @@ footer {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   text-align: center;
-  -webkit-font-smoothing: antialiased;
   /* Content Columns */ }
   #homepage .banner {
     background-image: url("https://img1.etsystatic.com/site-assets/vesta-homepage-headers-v3/lunaticart_157486339_2020x335.jpg");
     background-position: center;
     width: 100%;
-    height: 220px; }
+    height: 280px;
+    margin-top: -24px;
+    padding-left: 60px;
+    padding-top: 40px; }
     #homepage .banner h3 {
       width: 55%;
       padding-bottom: 10px;
       font-family: "Bitter", serif;
-      font-size: 52px;
+      font-size: 50px;
       text-align: left;
       line-height: 60px; }
     #homepage .banner #searchBar {
       display: inline-block;
-      width: 40%;
+      width: 30%;
       border: 1px solid #aaa;
       background-color: #fbfbfa;
       border-radius: 3px 0px 0px 3px;
@@ -335,27 +337,65 @@ footer {
       border-radius: 3px;
       width: 10%;
       margin-top: 4em;
-      padding: 5px;
-      float: right;
+      padding: 5px 0 5px 0;
+      position: absolute;
+      right: 2%;
       color: #222;
       font-size: 14px; }
+      #homepage .banner p:hover {
+        text-decoration: underline;
+        cursor: pointer; }
+  #homepage .illust-split {
+    padding: 20px; }
+    #homepage .illust-split .split-left {
+      float: left;
+      position: relative;
+      width: 80px;
+      height: 85px; }
+    #homepage .illust-split .split-right {
+      float: right;
+      width: 75%;
+      padding: 15px 0 0 0;
+      text-align: left; }
+  #homepage .illustrations h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px; }
+  #homepage .illustrations p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px; }
   #homepage .header-link h3 {
+    padding-top: 26px;
     text-decoration: none;
     font-family: "Lato", sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 28px;
     color: #222; }
   #homepage .header-link a {
     text-decoration: none;
     font-family: "Lato", sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 28px;
     color: #222; }
   #homepage .header-link a:hover {
     text-decoration: underline; }
-  #homepage .homepageImage {
-    width: 100%;
-    height: 10em; }
+  #homepage .cols-6 {
+    margin-left: 2.5%; }
+    #homepage .cols-6 .col-1-6 {
+      margin: 0 8px 0 8px; }
+      #homepage .cols-6 .col-1-6 img {
+        width: 15em;
+        height: 11.5em;
+        overflow: hidden; }
+      #homepage .cols-6 .col-1-6 h3 {
+        background: #fff;
+        padding: 10px;
+        font-size: 15px;
+        text-align: left; }
+        #homepage .cols-6 .col-1-6 h3:hover {
+          text-decoration: underline;
+          cursor: pointer; }
   #homepage a {
     color: #0192B5;
     text-decoration: none; }
@@ -365,15 +405,58 @@ footer {
   #homepage i {
     margin-left: 5px;
     font-weight: bold; }
-  #homepage .side-by-side .side-by-side-left {
-    float: left;
-    position: relative;
-    width: 50%;
-    height: 250px;
-    background: #FF883E; }
-  #homepage .side-by-side .side-by-side-right {
-    float: right;
-    width: 50%; }
+  #homepage .cols-2 {
+    margin-left: 2.5%; }
+    #homepage .cols-2 .col-1-2 {
+      margin: 0 11px 0 11px; }
+      #homepage .cols-2 .col-1-2 .browse-split .split-left {
+        float: left;
+        position: relative;
+        width: 50%;
+        height: 260px;
+        background: #FF883E; }
+      #homepage .cols-2 .col-1-2 .browse-split .split-right1 {
+        float: right;
+        width: 50%;
+        margin-top: 70px;
+        text-align: left; }
+        #homepage .cols-2 .col-1-2 .browse-split .split-right1 p {
+          padding: 20px 20px 10px 20px;
+          font-family: "Lato", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 12px;
+          color: #777; }
+        #homepage .cols-2 .col-1-2 .browse-split .split-right1 h3 {
+          padding-left: 20px;
+          font-family: "Bitter", serif;
+          font-weight: 700;
+          font-size: 24px;
+          color: #222; }
+        #homepage .cols-2 .col-1-2 .browse-split .split-right1:hover h3 {
+          text-decoration: underline;
+          cursor: pointer; }
+      #homepage .cols-2 .col-1-2 .browse-split .split-right2 {
+        float: right;
+        width: 50%;
+        margin-top: 80px;
+        text-align: left; }
+        #homepage .cols-2 .col-1-2 .browse-split .split-right2 p {
+          padding: 20px 20px 10px 20px;
+          font-family: "Lato", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 12px;
+          color: #777; }
+        #homepage .cols-2 .col-1-2 .browse-split .split-right2 h3 {
+          padding-left: 20px;
+          font-family: "Bitter", serif;
+          font-weight: 700;
+          font-size: 24px;
+          color: #222; }
+        #homepage .cols-2 .col-1-2 .browse-split .split-right2:hover h3 {
+          text-decoration: underline;
+          cursor: pointer; }
   #homepage .orangeBknd {
     width: 100%;
     height: 100%;
@@ -410,6 +493,33 @@ footer {
     #homepage .orangeBknd i {
       margin-left: 5px;
       font-weight: bold; }
+  #homepage .col-1-3-blog {
+    margin-left: 3%;
+    text-align: left; }
+    #homepage .col-1-3-blog img {
+      width: 413px;
+      height: 275px;
+      margin-bottom: 10px; }
+    #homepage .col-1-3-blog h3 {
+      padding: 15px 10px 15px 0;
+      font-family: "Lato", sans-serif;
+      font-size: 12px;
+      color: #222;
+      letter-spacing: 1px; }
+    #homepage .col-1-3-blog a {
+      padding: 0 10px 10px 0;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: #222;
+      letter-spacing: 0; }
+    #homepage .col-1-3-blog p {
+      padding: 15px 10px 5px 0;
+      font-size: 14px;
+      line-height: 20px; }
+    #homepage .col-1-3-blog:hover a {
+      text-decoration: underline;
+      cursor: pointer; }
   #homepage [class*='grid'],
   #homepage [class*='col-'],
   #homepage [class*='mobile-'],
@@ -442,16 +552,20 @@ footer {
   #homepage .col-1-1 {
     width: 100%;
     background: #efefeb;
-    border: 2px solid purple; }
+    padding: 30px 0 30px 0; }
   #homepage .col-1-1-orange {
     width: 100%;
-    background: #FF883E;
-    border: 2px solid purple; }
+    background: #FF883E; }
   #homepage .col-1-2, #homepage .col-6-12 {
-    width: 50%;
-    border: 2px solid #f56400; }
+    width: 47%;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: #fff; }
   #homepage .col-1-3, #homepage .col-4-12 {
     width: 32%; }
+  #homepage .col-1-3-illust, #homepage .col-4-12 {
+    width: 32%;
+    margin-left: 2%; }
   #homepage .col-1-5 {
     width: 20%; }
   #homepage .col-1-5-safe {
@@ -459,13 +573,10 @@ footer {
     height: 25%;
     background: #FF883E; }
   #homepage .col-1-6, #homepage .col-2-12 {
-    width: 16.667%; }
+    border: 1px solid #aaa;
+    border-radius: 3px; }
   #homepage .col-1-7 {
     width: 12%; }
-  #homepage .threerowimage {
-    width: 413px;
-    height: 275px;
-    border: 1px dashed red; }
   @media handheld, only screen and (max-width: 767px) {
     #homepage {
       /* Mobile Layout */ }
@@ -514,10 +625,10 @@ footer {
         height: 0; } }
 
 /*
-  Simple Grid
-  Project Page - http://thisisdallas.github.com/Simple-Grid/
-  Author - Dallas Bass
-  Site - http://dallasbass.com
+ Simple Grid
+ Project Page - http://thisisdallas.github.com/Simple-Grid/
+ Author - Dallas Bass
+ Site - http://dallasbass.com
 */
 
 /*# sourceMappingURL=styles.css.map */
