@@ -146,8 +146,8 @@
         <div class="right-col">
             <section class="overview">
               <div class="overview-content">
-                <p class="item-title">Cat Battle Armor</p>
-                <p class="price"> $343.00</p>
+                <p class="item-title">{{title}}</p>
+                <p class="price">{{price | currency}}</p>
                 <a href="#"><p class="question">Ask a question</p></a>
                 <p class="availability">Only 1 left</p>
                 <p class="type-of-option">D-ring for leash</p>
@@ -160,10 +160,10 @@
                 </div>
               <ul class="overview-list">Overview
                 <li>Handmade item</li>
-                <li>Materials: leather, waxed cord, nickel silver hardware, elastic</li>
+                <li>Materials: {{material}}</li>
                 <li>Only ships within United States.</li>
                 <li>Feedback: <a href="#">14 reviews</a></li>
-                <li>Favorited by: <a href="#">5819 people</a></li>
+                <li>Favorited by: <a href="#">{{favorers}} people</a></li>
               </ul>
               <p class="gift-line"><i class="fa fa-gift" aria-hidden="true"></i> This shop accepts Etsy gift cards</p>
 
@@ -195,13 +195,13 @@
   <div class="related">
     <p>Related to this item</p>
   <div class="links">
-    <a href="#">Pet Supplies</a> <a href="#"> Pet Clothing, Accessories & Shoes</a> <a href="#">cat armor</a> <a href="#">cat harness</a> <a href="#">pet armor</a>
+    <a href="#" ng-repeat="t in tPath">{{t}}</a> <a href="#" ng-repeat="tag in tags">{{tag}}</a>
   </div>
   </div>
   <ul class="item-stats">
-    <li>Listed on Jun 26, 2016</li>
-    <li>985872 views</li>
-    <a href="#"><li>5819 Favorites</li></a>
+    <li>Listed on {{listedOn * 1000 | date: 'MMM dd, yyyy'}}</li>
+    <li>{{views}} views</li>
+    <a href="#"><li>{{favorers}} Favorites</li></a>
     <a href="#"><li>3 treasury lists</li></a>
     <a href="#"><li>Add item to treasury</li></a>
     <a href="#"><li class="right-side">Report this item to Etsy</li></a>

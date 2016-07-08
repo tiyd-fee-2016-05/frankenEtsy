@@ -631,6 +631,7 @@ body {
   }
   .links{
     margin-top: 20px;
+    width: 80%;
     a{
       border: 1px solid $Light-Grey;
       text-decoration: none;
@@ -638,8 +639,10 @@ body {
       padding: 5px 5px;
       background-color: #fff;
       margin-left: 8px;
-      color: black;
+      margin-bottom: 8px;
+      color: $Blue;
       font-size: 15px;
+      display: inline-block;
     }a:hover{
       background-color: $Light-Blue;
     }
