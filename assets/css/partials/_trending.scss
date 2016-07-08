@@ -34,9 +34,13 @@
 .productGridWrapper{
   width:80%;
   margin: 0 auto;
-}
 
+ul{
+  // break-inside: avoid-column;
+  column-count: 4;
+  column-gap: 0;
 .productBox{
+  margin: .5em;
   width:225px;
   background-color: white;
   border-width: 224px;
@@ -46,6 +50,10 @@
   padding:5px;
   list-style: none;
   display:inline-block;
+  .image{
+    max-width: 224px;
+  }
+}
 }
 .productBox:hover{
   border:1px solid rgba(170,170,170,.7);
@@ -56,6 +64,10 @@
   font-family: $Font-Lato;
   font-size: 12px;
   text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .title:hover{
   text-decoration: underline;
@@ -79,13 +91,13 @@
   float:right;
   padding:3px 0 0 0;
 }
-
+}
 // *********  GRID CODE FROM http://www.responsivegridsystem.com/calculator/
 /*  SECTIONS  */
 .section {
 	clear: both;
 	padding: 0px;
-	margin: 0px;
+	margin: 4em;
 }
 
 /*  COLUMN SETUP  */

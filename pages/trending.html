@@ -1,160 +1,22 @@
-<!-- TOP ETSY BAR -->
-<div class="homeHeaderWrap">
-  <div class="pagePaddingWrap">
-
-    <div class="rightHead">
-        <h1>Etsy</h1>
-
-        <input id="searchBar" type="text" name="search" value="" placeholder="Search for frends or trends">
-        <button id="searchButton" type="button" name="button">Search</button>
-    </div>
-
-
-    <div class="leftHead">
-
-        <ul>
-          <li>
-            <div>
-              <a id="sellLink" href="https://www.etsy.com/sell">Sell on Etsy</a>
-            </div>
-          </li>
-            <li>
-                <div id="homeLink">
-                  <a href="https://www.etsy.com/">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                    <h4>Home</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div class="headerLinks">
-                  <a href="#">
-                    <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                    <h4>Favorites</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div class="headerLinks">
-                  <a href="#">
-                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-                    <h4>You</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div id="cart">
-                  <a href="#">
-                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                    <h4>Cart</h4>
-                  </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
-</div>
-
-<!-- SUBHEADER -->
-<div>
-  <div class='subHeaderWrap'>
-    <div class="subNavBar">
-    <ul>
-      <li class='navbarItems clothingNavBar'>Clothing & Accessories</li>
-      <li class='navbarItems'>Jewelry</li>
-      <li class='navbarItems'>Craft Supplies & Tools</li>
-      <li class='navbarItems'>Weddings</li>
-      <li class='navbarItems'>Entertainment</li>
-      <li class='navbarItems'>Home & Living</li>
-      <li class='navbarItems'>Kids & Baby</li>
-      <li class='navbarItems'>Vintage</li>
-      <li class='navbarItems moreNavbar'>More</li>
-    </ul>
-    </div>
-  </div>
-</div>
-
-<!-- DROP DOWN MENU -->
-  <!-- <div class="DropDownWrap">
-    <div class="LeftDropDown">
-      <ul id="navCLOTHINGandACCESSORIES">
-        <li><a href="https://www.etsy.com/c/accessories">
-          Accessories</a>
-        </li>
-        <li><a href="https://www.etsy.com/c/bags-and-purses">
-          Bags & Purses</a>
-        </li>
-        <li><a href="https://www.etsy.com/c/clothing">
-          Clothing</a>
-        </li>
-        <li><a href="https://www.etsy.com/c/shoes">
-          Shoes</a>
-        </li>
-      </ul>
-      <ul id=accessories>
-        <li><a href="https://www.etsy.com/c/"></a></li>
-      </ul>
-    </div>
-    <div class="MidDropDown">
-      Frend
-    </div>
-    <div class="RightDropDown">
-      End
-    </div>
-  </div> -->
-
-
-
-<!-- TRENDING ITEMS HEADER -->
-<div class="trendingItems">
-  <a id="trendingHeader" href="https://www.etsy.com/trending">Trending Items</a>
-  <p id="trendingSubHeader">
-    Explore shoppers' top finds from around the marketplace.
-  </p>
-</div>
-
 <!-- wrapper for width of page -->
-<div class='pageWidthWrapper'>
-  <!-- wrapper for product grid -->
-  <div class='productGridWrapper'
+<div class='pageWidthWrapper' ng-controller="trendingController">
+    <!-- wrapper for product grid -->
+    <div class='productGridWrapper'> <!-- grid code -->
+        <div class="section group">
+          <ul>
+            <!-- <div class=" col span_1_of_4" ng-repeat="one in first40"> -->
 
-<!-- grid code -->
- <div class="section group">
-	<div class=" col span_1_of_4">
-    <ul>
-      <li class='productBox'><img class='image'  src="https://img0.etsystatic.com/119/0/7939301/il_224xN.994118916_e07g.jpg">
-        <div class='title'>SALE 20% OFF: Bordeaux Leather Sandals</div>
-        <div class='shop'>Crupon </div>
-        <div class='price'>$75.20 USD</div>
-      </li>
+                    <li class='productBox' ng-repeat="one in callOne"><img class='image' ng-src="{{one.Images[0].url_570xN}}">
+                        <div class='title'>{{one.title}}</div>
+                        <div class='shop'>{{one.Shop.shop_name}} </div>
+                        <div class='price'>{{one.price}} {{one.currency_code}}</div>
+                    </li>
 
-	</div>
-	<div class="col span_1_of_4">
-    <li class='productBox'><img class='image' src="https://img1.etsystatic.com/128/0/7806883/il_224xN.916375255_boo4.jpg">
-      <div class='title'>Custom heart shaped handmade ring dish</div>
-      <div class='shop'>susangordonpott...</div>
-      <div class='price'>$28 USD</div>
-    </li>
-
-	</div>
-	<div class="col span_1_of_4">
-    <li class='productBox'><img class='image'  src="https://img0.etsystatic.com/066/0/11397876/il_224xN.802490682_czr7.jpg">
-      <div class='title'>Personalized olive wood cho...</div>
-      <div class='shop'>Crupon </div>
-      <div class='price'>$33.29 USD</div>
-    </li>
-
-	</div>
-	<div class="col span_1_of_4">
-    <li class='productBox'><img class='image'  src="https://img0.etsystatic.com/068/0/6048419/il_224xN.788693630_msnj.jpg"><div class='title'>Distressed Aluminum House Numbers</div>
-    <div class='shop'>RusticFlitch </div>
-    <div class='price'>$17 USD</div>
-    </li>
-
-	</div>
-  <!-- below closes section group-->
-  </div>
-   <!-- below closes productGridWrapper -->
-  </div>
-  <!-- below closes pageWidthWrapper -->
- </div>
+            <!-- </div> -->
+          </ul>
+            <!-- below closes section group-->
+        </div>
+        <!-- below closes productGridWrapper -->
+    </div>
+    <!-- below closes pageWidthWrapper -->
+</div>
