@@ -1,6 +1,6 @@
-var etsyApp= angular.module("etsyApp", ['ngRoute']);
+var mainApp= angular.module("mainApp", ['ngRoute']);
 
-etsyApp.config(function($routeProvider){
+mainApp.config(function($routeProvider){
   $routeProvider
     .when("/home",{
       templateUrl: 'pages/home.html'

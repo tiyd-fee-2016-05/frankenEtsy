@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
-  <body ng-app="etsyApp">
+  <body ng-app="mainApp">
   ​
   <!-- <body ng-app="mainApp">
 ​
@@ -156,37 +156,37 @@
   <div class="cols-6">
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/1.jpg">
+        <img class="homepageImage" ng-src={{homeInfo[0].Images[0].url_fullxfull}}>
         <h3>Home and Living</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/2.jpg">
+        <img class="homepageImage" ng-src={{jewelryInfo[0].Images[0].url_fullxfull}}>
          <h3>Jewelry</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/3.jpg">
+        <img class="homepageImage" ng-src={{clothingInfo[1].Images[0].url_fullxfull}}>
         <h3>Clothing</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/5.jpg">
+        <img class="homepageImage" ng-src={{weddingInfo[0].Images[0].url_fullxfull}}>
         <h3>Weddings</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/4.jpg">
+        <img class="homepageImage" ng-src={{yarnInfo[0].Images[0].url_fullxfull}}>
         <h3>Craft Supplies & Tools</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/6.jpg">
+        <img class="homepageImage" ng-src={{childrenInfo[0].Images[0].url_fullxfull}}>
         <h3>Toys & Games</h3>
       </div>
     </div>
