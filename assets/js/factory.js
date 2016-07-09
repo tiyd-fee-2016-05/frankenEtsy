@@ -2,7 +2,13 @@
 
   mainApp.factory( "dataFactory", [ "$http", function( $http ) {
 
+  var categories = [
+    211503541, 227863243, 231334114, 275364490, 129658736, 252277982, 384979608, 269331353, 112800567,
+    387344490, 222143675, 205962307, 176585619, 250921681, 184034620, 220649086, 291166227, 113867140,
+    230137205, 262342379, 289738745, 465120099, 267962437, 229862879, 242697726, 465119531, 245652533
+  ];
 
+  var necklacesUrl = "https://api.etsy.com/v2/listings/" + categories + "?api_key=8ehgwfe57rb8jl60hnt04nom&includes=Images,Shop&limit=3&offset=0";
   var listingsUrl = "https://openapi.etsy.com/v2/listings/active?includes=MainImage,Shop&limit=60&offset=0&api_key=8ehgwfe57rb8jl60hnt04nom";
   // var jewelryUrl = "https://api.etsy.com/v2/listings/active?api_key=8ehgwfe57rb8jl60hnt04nom&keywords=jewelry&includes=Images,Shop&limit=1&offset=0";
   // var homeUrl = "https://api.etsy.com/v2/listings/active?api_key=8ehgwfe57rb8jl60hnt04nom&keywords=home&includes=Images,Shop&limit=1&offset=0";
@@ -20,7 +26,8 @@
   // var shoesUrl = "https://api.etsy.com/v2/listings/active?api_key=8ehgwfe57rb8jl60hnt04nom&keywords=shoes&includes=Images,Shop&limit=1&offset=0";
   // var craftsUrl = "https://api.etsy.com/v2/listings/active?api_key=8ehgwfe57rb8jl60hnt04nom&keywords=crafts&includes=Images,Shop&limit=1&offset=0";
   //
-  var necklacesUrl = "https://api.etsy.com/v2/listings/active?api_key=8ehgwfe57rb8jl60hnt04nom&keywords=necklaces&includes=Images,Shop&limit=1&offset=0";
+  // var necklacesUrl = "https://api.etsy.com/v2/listings/active?api_key=8ehgwfe57rb8jl60hnt04nom&keywords=necklaces&includes=Images,Shop&limit=12&offset=0";
+  var necklacesUrl = "https://api.etsy.com/v2/listings/" + categories + "?api_key=8ehgwfe57rb8jl60hnt04nom&includes=Images,Shop&limit=3&offset=0";
   var decorUrl = "https://api.etsy.com/v2/listings/active?api_key=8ehgwfe57rb8jl60hnt04nom&keywords=decor&includes=Images,Shop&limit=1&offset=0";
   var beadingUrl = "https://api.etsy.com/v2/listings/active?api_key=8ehgwfe57rb8jl60hnt04nom&keywords=beading&includes=Images,Shop&limit=1&offset=0";
   var WomensclothingUrl = "https://api.etsy.com/v2/listings/active?api_key=8ehgwfe57rb8jl60hnt04nom&keywords=womens_clothing&includes=Images,Shop&limit=1&offset=0";
