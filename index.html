@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
-  <body ng-app="etsyApp">
+  <body ng-app="mainApp">
   ​
   <!-- <body ng-app="mainApp">
 ​
 ​<div>
   <ng-view> </ng-view>
-</div>
-​ -->
+</div>-->
+​
 
 
 <!-- TOP ETSY BAR -->
@@ -156,17 +156,17 @@
   <div class="cols-6">
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage"  ng-src="{{info[0].Images[0].url_fullxfull}}"><!---  using ng-src to pull api call image into locations -->
+        <img class="homepageImage"  ng-src="{{Home[0].Images[0].url_fullxfull}}"><!---  using ng-src to pull api call image into locations -->
         <h3>Home and Living</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage"  ng-src="{{info[1].Images[0].url_fullxfull}}">
+        <img class="homepageImage"  ng-src="{{Jewelry[1].Images[0].url_fullxfull}}">
          <h3>Jewelry</h3>
       </div>
     </div>
-    <div class="col-1-6">
+    <!-- <div class="col-1-6">
       <div class="content">
         <img class="homepageImage"  ng-src="{{info[2].Images[0].url_fullxfull}}">
         <h3>Clothing</h3>
@@ -180,16 +180,16 @@
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/4.jpg" ng-src="{{info.image4}}">
+        <img class="homepageImage"  ng-src="{{info[0].Images[1].url_fullxfull}}">
         <h3>Craft Supplies & Tools</h3>
       </div>
     </div>
     <div class="col-1-6">
       <div class="content">
-        <img class="homepageImage" src="assets/images/6.jpg" ng-src="{{info.image6}}">
+        <img class="homepageImage"  ng-src="{{info[1].Images[1].url_fullxfull}}">
         <h3>Toys & Games</h3>
       </div>
-    </div>
+    </div> -->
   </div>
 
 <!-- Fifth row -->
@@ -203,7 +203,7 @@
   <div class="cols-2 ">
     <div class="col-1-2">
       <div class="content browse-split">
-        <img class="split-left" src="assets/images/7.jpg" ng-src="{{info.image7}}">
+        <img class="split-left"  ng-src="{{info[7].Images[0].url_fullxfull}}">
         <div class="split-right1">
           <p>Editors' Picks</p>
           <h3>Personalized & Custom Jewelry</h3>
@@ -212,7 +212,7 @@
     </div>
     <div class="col-1-2">
       <div class="content browse-split">
-        <img class="split-left" src="assets/images/8.jpg" ng-src="{{info.image8}}">
+        <img class="split-left"  ng-src="{{info[8].Images[0].url_fullxfull}}">
         <div class="split-right2">
           <p>Editors' Picks</p>
           <h3>Classics never get old</h3>
@@ -541,11 +541,12 @@
 
 
 ​
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
       <script src="assets/js/app.js"></script>
       <script src="assets/js/controller.js"></script>
+      <script src="assets/js/factory.js"></script>
   </body>
 </html>
