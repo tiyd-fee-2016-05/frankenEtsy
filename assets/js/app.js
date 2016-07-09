@@ -1,7 +1,7 @@
 var mainApp= angular.module("mainApp", ['ngRoute']);
 
-mainApp.config(function($routeProvider){
 
+mainApp.config(function($routeProvider){
   $routeProvider
     .when("/home",{
       templateUrl: 'pages/home.html'

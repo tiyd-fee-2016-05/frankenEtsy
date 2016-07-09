@@ -1,36 +1,42 @@
-mainApp.controller("homepageController",["$scope", "dataFactory", function($scope, dataFactory){
-console.log("working");
 
-
-$scope.Home;
-$scope.Jewelry;
-
-
-getHome();
-getjewelry();
-
-
-function getHome(){
-  dataFactory.getHome().then(function(response){
-      $scope.Home = response.data.results;
-      console.log($scope.home.results);
-
+mainApp.controller("homepageController", ["$http", "$scope", function($http, $scope){
+console.log("Hello!");
+    $scope.message = "Whoever you are, find";
+    $http.get("https://openapi.etsy.com/v2/listings/active?api_key=nsh3xdn1xlab8cak8wsrh8f6&keywords=clothing&includes=Images,Shop&limit=3&offset=0").then(function(response){
+      $scope.clothingInfo = response.data.results;
+      console.log($scope.clothingInfo[0].Images[0].url_fullxfull);
+      // $scope.clothingInfo.Images[0].url_fullxfull);
     });
 
+    $http.get("https://openapi.etsy.com/v2/listings/active?api_key=nsh3xdn1xlab8cak8wsrh8f6&keywords=children&includes=Images,Shop&limit=3&offset=0").then(function(response){
+      $scope.childrenInfo = response.data.results;
+      console.log($scope.childrenInfo[0].Images[0].url_fullxfull);
+    });
 
-}
+    $http.get("https://openapi.etsy.com/v2/listings/active?api_key=nsh3xdn1xlab8cak8wsrh8f6&keywords=yarn&includes=Images,Shop&limit=3&offset=0").then(function(response){
+      $scope.yarnInfo = response.data.results;
+      console.log($scope.yarnInfo[0].Images[0].url_fullxfull);
+    });
 
-function getJewerly(){
-  dataFactory.getJewerly().then(function(response){
-    $scope.Jewelry = response.data.results;
-    consolo.log($scope.Jewelry.results);
+    $http.get("https://openapi.etsy.com/v2/listings/active?api_key=nsh3xdn1xlab8cak8wsrh8f6&keywords=weddings&includes=Images,Shop&limit=3&offset=0").then(function(response){
+      $scope.weddingInfo = response.data.results;
+      console.log($scope.weddingInfo[0].Images[0].url_fullxfull);
 
+    });
+    $http.get("https://openapi.etsy.com/v2/listings/active?api_key=nsh3xdn1xlab8cak8wsrh8f6&keywords=entertainment&includes=Images,Shop&limit=3&offset=0").then(function(response){
+      $scope.entertainmentInfo = response.data.results;
+      console.log($scope.entertainmentInfo[0].Images[0].url_fullxfull);
+    });
 
+    $http.get("https://openapi.etsy.com/v2/listings/active?api_key=nsh3xdn1xlab8cak8wsrh8f6&keywords=home&includes=Images,Shop&limit=3&offset=0").then(function(response){
+      $scope.homeInfo = response.data.results;
+      console.log($scope.homeInfo[0].Images[0].url_fullxfull);
+    });
 
-  });
-}
-
-
+    $http.get("https://openapi.etsy.com/v2/listings/active?api_key=nsh3xdn1xlab8cak8wsrh8f6&keywords=jewelry&includes=Images,Shop&limit=3&offset=0").then(function(response){
+      $scope.jewelryInfo = response.data.results;
+      console.log($scope.homeInfo[0].Images[0].url_fullxfull);
+    });
 
 }]);
 
