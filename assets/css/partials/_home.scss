@@ -58,7 +58,7 @@
             border-radius: 3px;
             width: 10%;
             // opacity: 0.5;
-            margin-top: 4em;
+            margin-top: 6em;
             padding: 5px 0;
             position: absolute;
             right: 2%;
@@ -371,6 +371,65 @@
     }
 
 
+.col-1-3-explore {
+  height: 364px;
+  margin: 0 10px 70px 180px;
+  border: 1px solid $Light-Grey;
+  border-radius: 3px;
+  text-align: center;
+
+img {
+  margin-bottom: -2px;
+  text-align: center;
+}
+h3 {
+  padding: 15px 5px 2px 5px;
+  background: #fff;
+  font-family: $Font-Lato;
+  font-weight: 400;
+  font-size: 13px;
+  color: $Black;
+  text-align: left;
+}
+.reviews {
+    padding: 5px;
+    background: #fff;
+    font-family: $Font-Lato;
+    font-weight: 400;
+    font-size: 11px;
+    color: $Mid-Grey;
+    text-align: left;
+
+  i {
+    color: $Yellow;
+  }
+}
+
+.location {
+  padding: 5px;
+  background: #fff;
+    font-family: $Font-Lato;
+    font-weight: 400;
+    font-size: 13px;
+    color: $Mid-Grey;
+    text-align: left;
+
+
+  i {
+    margin-right: 5px;
+    color: $Mid-Grey;
+  }
+}
+&:hover {
+  cursor: pointer;
+  h3 {
+    text-decoration: underline;
+  }
+} }
+
+
+
+
     .col-1-3-blog {
         margin-left: 3%;
         // border: 1px dashed red;
@@ -489,6 +548,11 @@
         width: 32%;
         // border: 2px solid $Dark-Grey;
         margin-left: 2%;
+    }
+    .col-1-3-explore,
+    .col-4-12 {
+        width: 16.9%;
+        // border: 2px solid $Dark-Grey;
     }
     // .col-1-4, .col-3-12 {
     // 	width: 25%;
