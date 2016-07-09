@@ -50,8 +50,40 @@ ul{
   padding:5px;
   list-style: none;
   display:inline-block;
+  position: relative;
   .image{
     max-width: 224px;
+    cursor: pointer;
+  }
+  .favHeart{
+    font-size:1.25em;
+    border-radius: 3px;
+    float:left;
+    position:absolute;
+    top:.75em;
+    right:3em;
+    padding-bottom: .5em;
+    // width:26px;
+    height:25px;
+    background-color: #FFF;
+    border: 1px solid rgba(170,170,170,.4);
+    z-index: 2;
+    display:inline-block;
+    i{
+      color:rgba(170,170,170,.4);
+      font-size: .75em;
+    }
+    }
+    .yourLists{
+      @extend .favHeart;
+      right:1em;
+      margin-left: .5em;
+      i{
+        color:rgba(0, 0, 0, 0.15);
+      }
+    }
+
+
   }
 }
 }
@@ -71,6 +103,7 @@ ul{
 }
 .title:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .shop{
@@ -78,9 +111,11 @@ ul{
   font-family: $Font-Lato;
   font-size: 12px;
   display:inline;
+
 }
 .shop:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .price{
@@ -91,7 +126,8 @@ ul{
   float:right;
   padding:3px 0 0 0;
 }
-}
+
+
 // *********  GRID CODE FROM http://www.responsivegridsystem.com/calculator/
 /*  SECTIONS  */
 .section {
