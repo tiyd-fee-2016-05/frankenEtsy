@@ -145,11 +145,11 @@
           <li><img src={{listings[0].MainImage.url_fullxfull}}>
           <h3>{{listings[0].taxonomy_path[0]}}</h3></li>
           <li><img src={{listings[1].MainImage.url_fullxfull}}>
-          <h3>{{listings[1].taxonomy_path[0]}}</h3></li>
+          <h3>{{listings[1].taxonomy_path[1]}}</h3></li>
           <li><img src={{listings[2].MainImage.url_fullxfull}}>
           <h3>{{listings[2].taxonomy_path[0]}}</h3></li>
           <li><img src={{listings[3].MainImage.url_fullxfull}}>
-          <h3>{{listings[3].taxonomy_path[0]}}</h3></li>
+          <h3>{{listings[3].taxonomy_path[1]}}</h3></li>
           <li><img src={{listings[4].MainImage.url_fullxfull}}>
           <h3>{{listings[4].taxonomy_path[0]}}</h3></li>
           <li><img src={{listings[5].MainImage.url_fullxfull}}>
@@ -157,15 +157,15 @@
           <li><img src={{listings[6].MainImage.url_fullxfull}}>
           <h3>{{listings[6].taxonomy_path[0]}}</h3></li>
           <li><img src={{listings[7].MainImage.url_fullxfull}}>
-          <h3>{{listings[7].taxonomy_path[0]}}</h3></li>
+          <h3>{{listings[7].taxonomy_path[1]}}</h3></li>
           <li><img src={{listings[8].MainImage.url_fullxfull}}>
           <h3>{{listings[8].taxonomy_path[0]}}</h3></li>
           <li><img src={{listings[9].MainImage.url_fullxfull}}>
-          <h3>{{listings[9].taxonomy_path[0]}}</h3></li>
+          <h3>{{listings[9].taxonomy_path[1]}}</h3></li>
           <li><img src={{listings[10].MainImage.url_fullxfull}}>
           <h3>{{listings[10].taxonomy_path[0]}}</h3></li>
           <li><img src={{listings[11].MainImage.url_fullxfull}}>
-          <h3>{{listings[11].taxonomy_path[0]}}</h3></li>
+          <h3>{{listings[11].taxonomy_path[1]}}</h3></li>
           <li><img src={{listings[12].MainImage.url_fullxfull}}>
           <h3>{{listings[12].taxonomy_path[0]}}</h3></li>
         </ul>
@@ -199,15 +199,15 @@
       <li><img src={{prints}}>
         <h1>ART & COLLECTIBLES</h1>
       <h3>Prints</h3></li>
-      <li><img src=>
-        <h1>HOME & LIVING</h1>
-      <h3>Kitchen & Dining</h3></li>
-      <li><img src="assets/images/sample-2.png">
+      <li><img src={{listings[17].MainImage.url_570xN}}>
+        <h1>{{listings[17].category_path[0]}}</h1>
+      <h3>{{listings[17].taxonomy_path[1]}}</h3></li>
+      <li><img src={{listings[23].MainImage.url_570xN}}>
         <h1>CRAFT SUPPLIES & TOOLS</h1>
       <h3>Sewing & Needlecraft Supplies</h3></li>
-      <li><img src="assets/images/sample-2.png">
-        <h1>JEWELRY</h1>
-      <h3>Bracelets</h3></li>
+      <li><img src={{listings[24].MainImage.url_570xN}}>
+        <h1>{{listings[24].category_path[0]}}</h1>
+      <h3>{{listings[24].taxonomy_path[1]}}</h3></li>
       <li><img src={{Partysupplies}}>
         <h1>PAPER & PARTY SUPPLIES</h1>
       <h3>Party Supplies</h3></li>
@@ -221,75 +221,75 @@
     <ul class="shop-list" ng-repeat="listing in listings | limitTo: 1">
     <li ng-click="goToProduct( listings[0] )">
       <img src={{listings[0].MainImage.url_570xN}}>
-      <h3>{{listings[0].description}}</h3>
-      <h3>{{listings[0].Shop.shop_name}}</h3>
-      <h3>{{listings[0].price | currency}}</h3>
+      <h3>{{listings[0].title}}</h3>
+      <h1>{{listings[0].Shop.shop_name}}</h1>
+      <h2>{{listings[0].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[1] )">
       <img src={{listings[1].MainImage.url_570xN}}>
-      <h3>{{listings[1].description}}</h3>
-      <h3>{{listings[1].Shop.shop_name}}</h3>
-      <h3>{{listings[1].price | currency}}</h3>
+      <h3>{{listings[1].title}}</h3>
+      <h1>{{listings[1].Shop.shop_name}}</h1>
+      <h2>{{listings[1].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[2] )">
       <img src={{listings[2].MainImage.url_570xN}}>
-      <h3>{{listings[2].description}}</h3>
-      <h3>{{listings[2].Shop.shop_name}}</h3>
-      <h3>{{listings[2].price | currency}}</h3>
+      <h3>{{listings[2].title}}</h3>
+      <h1>{{listings[2].Shop.shop_name}}</h1>
+      <h2>{{listings[2].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[3] )">
       <img src={{listings[3].MainImage.url_570xN}}>
-      <h3>{{listings[3].description}}</h3>
-      <h3>{{listings[3].Shop.shop_name}}</h3>
-      <h3>{{listings[3].price | currency}}</h3>
+      <h3>{{listings[3].title}}</h3>
+      <h1>{{listings[3].Shop.shop_name}}</h1>
+      <h2>{{listings[3].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[4] )">
       <img src={{listings[4].MainImage.url_570xN}}>
-      <h3>{{listings[4].description}}</h3>
-      <h3>{{listings[4].Shop.shop_name}}</h3>
-      <h3>{{listings[4].price | currency}}</h3>
+      <h3>{{listings[4].title}}</h3>
+      <h1>{{listings[4].Shop.shop_name}}</h1>
+      <h2>{{listings[4].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[5] )">
       <img src={{listings[5].MainImage.url_570xN}}>
-      <h3>{{listings[5].description}}</h3>
-      <h3>{{listings[5].Shop.shop_name}}</h3>
-      <h3>{{listings[5].price | currency}}</h3>
+      <h3>{{listings[5].title}}</h3>
+      <h1>{{listings[5].Shop.shop_name}}</h1>
+      <h2>{{listings[5].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[6] )">
       <img src={{listings[6].MainImage.url_570xN}}>
-      <h3>{{listings[6].description}}</h3>
-      <h3>{{listings[6].Shop.shop_name}}</h3>
-      <h3>{{listings[6].price | currency}}</h3>
+      <h3>{{listings[6].title}}</h3>
+      <h1>{{listings[6].Shop.shop_name}}</h1>
+      <h2>{{listings[6].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[7] )">
       <img src={{listings[7].MainImage.url_570xN}}>
-      <h3>{{listings[7].description}}</h3>
-      <h3>{{listings[7].Shop.shop_name}}</h3>
-      <h3>{{listings[7].price | currency}}</h3>
+      <h3>{{listings[7].title}}</h3>
+      <h1>{{listings[7].Shop.shop_name}}</h1>
+      <h2>{{listings[7].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[8] )">
       <img src={{listings[8].MainImage.url_570xN}}>
-      <h3>{{listings[8].description}}</h3>
-      <h3>{{listings[8].Shop.shop_name}}</h3>
-      <h3>{{listings[8].price | currency}}</h3>
+      <h3>{{listings[8].title}}</h3>
+      <h1>{{listings[8].Shop.shop_name}}</h1>
+      <h2>{{listings[8].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[9] )">
       <img src={{listings[9].MainImage.url_570xN}}>
-      <h3>{{listings[9].description}}</h3>
-      <h3>{{listings[9].Shop.shop_name}}</h3>
-      <h3>{{listings[9].price | currency}}</h3>
+      <h3>{{listings[9].title}}</h3>
+      <h1>{{listings[9].Shop.shop_name}}</h1>
+      <h2>{{listings[9].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[10] )">
       <img src={{listings[10].MainImage.url_570xN}}>
-      <h3>{{listings[10].description}}</h3>
-      <h3>{{listings[10].Shop.shop_name}}</h3>
-      <h3>{{listings[10].price | currency}}</h3>
+      <h3>{{listings[10].title}}</h3>
+      <h1>{{listings[10].Shop.shop_name}}</h1>
+      <h2>{{listings[10].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[11] )">
       <img src={{listings[11].MainImage.url_570xN}}>
-      <h3>{{listings[11].description}}</h3>
-      <h3>{{listings[11].Shop.shop_name}}</h3>
-      <h3>{{listings[11].price | currency}}</h3>
+      <h3>{{listings[11].title}}</h3>
+      <h1>{{listings[11].Shop.shop_name}}</h1>
+      <h2>{{listings[11].price | currency}}</h2>
     </li>
 <!-- <li><img src={{listing.MainImage.url_570xN}}>
     <h3>Arts & Collectibles</h3></li>
