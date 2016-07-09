@@ -473,9 +473,12 @@ body {
     width: 100%;
     margin-top: 35px;
     margin-bottom: 20px;
+      .fa {
+        color: #FFDC1E;
+      }
   }
   ul {
-    width: 370px;
+    width: 405px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -496,6 +499,9 @@ body {
     color: $Dark-Grey;
     line-height: 1.75;
     font-size: 15px;
+    p{
+      white-space: pre-line;
+    }
   }
   .reviews-content {
     // width: 550px;
@@ -541,9 +547,12 @@ body {
           width: 395px;
           color: $Light-Grey;
         }
+        .fa {
+          color: #FFDC1E;
+        }
         .reviewer-stars {
-          width: 50px;
-          margin-right: 276px;
+          width: 72px;
+          margin-right: 250px;
         }
         .reviewed-date {
           width: 75px;
@@ -697,6 +706,7 @@ body {
       margin-top: 20px;
       color: $Dark-Grey;
       line-height: 1.5;
+      width: 500px;
     }
     .pol-1{
       margin-bottom: 45px;
@@ -710,6 +720,11 @@ body {
     .right-pol-1{
       display: inline-block;
       margin-left: 150px;
+      vertical-align: top;
+      p {
+        display: inline-block;
+        vertical-align: top;
+      }
     }
 }
 .related {

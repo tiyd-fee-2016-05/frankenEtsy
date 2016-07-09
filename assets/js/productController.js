@@ -1,10 +1,10 @@
-mainApp.controller('productCtrl', function($scope, $http) {
+mainApp.controller('productCtrl', function($scope, $http, $sce) {
   $http({
     method: 'GET',
-    url: 'https://openapi.etsy.com/v2/listings/'+ 175112598 +'?api_key=9tojngbsrbfw4ezg2zfrrqvo'
+    url: 'https://openapi.etsy.com/v2/listings/'+ 175112598 + '?includes=Shop&api_key=9tojngbsrbfw4ezg2zfrrqvo'
   }).then(function successCallback(response){
     $scope.product = response.data;
-    $scope.desc = JSON.stringify(response.data.results[0].description);
+    $scope.desc = response.data.results[0].description;
     $scope.price = response.data.results[0].price;
     $scope.title = response.data.results[0].title;
     $scope.views = response.data.results[0].views;
@@ -17,9 +17,16 @@ mainApp.controller('productCtrl', function($scope, $http) {
     $scope.tPath = response.data.results[0].taxonomy_path;
     $scope.tags = response.data.results[0].tags;
     $scope.quantity = response.data.results[0].quantity;
+    $scope.shopName = response.data.results[0].Shop.shop_name;
+    $scope.activeItems = response.data.results[0].Shop.listing_active_count;
+    $scope.paymentPolicy = response.data.results[0].Shop.policy_payment;
+    $scope.shippingPolicy = response.data.results[0].Shop.policy_shipping;
+
+
+
     // }
     console.log($scope.desc);
-    console.log($scope.product);
+    console.log(response);
     console.log($scope.materials);
     console.log("Quantity:" + $scope.quantity);
 
@@ -72,6 +79,7 @@ mainApp.controller('productCtrl', function($scope, $http) {
       $scope.loadImage = response.data.results[0].url_570xN;
       for(var y= 0; y < response.data.results.length; y++){
         $scope.thumbnail.push(response.data.results[y].url_75x75)
+
         console.log($scope.thumbnail);
       }
       var imgCount = 0;
@@ -100,6 +108,28 @@ mainApp.controller('productCtrl', function($scope, $http) {
         }
 
       }
+
+      $scope.thumbImgFunc = function(thumb) {
+        $scope.selected = $scope.thumbnail.indexOf(thumb);
+        console.log($scope.selected);
+        imgCount = $scope.selected;
+        $scope.loadImage = response.data.results[imgCount].url_570xN;
+
+
+
+
+      }
+
+
+
+
+
+
+
+
+
+
+
     })
 
 

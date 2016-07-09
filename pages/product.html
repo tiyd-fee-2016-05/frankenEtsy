@@ -107,13 +107,13 @@
         <div class="left-top">
             <img src="https://www.etsy.com/images/avatars/default_avatar_75x75.png">
             <div class="user-stuffs">
-                <h2 class="user-name">savagepunk</h2>
+                <h2 class="user-name">{{shopName}}</h2>
                 <button class="user-favorite"><i class="fa fa-heart" aria-hidden="true"></i> Favorite shop</button>
             </div>
         </div>
         <div class="right-top">
           <div class="additional-items">
-              <p class="items-number">2</p>
+              <p class="items-number">{{activeItems}}</p>
               <p class="items-text">items</p>
           </div>
             <img src="https://img1.etsystatic.com/139/0/6036607/il_75x75.898694877_dvgy.jpg">
@@ -146,7 +146,7 @@
             </ul>
 
             <div class="more-images">
-              <div class="thumbnail" id="{{thumb}}" ng-repeat="thumb in thumbnail" ng-click="thumbImgFunc()">
+              <div class="thumbnail" id={{thumbId}} ng-repeat="thumb in thumbnail" ng-click="thumbImgFunc(thumb)">
                 <img src="{{thumb}}"/>
               </div>
               <!-- <div class="thumbnail">
@@ -171,7 +171,13 @@
             <section class="reviews">
               <div class="tabs">
                 <ul>
-                  <li ng-click="deatsTabFunc()">Item details</li><li ng-click="reviewTabFunc()">* * * * * (14)</li><li class="list-right" ng-click="shipTabFunc()">Shipping & Policies</li>
+                  <li ng-click="deatsTabFunc()">Item details</li><li ng-click="reviewTabFunc()">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    (14)</li><li class="list-right" ng-click="shipTabFunc()">Shipping & Policies</li>
                 </ul>
               </div>
               <div class="details-content" ng-show="deatsTab">
@@ -187,7 +193,7 @@
                   </div>
                   <div class="review-right">
                     <div class="review-stars-date">
-                      <p class="reviewer-stars">* * * * *</p>
+                      <p class="reviewer-stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
                       <p class="reviewed-date">May 9, 2016</p>
                     </div>
                     <div class="review-par">
@@ -234,7 +240,7 @@
                     <p>Payment</p>
                   </div>
                   <div class="right-pol-1">
-                    We take many forms of payment: PayPal, credit</br> card, and Etsy gift card. Payment must be</br> received before work is started.
+                    <p>{{paymentPolicy}}</p>
                   </div>
                 </div>
                 <div class="pol-1">
@@ -242,7 +248,7 @@
                     <p>Shipping</p>
                   </div>
                   <div class="right-pol-1">
-                    Shipping is usually done by the United States</br> Postal Service. All items are insured with tracking </br>information. We will ship to any country, so feel</br> free to inquire if you do not see a shipping option</br> posted for yours!
+                    <p>{{shippingPolicy}}</p>
                   </div>
                 </div>
 
