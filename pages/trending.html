@@ -100,61 +100,25 @@
     </div>
     <div class="RightDropDown">
       End
-    </div>
-  </div> -->
-
-
-
-<!-- TRENDING ITEMS HEADER -->
-<div class="trendingItems">
-  <a id="trendingHeader" href="https://www.etsy.com/trending">Trending Items</a>
-  <p id="trendingSubHeader">
-    Explore shoppers' top finds from around the marketplace.
-  </p>
-</div>
-
 <!-- wrapper for width of page -->
-<div class='pageWidthWrapper'>
-  <!-- wrapper for product grid -->
-  <div class='productGridWrapper'>
+<div class='pageWidthWrapper' ng-controller="trendingController">
+    <!-- wrapper for product grid -->
+    <div class='productGridWrapper'> <!-- grid code -->
+        <div class="section group">
+          <ul>
+            <!-- <div class=" col span_1_of_4" ng-repeat="one in first40"> -->
 
-<!-- grid code -->
- <div class="section group" ng-repeat = "factoryController">
-	<div class=" col span_1_of_4">
-    <ul>
-      <li class='productBox'>{{img}}
-        <div class='title'>{{title}}</div>
-        <div class='shop'>{{shop}} </div>
-        <div class='price'>{{price | currency}}</div>
-      </li>
+                    <li class='productBox' ng-repeat="one in callOne"><img class='image' ng-src="{{one.Images[0].url_570xN}}">
+                        <div class='title'>{{one.title}}</div>
+                        <div class='shop'>{{one.Shop.shop_name}} </div>
+                        <div class='price'>{{one.price}} {{one.currency_code}}</div>
+                    </li>
 
-	</div>
-	<div class="col span_1_of_4">
-    <li class='productBox'><img class='image' src="https://img1.etsystatic.com/128/0/7806883/il_224xN.916375255_boo4.jpg">
-      <div class='title'>Custom heart shaped handmade ring dish</div>
-      <div class='shop'>susangordonpott...</div>
-      <div class='price'>$28 USD</div>
-    </li>
-
-	</div>
-	<div class="col span_1_of_4">
-    <li class='productBox'><img class='image'  src="https://img0.etsystatic.com/066/0/11397876/il_224xN.802490682_czr7.jpg">
-      <div class='title'>Personalized olive wood cho...</div>
-      <div class='shop'>Crupon </div>
-      <div class='price'>$33.29 USD</div>
-    </li>
-
-	</div>
-	<div class="col span_1_of_4">
-    <li class='productBox'><img class='image'  src="https://img0.etsystatic.com/068/0/6048419/il_224xN.788693630_msnj.jpg"><div class='title'>Distressed Aluminum House Numbers</div>
-    <div class='shop'>RusticFlitch </div>
-    <div class='price'>$17 USD</div>
-    </li>
-
-	</div>
-  <!-- below closes section group-->
-  </div>
-   <!-- below closes productGridWrapper -->
-  </div>
-  <!-- below closes pageWidthWrapper -->
- </div>
+            <!-- </div> -->
+          </ul>
+            <!-- below closes section group-->
+        </div>
+        <!-- below closes productGridWrapper -->
+    </div>
+    <!-- below closes pageWidthWrapper -->
+</div>
