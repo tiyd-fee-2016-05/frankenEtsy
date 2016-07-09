@@ -119,7 +119,7 @@
     <div class="cole-9-12">
        <div class="content-gallery">
           <div class="showCase1">
-          <img src={{jewelry}}>
+          <img src={{necklaces}}>
           <h3>Jewelry</h3>
           <ul>
             <li>Necklaces</li>
@@ -130,7 +130,7 @@
           <h2>Shop All Jewelry</h2>
         </div>
           <div class="showCase2">
-          <img src="assets/images/sample-11.png">
+          <img src="{{decor}}">
           <h3>Home & Living</h3>
           <ul>
             <li>Home Decor</li>
@@ -142,32 +142,32 @@
         </div>
           <div class="gallery">
           <ul class="gallery-box">
-          <li><img src="assets/images/sample-1.png">
-          <h3>Arts & Collectibles</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Clothing</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Accessories</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Paper & Party Supplies</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Weddings</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Bags & Purses</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Bath & Beauty</h3></li>
-          <li><img src="assets/images/sample-1.png">
-          <h3>Toys & Games</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Books, Movies and Music</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Electronics & Accessories</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Pet Supplies</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Shoes</h3></li>
-          <li><img src="assets/images/sample-2.png">
-          <h3>Craft Supplies & Tools</h3></li>
+          <li><img src={{listings[0].MainImage.url_fullxfull}}>
+          <h3>{{listings[0].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[1].MainImage.url_fullxfull}}>
+          <h3>{{listings[1].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[2].MainImage.url_fullxfull}}>
+          <h3>{{listings[2].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[3].MainImage.url_fullxfull}}>
+          <h3>{{listings[3].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[4].MainImage.url_fullxfull}}>
+          <h3>{{listings[4].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[5].MainImage.url_fullxfull}}>
+          <h3>{{listings[5].taxonomy_path[1]}}</h3></li>
+          <li><img src={{listings[6].MainImage.url_fullxfull}}>
+          <h3>{{listings[6].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[7].MainImage.url_fullxfull}}>
+          <h3>{{listings[7].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[8].MainImage.url_fullxfull}}>
+          <h3>{{listings[8].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[9].MainImage.url_fullxfull}}>
+          <h3>{{listings[9].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[10].MainImage.url_fullxfull}}>
+          <h3>{{listings[10].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[11].MainImage.url_fullxfull}}>
+          <h3>{{listings[11].taxonomy_path[0]}}</h3></li>
+          <li><img src={{listings[12].MainImage.url_fullxfull}}>
+          <h3>{{listings[12].taxonomy_path[0]}}</h3></li>
         </ul>
 
         </div>
@@ -178,28 +178,28 @@
 
     <h1 class="browse-more">Browse more categories</h1>
     <ul class="browse-list">
-      <li><img src="assets/images/sample-1.png">
+      <li><img src={{necklaces}}>
         <h1>JEWELRY</h1>
       <h3>Necklaces</h3></li>
-      <li><img src="assets/images/sample-2.png">
+      <li><img src={{decor}}>
         <h1>HOME & LIVING</h1>
       <h3>HOME D&Eacute;COR</h3></li>
-      <li><img src="assets/images/sample-2.png">
+      <li><img src={{beading}}>
         <h1>CRAFT SUPPLIES & TOOLS</h1>
       <h3>Jewlery & Beading Supplies</h3></li>
-      <li><img src="assets/images/sample-2.png">
+      <li><img src={{Womensclothing}}>
         <h1>CLOTHING</h1>
       <h3>Women's Clothing</h3></li>
-      <li><img src="assets/images/sample-2.png">
+      <li><img src={{Partysupplies}}>
         <h1>PAPER & PARTY SUPPLIES</h1>
       <h3>Paper</h3></li>
-      <li><img src="assets/images/sample-2.png">
+      <li><img src={{earrings}}>
         <h1>JEWELRY</h1>
       <h3>Earrings</h3></li>
-      <li><img src="assets/images/sample-2.png">
+      <li><img src={{prints}}>
         <h1>ART & COLLECTIBLES</h1>
       <h3>Prints</h3></li>
-      <li><img src="assets/images/sample-1.png">
+      <li><img src=>
         <h1>HOME & LIVING</h1>
       <h3>Kitchen & Dining</h3></li>
       <li><img src="assets/images/sample-2.png">
@@ -208,10 +208,10 @@
       <li><img src="assets/images/sample-2.png">
         <h1>JEWELRY</h1>
       <h3>Bracelets</h3></li>
-      <li><img src="assets/images/sample-2.png">
+      <li><img src={{Partysupplies}}>
         <h1>PAPER & PARTY SUPPLIES</h1>
       <h3>Party Supplies</h3></li>
-      <li><img src="assets/images/sample-2.png">
+      <li><img src={{earrings}}>
         <h1>JEWELRY</h1>
       <h3>Rings</h3></li>
 
@@ -291,7 +291,7 @@
       <h3>{{listings[11].Shop.shop_name}}</h3>
       <h3>{{listings[11].price | currency}}</h3>
     </li>
-    <!-- <li><img src={{listing.MainImage.url_570xN}}>
+<!-- <li><img src={{listing.MainImage.url_570xN}}>
     <h3>Arts & Collectibles</h3></li>
     <li><img src={{listing.MainImage.url_570xN}}>
     <h3>Arts & Collectibles</h3></li>
@@ -311,7 +311,7 @@
     <h3>Arts & Collectibles</h3></li>
     <li><img src="assets/images/sample-2.png">
     <h3>Arts & Collectibles</h3></li>
-    <li><img src="assets/images/sample-2.png">
+    <li><img src="assets/images/sample-2.png"> -->
 
 
     </ul>
@@ -324,11 +324,9 @@
 </div>
 
 <div id="footer">
-  <!-- Footer starts here -->
 
 <footer class="grid grid-pad">
-<!-- First row -->
-  <div class="col-1-1">   <!--gray border-->
+  <div class="col-1-1">
     <div class="content upper">
        <h3>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</h3>
        <button>Subscribe</button>
