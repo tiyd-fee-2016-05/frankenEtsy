@@ -234,52 +234,55 @@ body {
 .productGridWrapper {
   width: 80%;
   margin: 0 auto; }
-
-.productBox {
-  width: 225px;
-  background-color: white;
-  border-width: 224px;
-  border-radius: 3px;
-  border: 1px solid rgba(170, 170, 170, 0.4);
-  box-shadow: 1px 1px 2px #d0d0d0;
-  padding: 5px;
-  list-style: none;
-  display: inline-block; }
-
-.productBox:hover {
-  border: 1px solid rgba(170, 170, 170, 0.7); }
-
-.title {
-  color: black;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  text-decoration: none; }
-
-.title:hover {
-  text-decoration: underline; }
-
-.shop {
-  color: #aaa;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  display: inline; }
-
-.shop:hover {
-  text-decoration: underline; }
-
-.price {
-  color: #78c042;
-  font-family: "Lato", sans-serif;
-  display: inline;
-  font-size: 12px;
-  float: right;
-  padding: 3px 0 0 0; }
+  .productGridWrapper ul {
+    column-count: 4;
+    column-gap: 0; }
+    .productGridWrapper ul .productBox {
+      margin: .5em;
+      width: 225px;
+      background-color: white;
+      border-width: 224px;
+      border-radius: 3px;
+      border: 1px solid rgba(170, 170, 170, 0.4);
+      box-shadow: 1px 1px 2px #d0d0d0;
+      padding: 5px;
+      list-style: none;
+      display: inline-block; }
+      .productGridWrapper ul .productBox .image {
+        max-width: 224px; }
+  .productGridWrapper .productBox:hover {
+    border: 1px solid rgba(170, 170, 170, 0.7); }
+  .productGridWrapper .title {
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .productGridWrapper .title:hover {
+    text-decoration: underline; }
+  .productGridWrapper .shop {
+    color: #aaa;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    display: inline; }
+  .productGridWrapper .shop:hover {
+    text-decoration: underline; }
+  .productGridWrapper .price {
+    color: #78c042;
+    font-family: "Lato", sans-serif;
+    display: inline;
+    font-size: 12px;
+    float: right;
+    padding: 3px 0 0 0; }
 
 /*  SECTIONS  */
 .section {
   clear: both;
   padding: 0px;
-  margin: 0px; }
+  margin: 4em; }
 
 /*  COLUMN SETUP  */
 .col {
