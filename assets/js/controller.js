@@ -20,22 +20,33 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
         $scope.callOne = first.data.results;
         console.log(first);                     //returns the entire response as an object
 
-        first40 = first.data.results;          //first40 now is assigned the ARRAY OF OBJECTS (aka first 40 results)
-        console.log(first40.currency_code);
+        // var first40 = first.data.results;          //first40 now is assigned the ARRAY OF OBJECTS (aka first 40 results)
+        // console.log(first40[0].listing_id);
 
-        // curCode will equal the results of all the currency_codes from the API call
-        var currCode;
-        var euro = 'EUR';
-        var dolla = 'USD';
-
-
-        if(currCode == euro){
-          return '&#128;';
-        } else if (currCode == dolla){
-          return '&#36;';
-        }
-
-
+        $scope.catchId = function(click){
+          localStorage.setItem('listing_id',click);
+          console.log(click);
+        };
     });
 
+    // $scope.catchId = function (){
+    //   $scope.listing = this;
+    //   console.log(callOne.data.results.listing.listing_id);
+    //
+    // };
+
 }]);
+
+
+//USED NG-IF INSTEAD......
+        // curCode will equal the results of all the currency_codes from the API call
+        // var currCode;
+        // var euro = 'EUR';
+        // var dolla = 'USD';
+        //
+        //
+        // if(currCode == euro){
+        //   return '&#128;';
+        // } else if (currCode == dolla){
+        //   return '&#36;';
+        // }

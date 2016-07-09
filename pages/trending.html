@@ -91,10 +91,12 @@
           <ul>
             <!-- <div class=" col span_1_of_4" ng-repeat="one in first40"> -->
 
-                    <li class='productBox' ng-repeat="one in callOne"><img class='image' ng-src="{{one.Images[0].url_570xN}}">
+                    <li class='productBox' ng-repeat="one in callOne" ng-click="catchId(one.listing_id)">
+                        <img class='image' ng-src="{{one.Images[0].url_570xN}}">
                         <div class='title'>{{one.title}}</div>
-                        <div class='shop'>{{one.Shop.shop_name}} </div>
-                        <div class='price'>{{one.price}} {{one.currency_code}}</div>
+                        <div class='shop'><a ng-href="{{one.Shop.url}}">{{one.Shop.shop_name}} </a></div>
+                        <div class='price' ng-if="one.currency_code == 'USD'" >&#36;{{one.price}} <span>{{one.currency_code}}</span></div>
+                        <div class='price' ng-if="one.currency_code == 'EUR'" >&#128;{{one.price}} <span>{{one.currency_code}}</span></div>
                     </li>
 
             <!-- </div> -->

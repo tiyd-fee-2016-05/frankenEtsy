@@ -5,7 +5,7 @@
   box-shadow: 0px 1px 3px 1px #d0d0d0 inset;
   #trendingHeader{
     font-size: 28px;
-    width: 79%;
+    width: 70%;
     display: block;
     margin: 0 auto;
     color: $Black;
@@ -17,7 +17,7 @@
   }
   #trendingSubHeader{
     font-size: 16px;
-    width: 79%;
+    width: 70%;
     display: block;
     margin: 0 auto;
     text-decoration: none;
@@ -40,7 +40,7 @@ ul{
   column-count: 4;
   column-gap: 0;
 .productBox{
-  margin: .5em;
+  margin: 1em 0;
   width:225px;
   background-color: white;
   border-width: 224px;
@@ -78,18 +78,29 @@ ul{
   font-family: $Font-Lato;
   font-size: 12px;
   display:inline;
-}
-.shop:hover{
-  text-decoration: underline;
+  cursor: pointer;
+  a{
+    text-decoration: none;
+    color:$Light-Grey;
+  }
+  &:hover{
+    text-decoration: underline;
+  }
+  &:visited{
+    text-decoration: none;
+  }
 }
 
 .price{
   color:$Green;
   font-family: $Font-Lato;
   display:inline;
-  font-size: 12px;
+  font-size: 13px;
   float:right;
   padding:3px 0 0 0;
+  span{
+    font-size: 10px;
+  }
 }
 }
 // *********  GRID CODE FROM http://www.responsivegridsystem.com/calculator/
@@ -97,7 +108,7 @@ ul{
 .section {
 	clear: both;
 	padding: 0px;
-	margin: 4em;
+	margin: 1em 4em;
 }
 
 /*  COLUMN SETUP  */
