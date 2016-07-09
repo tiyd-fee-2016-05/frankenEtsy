@@ -1,7 +1,7 @@
 
 mainApp.controller("homepageController", ["$http", "$scope", function($http, $scope){
 console.log("Hello!");
-    $scope.message = "Whoever you are, find";
+    $scope.message = "Whoever you are, find";//  FOURTH ROW //
     $http.get("https://openapi.etsy.com/v2/listings/active?api_key=nsh3xdn1xlab8cak8wsrh8f6&keywords=clothing&includes=Images,Shop&limit=3&offset=0").then(function(response){
       $scope.clothingInfo = response.data.results;
       console.log($scope.clothingInfo[0].Images[0].url_fullxfull);
@@ -37,6 +37,10 @@ console.log("Hello!");
       $scope.jewelryInfo = response.data.results;
       console.log($scope.homeInfo[0].Images[0].url_fullxfull);
     });
+
+
+
+    
 
 }]);
 
