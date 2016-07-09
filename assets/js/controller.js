@@ -21,7 +21,20 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
         console.log(first);                     //returns the entire response as an object
 
         first40 = first.data.results;          //first40 now is assigned the ARRAY OF OBJECTS (aka first 40 results)
-        console.log(first40);
+        console.log(first40.currency_code);
+
+        // curCode will equal the results of all the currency_codes from the API call
+        var currCode;
+        var euro = 'EUR';
+        var dolla = 'USD';
+
+
+        if(currCode == euro){
+          return '&#128;';
+        } else if (currCode == dolla){
+          return '&#36;';
+        }
+
 
     });
 
