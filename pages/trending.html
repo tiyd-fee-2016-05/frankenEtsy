@@ -1,106 +1,140 @@
 <!-- TOP ETSY BAR -->
 <div class="homeHeaderWrap">
-  <div class="pagePaddingWrap">
+    <div class="pagePaddingWrap">
 
-    <div class="rightHead">
-        <h1>Etsy</h1>
+        <div class="rightHead">
+            <h1>Etsy</h1>
 
-        <input id="searchBar" type="text" name="search" value="" placeholder="Search for frends or trends">
-        <button id="searchButton" type="button" name="button">Search</button>
+            <input id="searchBar" type="text" name="search" value="" placeholder="Search for frends or trends">
+            <button id="searchButton" type="button" name="button">Search</button>
+        </div>
+
+
+        <div class="leftHead">
+
+            <ul>
+                <li>
+                    <div>
+                        <a id="sellLink" href="https://www.etsy.com/sell">Sell on Etsy</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="homeLink">
+                        <a href="https://www.etsy.com/">
+                            <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                            <h4>Home</h4>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="headerLinks">
+                        <a href="#">
+                            <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                            <h4>Favorites</h4>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="headerLinks">
+                        <a href="#">
+                            <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                            <h4>You</h4>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="cart">
+                        <a href="#">
+                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                            <h4>Cart</h4>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-
-
-    <div class="leftHead">
-
-        <ul>
-          <li>
-            <div>
-              <a id="sellLink" href="https://www.etsy.com/sell">Sell on Etsy</a>
-            </div>
-          </li>
-            <li>
-                <div id="homeLink">
-                  <a href="https://www.etsy.com/">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                    <h4>Home</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div class="headerLinks">
-                  <a href="#">
-                    <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                    <h4>Favorites</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div class="headerLinks">
-                  <a href="#">
-                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-                    <h4>You</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div id="cart">
-                  <a href="#">
-                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                    <h4>Cart</h4>
-                  </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
 </div>
 
 <!-- SUBHEADER -->
 <div>
-  <div class='subHeaderWrap'>
-    <div class="subNavBar">
-    <ul>
-      <li class='navbarItems clothingNavBar'>Clothing & Accessories</li>
-      <li class='navbarItems'>Jewelry</li>
-      <li class='navbarItems'>Craft Supplies & Tools</li>
-      <li class='navbarItems'>Weddings</li>
-      <li class='navbarItems'>Entertainment</li>
-      <li class='navbarItems'>Home & Living</li>
-      <li class='navbarItems'>Kids & Baby</li>
-      <li class='navbarItems'>Vintage</li>
-      <li class='navbarItems moreNavbar'>More</li>
-    </ul>
+    <div class='subHeaderWrap'>
+        <div class="subNavBar">
+            <ul>
+                <li class='navbarItems clothingNavBar'>Clothing & Accessories</li>
+                <li class='navbarItems'>Jewelry</li>
+                <li class='navbarItems'>Craft Supplies & Tools</li>
+                <li class='navbarItems'>Weddings</li>
+                <li class='navbarItems'>Entertainment</li>
+                <li class='navbarItems'>Home & Living</li>
+                <li class='navbarItems'>Kids & Baby</li>
+                <li class='navbarItems'>Vintage</li>
+                <li class='navbarItems moreNavbar'>More</li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
 
 
 <!-- TRENDING ITEMS HEADER -->
 <div class="trendingItems">
-  <a id="trendingHeader" href="https://www.etsy.com/trending">Trending Items</a>
-  <p id="trendingSubHeader">
-    Explore shoppers' top finds from around the marketplace.
-  </p>
+    <a id="trendingHeader" href="https://www.etsy.com/trending">Trending Items</a>
+    <p id="trendingSubHeader">
+        Explore shoppers' top finds from around the marketplace.
+    </p>
 </div>
 
 <!-- wrapper for width of page -->
 <div class='pageWidthWrapper' ng-controller="trendingController">
     <!-- wrapper for product grid -->
-    <div class='productGridWrapper'> <!-- grid code -->
+    <div class='productGridWrapper'>
+        <!-- grid code -->
         <div class="section group">
-          <ul>
-            <!-- <div class=" col span_1_of_4" ng-repeat="one in first40"> -->
+            <ul>
+                <!-- <div class=" col span_1_of_4" ng-repeat="one in first40"> -->
 
-                    <li class='productBox' ng-repeat="one in callOne" ng-click="catchId(one.listing_id)">
-                        <img class='image' ng-src="{{one.Images[0].url_570xN}}">
-                        <div class='title'>{{one.title}}</div>
-                        <div class='shop'><a ng-href="{{one.Shop.url}}">{{one.Shop.shop_name}} </a></div>
-                        <div class='price' ng-if="one.currency_code == 'USD'" >&#36;{{one.price}} <span>{{one.currency_code}}</span></div>
-                        <div class='price' ng-if="one.currency_code == 'EUR'" >&#128;{{one.price}} <span>{{one.currency_code}}</span></div>
-                    </li>
+                <li class='productBox' ng-repeat="one in callOne" ng-click="catchId(one.listing_id)">
+                    <img class='image' ng-src="{{one.Images[0].url_570xN}}">
+                    <div class='title'>{{one.title}}</div>
+                    <div class='shop'><a ng-href="{{one.Shop.url}}">{{one.Shop.shop_name}} </a></div>
+                    <div class='price' ng-if="one.currency_code == 'USD'">&#36;{{one.price}} <span>{{one.currency_code}}</span></div>
+                    <div class='price' ng-if="one.currency_code == 'EUR'">&#128;{{one.price}} <span>{{one.currency_code}}</span></div>
+                    <div class='favoritesContainer'>
+                      <button type= 'button' class='favHeart'>
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                      </button>
+                      <button type='button' class='yourLists'>
+                          <i class="fa fa-bars" aria-hidden="true"></i>
+                          <i class="fa fa-caret-down" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                </li>
+                <li class='productBox' ng-repeat='two in callTwo' ng-click="catchId(two.listing_id)">
+                    <img class='image' ng-src="{{two.Images[0].url_570xN}}">
+                    <div class='title'>{{two.title}}</div>
+                    <div class='shop'><a ng-href="{{two.Shop.url}}">{{two.Shop.shop_name}}</a></div>
+                    <div class='price' ng-if="two.currency_code == 'USD'">&#36;{{two.price}} <span>{{two.currency_code}}</span></div>
+                    <div class='price' ng-if="two.currency_code == 'EUR'">&#128;{{two.price}} <span>{{two.currency_code}}</span></div>
+                </li>
+                <li class='productBox' ng-repeat='three in callThree' ng-click="catchId(three.listing_id)">
+                    <img class='image' ng-src="{{three.Images[0].url_570xN}}">
+                    <div class='title'>{{three.title}}</div>
+                    <div class='shop'><a ng-href="{{three.Shop.url}}">{{three.Shop.shop_name}}</a></div>
+                    <div class='price' ng-if="three.currency_code == 'USD'">&#36;{{three.price}} <span>{{three.currency_code}}</span></div>
+                    <div class='price' ng-if="three.currency_code == 'EUR'">&#128;{{three.price}} <span>{{three.currency_code}}</span></div>
+                </li>
+                <li class='productBox' ng-repeat='four in callFour' ng-click="catchId(four.listing_id)">
+                    <img class='image' ng-src="{{four.Images[0].url_570xN}}">
+                    <div class='title'>{{four.title}}</div>
+                    <div class='shop'><a ng-href="{{four.Shop.url}}">{{four.Shop.shop_name}}</a></div>
+                    <div class='price' ng-if="four.currency_code == 'USD'">&#36;{{four.price}} <span>{{four.currency_code}}</span></div>
+                    <div class='price' ng-if="four.currency_code == 'EUR'">&#128;{{four.price}} <span>{{four.currency_code}}</span></div>
 
-            <!-- </div> -->
-          </ul>
+
+                    <!-- </div> -->
+            </ul>
+            <button id="loadMore">
+                Show More Items
+            </button>
             <!-- below closes section group-->
         </div>
         <!-- below closes productGridWrapper -->
