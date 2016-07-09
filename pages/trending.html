@@ -1,5 +1,5 @@
 <!-- TOP ETSY BAR -->
-<div class="homeHeaderWrap">
+<div class="homeHeaderWrap" ng-controller = "factoryController">
   <div class="pagePaddingWrap">
 
     <div class="rightHead">
@@ -116,16 +116,16 @@
 <!-- wrapper for width of page -->
 <div class='pageWidthWrapper'>
   <!-- wrapper for product grid -->
-  <div class='productGridWrapper'
+  <div class='productGridWrapper'>
 
 <!-- grid code -->
- <div class="section group">
+ <div class="section group" ng-repeat = "factoryController">
 	<div class=" col span_1_of_4">
     <ul>
-      <li class='productBox'><img class='image'  src="https://img0.etsystatic.com/119/0/7939301/il_224xN.994118916_e07g.jpg">
-        <div class='title'>SALE 20% OFF: Bordeaux Leather Sandals</div>
-        <div class='shop'>Crupon </div>
-        <div class='price'>$75.20 USD</div>
+      <li class='productBox'>{{img}}
+        <div class='title'>{{title}}</div>
+        <div class='shop'>{{shop}} </div>
+        <div class='price'>{{price | currency}}</div>
       </li>
 
 	</div>
