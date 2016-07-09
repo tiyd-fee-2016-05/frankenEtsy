@@ -1,5 +1,5 @@
 <!-- TOP ETSY BAR -->
-<div class="homeHeaderWrap" ng-controller = "factoryController">
+<div class="homeHeaderWrap">
   <div class="pagePaddingWrap">
 
     <div class="rightHead">
@@ -113,9 +113,17 @@
                         <div class='shop'>{{one.Shop.shop_name}} </div>
                         <div class='price'>{{one.price}} {{one.currency_code}}</div>
                     </li>
+                    <li class = 'productBox' ng-repeat= 'four in callFour'><img class = 'image' ng-src="{{four.Images[0].url_570xN}}">
+                      <div class = 'title'>{{four.title}}</div>
+                      <div class = 'shop'>{{four.Shop.shop_name}}</div>
+                      <div class = 'price'>{{four.price}} {{four.currency_code}}</div>
+                    </li>
 
             <!-- </div> -->
           </ul>
+          <button id = "loadMore">
+            Show More Items
+          </button>
             <!-- below closes section group-->
         </div>
         <!-- below closes productGridWrapper -->

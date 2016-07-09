@@ -25,4 +25,28 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
 
     });
 
+    //fourth api call. triggered by button.
+    $('#loadMore').click(function(){
+      // e.preventDefault;
+      $http({
+        method: 'GET',
+        url: 'https://openapi.etsy.com/v2/listings/trending?limit=40&offset=120&includes=Shop,Images&api_key=9l86gozghbufirehm13mtdky'
+      }).then(function fourthCall (fourth){
+        $scope.callFour = fourth.data.results;
+        console.log(fourth);
+
+        // last40 = fourth.data.result;
+        // console.log(last40);
+      });
+    });
+
+  //   if($(window).scrollTop()){
+  //   ($(document).height() - $(window).height()) * 0.7;
+  // }
+  //
+  // else{
+  //
+  // }
+
+
 }]);
