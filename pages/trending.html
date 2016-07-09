@@ -113,6 +113,16 @@
                         <div class='shop'>{{one.Shop.shop_name}} </div>
                         <div class='price'>{{one.price}} {{one.currency_code}}</div>
                     </li>
+                    <li class = 'productBox' ng-repeat= 'two in callTwo'><img class = 'image' ng-src="{{two.Images[0].url_570xN}}">
+                      <div class = 'title'>{{two.title}}</div>
+                      <div class = 'shop'>{{two.Shop.shop_name}}</div>
+                      <div class = 'price'>{{two.price}} {{two.currency_code}}</div>
+                    </li>
+                    <li class = 'productBox' ng-repeat= 'three in callThree'><img class = 'image' ng-src="{{three.Images[0].url_570xN}}">
+                      <div class = 'title'>{{three.title}}</div>
+                      <div class = 'shop'>{{three.Shop.shop_name}}</div>
+                      <div class = 'price'>{{three.price}} {{three.currency_code}}</div>
+                    </li>
                     <li class = 'productBox' ng-repeat= 'four in callFour'><img class = 'image' ng-src="{{four.Images[0].url_570xN}}">
                       <div class = 'title'>{{four.title}}</div>
                       <div class = 'shop'>{{four.Shop.shop_name}}</div>

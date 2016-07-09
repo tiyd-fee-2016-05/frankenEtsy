@@ -92,6 +92,22 @@ ul{
   padding:3px 0 0 0;
 }
 }
+//Load more button//
+#loadMore{
+  position: relative;
+  left: 44%;
+  border-radius: .19em;
+  outline: none;
+  border: none;
+  padding: .5em 1em;
+  font: Lato, sans-serif;
+  color: white;
+  background-color: #0192B5;
+  font-size: .9em;
+  font-weight: 600;
+
+}
+
 // *********  GRID CODE FROM http://www.responsivegridsystem.com/calculator/
 /*  SECTIONS  */
 .section {
