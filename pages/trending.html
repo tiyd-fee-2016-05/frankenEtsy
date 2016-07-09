@@ -74,6 +74,7 @@
     </div>
 </div>
 
+
 <!-- DROP DOWN MENU -->
 <!-- <div class="DropDownWrap">
     <div class="LeftDropDown">
@@ -105,6 +106,7 @@
 
 
 
+
 <!-- TRENDING ITEMS HEADER -->
 <div class="trendingItems">
     <a id="trendingHeader" href="https://www.etsy.com/trending">Trending Items</a>
@@ -114,6 +116,7 @@
 </div>
 
 <!-- wrapper for width of page -->
+<<<<<<< HEAD
 <div class='pageWidthWrapper'>
     <!-- wrapper for product grid -->
     <div class='productGridWrapper'>
@@ -162,6 +165,23 @@
                 </li>
 
             </div>
+=======
+<div class='pageWidthWrapper' ng-controller="trendingController">
+    <!-- wrapper for product grid -->
+    <div class='productGridWrapper'> <!-- grid code -->
+        <div class="section group">
+          <ul>
+            <!-- <div class=" col span_1_of_4" ng-repeat="one in first40"> -->
+
+                    <li class='productBox' ng-repeat="one in callOne"><img class='image' ng-src="{{one.Images[0].url_570xN}}">
+                        <div class='title'>{{one.title}}</div>
+                        <div class='shop'>{{one.Shop.shop_name}} </div>
+                        <div class='price'>{{one.price}} {{one.currency_code}}</div>
+                    </li>
+
+            <!-- </div> -->
+          </ul>
+>>>>>>> 99ed0ba6575491d4b4ec04be758874dc0a789be6
             <!-- below closes section group-->
         </div>
         <!-- below closes productGridWrapper -->

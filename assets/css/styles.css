@@ -12,85 +12,85 @@ body {
   .homeHeaderWrap .pagePaddingWrap {
     margin: 0 auto;
     position: relative;
-    width: 80%; }
-  .homeHeaderWrap .rightHead {
-    position: absolute;
-    display: inline-block; }
-    .homeHeaderWrap .rightHead h1 {
-      display: inline-block;
-      font-family: "Bitter", serif;
-      color: #f56400;
-      font-size: 2.5em;
-      margin-right: .5em; }
-    .homeHeaderWrap .rightHead #searchBar {
-      display: inline-block;
-      font-size: .9em;
-      padding: 0.5em;
-      width: 15em;
-      border: 1px solid #aaa;
-      background-color: #fbfbfa;
-      border-radius: 3px 0px 0px 3px;
-      box-shadow: 0px 0px 2px 1px #e6e6e6 inset; }
-      .homeHeaderWrap .rightHead #searchBar:focus {
+    width: 85%; }
+    .homeHeaderWrap .pagePaddingWrap .rightHead {
+      position: absolute;
+      display: inline-block; }
+      .homeHeaderWrap .pagePaddingWrap .rightHead h1 {
+        display: inline-block;
+        font-family: "Bitter", serif;
+        color: #f56400;
+        font-size: 2.5em;
+        margin-right: 0.5em; }
+      .homeHeaderWrap .pagePaddingWrap .rightHead #searchBar {
+        display: inline-block;
+        font-size: 0.9em;
+        padding: 0.5em;
+        width: 15em;
+        border: 1px solid #aaa;
+        background-color: #fbfbfa;
+        border-radius: 3px 0 0 3px;
+        box-shadow: 0 0 2px 1px #e6e6e6 inset; }
+        .homeHeaderWrap .pagePaddingWrap .rightHead #searchBar:focus {
+          border: 1px solid #0192B5;
+          outline: none; }
+      .homeHeaderWrap .pagePaddingWrap .rightHead #searchButton {
+        font-size: 0.9em;
+        background: #0192B5;
+        color: white;
         border: 1px solid #0192B5;
-        outline: none; }
-    .homeHeaderWrap .rightHead #searchButton {
-      font-size: 0.9em;
-      background: #0192B5;
-      color: white;
-      border: 1px solid #0192B5;
-      border-radius: 0px 3px 3px 0px;
-      padding: 0.5em 1em;
-      margin-left: -0.4em; }
-      .homeHeaderWrap .rightHead #searchButton:hover {
-        background-color: #34A8C4; }
-  .homeHeaderWrap .leftHead {
-    position: absolute;
-    right: 2em;
-    display: inline-block;
-    font-family: "Lato", sans-serif; }
-    .homeHeaderWrap .leftHead ul {
-      color: #666;
+        border-radius: 0 3px 3px 0;
+        padding: 0.5em 1em;
+        margin-left: -0.4em; }
+        .homeHeaderWrap .pagePaddingWrap .rightHead #searchButton:hover {
+          background-color: #34A8C4; }
+    .homeHeaderWrap .pagePaddingWrap .leftHead {
+      position: absolute;
+      right: 0;
       display: inline-block;
-      padding-right: 1em; }
-      .homeHeaderWrap .leftHead ul li {
-        text-align: center;
-        display: inline-block; }
-        .homeHeaderWrap .leftHead ul li #sellLink {
-          vertical-align: super;
-          color: #0192B5;
-          text-decoration: none;
-          padding-right: 1em; }
-        .homeHeaderWrap .leftHead ul li .headerLinks, .homeHeaderWrap .leftHead ul li #homeLink {
-          border-right: 1px solid rgba(0, 0, 0, 0.1);
-          padding: 0 1em; }
-          .homeHeaderWrap .leftHead ul li .headerLinks a, .homeHeaderWrap .leftHead ul li #homeLink a {
-            color: #666;
+      font-family: "Lato", sans-serif; }
+      .homeHeaderWrap .pagePaddingWrap .leftHead ul {
+        color: #666;
+        display: inline-block;
+        padding-right: 0; }
+        .homeHeaderWrap .pagePaddingWrap .leftHead ul li {
+          text-align: center;
+          display: inline-block; }
+          .homeHeaderWrap .pagePaddingWrap .leftHead ul li #sellLink {
+            vertical-align: super;
+            color: #0192B5;
             text-decoration: none;
-            outline: none; }
-            .homeHeaderWrap .leftHead ul li .headerLinks a:visited, .homeHeaderWrap .leftHead ul li #homeLink a:visited {
-              color: #666; }
-        .homeHeaderWrap .leftHead ul li #homeLink {
-          border-left: 1px solid rgba(0, 0, 0, 0.1); }
-          .homeHeaderWrap .leftHead ul li #homeLink a {
-            color: #666;
-            text-decoration: none;
-            outline: none; }
-            .homeHeaderWrap .leftHead ul li #homeLink a:visited {
-              color: #666; }
-        .homeHeaderWrap .leftHead ul li #cart {
-          padding: 0 1em; }
-          .homeHeaderWrap .leftHead ul li #cart a {
-            color: #666;
-            text-decoration: none;
-            outline: none; }
-            .homeHeaderWrap .leftHead ul li #cart a:visited {
-              color: #666; }
-        .homeHeaderWrap .leftHead ul li i {
-          font-size: 1.5em; }
-        .homeHeaderWrap .leftHead ul li h4 {
-          padding-top: .5em;
-          font-size: .8em; }
+            padding-right: 1em; }
+          .homeHeaderWrap .pagePaddingWrap .leftHead ul li .headerLinks, .homeHeaderWrap .pagePaddingWrap .leftHead ul li #homeLink {
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0 1em; }
+            .homeHeaderWrap .pagePaddingWrap .leftHead ul li .headerLinks a, .homeHeaderWrap .pagePaddingWrap .leftHead ul li #homeLink a {
+              color: #666;
+              text-decoration: none;
+              outline: none; }
+              .homeHeaderWrap .pagePaddingWrap .leftHead ul li .headerLinks a:visited, .homeHeaderWrap .pagePaddingWrap .leftHead ul li #homeLink a:visited {
+                color: #666; }
+          .homeHeaderWrap .pagePaddingWrap .leftHead ul li #homeLink {
+            border-left: 1px solid rgba(0, 0, 0, 0.1); }
+            .homeHeaderWrap .pagePaddingWrap .leftHead ul li #homeLink a {
+              color: #666;
+              text-decoration: none;
+              outline: none; }
+              .homeHeaderWrap .pagePaddingWrap .leftHead ul li #homeLink a:visited {
+                color: #666; }
+          .homeHeaderWrap .pagePaddingWrap .leftHead ul li #cart {
+            padding: 0 0 0 1em; }
+            .homeHeaderWrap .pagePaddingWrap .leftHead ul li #cart a {
+              color: #666;
+              text-decoration: none;
+              outline: none; }
+              .homeHeaderWrap .pagePaddingWrap .leftHead ul li #cart a:visited {
+                color: #666; }
+          .homeHeaderWrap .pagePaddingWrap .leftHead ul li i {
+            font-size: 1.5em; }
+          .homeHeaderWrap .pagePaddingWrap .leftHead ul li h4 {
+            padding-top: 0.5em;
+            font-size: 0.8em; }
 
 .subHeaderWrap {
   width: 100%;
@@ -102,12 +102,10 @@ body {
   height: 50px;
   position: relative; }
   .subHeaderWrap .subNavBar {
-    display: inline-block;
+    display: block;
     margin: 0 auto;
     position: relative;
-    width: 80%;
-    text-align: center;
-    margin-left: 2em; }
+    width: 85%; }
   .subHeaderWrap .navbarItems {
     font-family: "Lato", sans-serif;
     color: #777;
@@ -123,6 +121,88 @@ body {
   .subHeaderWrap .moreNavbar {
     display: none; }
 
+.DropDownWrap {
+  background-color: white;
+  position: relative;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  font-family: Lato, sans-serif;
+  box-shadow: 1px 5px 20px #aaa;
+  border-top: none;
+  padding: 1.5em 1em 1.5em 0; }
+  .DropDownWrap a {
+    color: #666;
+    text-decoration: none; }
+  .DropDownWrap .LeftDropDown, .DropDownWrap .RightDropDown {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top; }
+    .DropDownWrap .LeftDropDown li, .DropDownWrap .RightDropDown li {
+      padding: 0.45em 0;
+      font-size: 0.9em;
+      letter-spacing: 0.025em; }
+    .DropDownWrap .LeftDropDown .navHighlight, .DropDownWrap .RightDropDown .navHighlight {
+      color: #0192B5;
+      background-color: #E4F3F7;
+      padding: 0.5em 6em 0.2em 1.7em; }
+      .DropDownWrap .LeftDropDown .navHighlight #angleRightHighlight, .DropDownWrap .RightDropDown .navHighlight #angleRightHighlight {
+        margin: -.65em -.3em -.65em 0;
+        position: relative;
+        vertical-align: middle;
+        background-color: #E4F3F7;
+        font-weight: 900;
+        padding: 0.5em 0.38em 0.4em 2em; }
+    .DropDownWrap .LeftDropDown .LeftDropDown-nav, .DropDownWrap .RightDropDown .LeftDropDown-nav {
+      padding-left: 1.5em; }
+    .DropDownWrap .LeftDropDown .fa-angle-right, .DropDownWrap .RightDropDown .fa-angle-right {
+      float: right; }
+  .DropDownWrap .MidDropDown {
+    width: 47%;
+    display: inline-block;
+    position: relative; }
+    .DropDownWrap .MidDropDown li {
+      padding: 0.45em 1.5em;
+      font-size: 0.9em;
+      letter-spacing: 0.025em;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa; }
+      .DropDownWrap .MidDropDown li .midNavSubItem {
+        font-size: 0.89em;
+        color: #aaa;
+        padding-left: 1em; }
+    .DropDownWrap .MidDropDown p {
+      position: absolute;
+      right: 1em;
+      top: 0;
+      float: right;
+      border-left: none; }
+      .DropDownWrap .MidDropDown p .navAllItems {
+        display: inline-block;
+        color: #222;
+        letter-spacing: 0.03em;
+        font-size: 0.92em;
+        font-weight: 600;
+        padding-right: 2.5em; }
+  .DropDownWrap .RightDropDown {
+    display: inline-block;
+    padding-left: 1.5em; }
+    .DropDownWrap .RightDropDown li {
+      bottom: 1; }
+    .DropDownWrap .RightDropDown #editorsPicks-img {
+      position: relative;
+      width: 12em;
+      height: 10em;
+      padding-left: 0.5em; }
+    .DropDownWrap .RightDropDown #editorsPicks {
+      font-size: 0.7em;
+      letter-spacing: 0.4em;
+      color: #aaa; }
+    .DropDownWrap .RightDropDown #editorsPicks-item {
+      font-family: Bitter;
+      color: #222;
+      font-size: 1.2em; }
+
 .trendingItems {
   display: block;
   font-family: "Bitter", serif;
@@ -130,7 +210,7 @@ body {
   box-shadow: 0px 1px 3px 1px #d0d0d0 inset; }
   .trendingItems #trendingHeader {
     font-size: 28px;
-    width: 80%;
+    width: 79%;
     display: block;
     margin: 0 auto;
     color: #222;
@@ -140,7 +220,7 @@ body {
       text-decoration: underline; }
   .trendingItems #trendingSubHeader {
     font-size: 16px;
-    width: 80%;
+    width: 79%;
     display: block;
     margin: 0 auto;
     text-decoration: none;
@@ -154,52 +234,55 @@ body {
 .productGridWrapper {
   width: 80%;
   margin: 0 auto; }
-
-.productBox {
-  width: 225px;
-  background-color: white;
-  border-width: 224px;
-  border-radius: 3px;
-  border: 1px solid rgba(170, 170, 170, 0.4);
-  box-shadow: 1px 1px 2px #d0d0d0;
-  padding: 5px;
-  list-style: none;
-  display: inline-block; }
-
-.productBox:hover {
-  border: 1px solid rgba(170, 170, 170, 0.7); }
-
-.title {
-  color: black;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  text-decoration: none; }
-
-.title:hover {
-  text-decoration: underline; }
-
-.shop {
-  color: #aaa;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  display: inline; }
-
-.shop:hover {
-  text-decoration: underline; }
-
-.price {
-  color: #78c042;
-  font-family: "Lato", sans-serif;
-  display: inline;
-  font-size: 12px;
-  float: right;
-  padding: 3px 0 0 0; }
+  .productGridWrapper ul {
+    column-count: 4;
+    column-gap: 0; }
+    .productGridWrapper ul .productBox {
+      margin: .5em;
+      width: 225px;
+      background-color: white;
+      border-width: 224px;
+      border-radius: 3px;
+      border: 1px solid rgba(170, 170, 170, 0.4);
+      box-shadow: 1px 1px 2px #d0d0d0;
+      padding: 5px;
+      list-style: none;
+      display: inline-block; }
+      .productGridWrapper ul .productBox .image {
+        max-width: 224px; }
+  .productGridWrapper .productBox:hover {
+    border: 1px solid rgba(170, 170, 170, 0.7); }
+  .productGridWrapper .title {
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .productGridWrapper .title:hover {
+    text-decoration: underline; }
+  .productGridWrapper .shop {
+    color: #aaa;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    display: inline; }
+  .productGridWrapper .shop:hover {
+    text-decoration: underline; }
+  .productGridWrapper .price {
+    color: #78c042;
+    font-family: "Lato", sans-serif;
+    display: inline;
+    font-size: 12px;
+    float: right;
+    padding: 3px 0 0 0; }
 
 /*  SECTIONS  */
 .section {
   clear: both;
   padding: 0px;
-  margin: 0px; }
+  margin: 4em; }
 
 /*  COLUMN SETUP  */
 .col {
