@@ -1,152 +1,649 @@
 <!-- TOP ETSY BAR -->
 <div class="homeHeaderWrap">
-  <div class="pagePaddingWrap">
+    <div class="pagePaddingWrap">
 
-    <div class="rightHead">
-        <h1>Etsy</h1>
+        <div class="rightHead">
+            <h1>Etsy</h1>
 
-        <input id="searchBar" type="text" name="search" value="" placeholder="Search for frends or trends">
-        <button id="searchButton" type="button" name="button">Search</button>
+            <input id="searchBar" type="text" name="search" value="" placeholder="Search for frends or trends">
+            <button id="searchButton" type="button" name="button">Search</button>
+        </div>
+
+
+        <div class="leftHead">
+
+            <ul>
+                <li>
+                    <div>
+                        <a id="sellLink" href="https://www.etsy.com/sell">Sell on Etsy</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="homeLink">
+                        <a href="https://www.etsy.com/">
+                            <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                            <h4>Home</h4>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="headerLinks">
+                        <a href="#">
+                            <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                            <h4>Favorites</h4>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="headerLinks">
+                        <a href="#">
+                            <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                            <h4>You</h4>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="cart">
+                        <a href="#">
+                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                            <h4>Cart</h4>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-
-
-    <div class="leftHead">
-
-        <ul>
-          <li>
-            <div>
-              <a id="sellLink" href="https://www.etsy.com/sell">Sell on Etsy</a>
-            </div>
-          </li>
-            <li>
-                <div id="homeLink">
-                  <a href="https://www.etsy.com/">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                    <h4>Home</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div class="headerLinks">
-                  <a href="#">
-                    <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                    <h4>Favorites</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div class="headerLinks">
-                  <a href="#">
-                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-                    <h4>You</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div id="cart">
-                  <a href="#">
-                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                    <h4>Cart</h4>
-                  </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
 </div>
 
 <!-- SUBHEADER -->
 <div>
-  <div class='subHeaderWrap'>
-    <div class="subNavBar">
-    <ul>
-      <li class='navbarItems clothingNavBar'>Clothing & Accessories</li>
-      <li class='navbarItems'>Jewelry</li>
-      <li class='navbarItems'>Craft Supplies & Tools</li>
-      <li class='navbarItems'>Weddings</li>
-      <li class='navbarItems'>Entertainment</li>
-      <li class='navbarItems'>Home & Living</li>
-      <li class='navbarItems'>Kids & Baby</li>
-      <li class='navbarItems'>Vintage</li>
-      <li class='navbarItems moreNavbar'>More</li>
-    </ul>
+    <div class='subHeaderWrap'>
+        <div class="subNavBar">
+            <ul>
+              <!--///////////////////////////////////
+              ///////////CLOTHING & ACCESSORIES /////
+              ////////STILL NEEDS TO BE CODED FOR BAGS & PURSES, CLOTHING, and SHOES CATEGORIES/////////////// -->
+                <li class='navbarItems clothingNavBar'>Clothing & Accessories
+                    <!--Menu Wrap-->
+                    <div class="DropDownWrap">
+                        <!--Left menu-->
+                        <div class="LeftDropDown">
+                            <ul id="navCLOTHINGandACCESSORIES">
+                                <li><a class="navHighlight" href="https://www.etsy.com/c/accessories">
+                      Accessories <i class="fa fa-angle-right" id = "angleRightHighlight" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="LeftDropDown-nav"><a href="https://www.etsy.com/c/bags-and-purses">
+                      Bags & Purses</a>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </li>
+                                <li class="LeftDropDown-nav"><a href="https://www.etsy.com/c/clothing">
+                      Clothing</a>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </li>
+                                <li class="LeftDropDown-nav"><a href="https://www.etsy.com/c/shoes">
+                      Shoes</a>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--Middle menu-->
+                        <div class="MidDropDown">
+                            <ul id="midNavACCESSORIES">
+                                <li><a href="#">
+                      Belts & Suspenders</a>
+                                </li>
+                                <li><a href="#">
+                      Gloves & Mittens</a>
+                                </li>
+                                <li><a href="#">
+                      Hair Accessories</a>
+                                </li>
+                                <ul id="midNavACCESSORIESsub">
+                                    <li><a class="midNavSubItem" href="#">
+                          Fascinators & Mini Hats</a>
+                                    </li>
+                                    <li><a class="midNavSubItem" href="#">
+                          Headbands</a>
+                                    </li>
+                                    <li><a class="midNavSubItem" href="#">
+                          Ties & Elastics</a>
+                                    </li>
+                                </ul>
+                                <li><a href="#">
+                      Hats & Caps</a>
+                                </li>
+                                <li><a href="#">
+                    Keychains & Lanyards</a>
+                                </li>
+                                <li><a href="#">
+                      Patches & Pins</a>
+                                </li>
+                                <li><a href="#">
+                      Scarves & Wraps</a>
+                                </li>
+                                <li><a href="#">
+                      Suit & Tie Accessories</a>
+                                </li>
+                                <li><a href="#">
+                      Sunglasses & Eyewear</a>
+                                </li>
+                                <li><a href="#">
+                      Umbrellas & Rain Accessories</a>
+                                </li>
+                            </ul>
+                            <p><a class="navAllItems" href="#">
+                      All Accessories</a>
+                            </p>
+                        </div>
+
+                        <!--Right menu-->
+                        <div class="RightDropDown">
+                            <img id="editorsPicks-img" src="assets/images/rightMenu_img.png">
+                            </>
+                            <ul id="rightNavLIST">
+                                <li><a id="editorsPicks" href="#">
+            EDITORS' PICKS</a>
+                                </li>
+                                <li><a id="editorsPicks-item" href="#">
+            Women's fashion shop</a>
+                                </li>
+                        </div>
+                    </div>
+                </li>
+
+                <!--///////////////////////////////////
+                ///////////JEWELRY ////////////////////
+                /////////////////////////////////////// -->
+
+                <li class='navbarItems'>Jewelry</li>
+                <!--Menu Wrap-->
+                <div class="DropDownWrap">
+                    <!--Left menu-->
+                    <div class="LeftDropDown">
+                        <ul id="">
+                            <li><a class="navHighlight" href="#">
+                    Body Jewelry <i class="fa fa-angle-right" id = "angleRightHighlight" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="LeftDropDown-nav"><a href="#">
+                    Bracelets</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </li>
+                            <li class="LeftDropDown-nav"><a href="#">
+                    Cuff Links & Tie Clips</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </li>
+                            <li class="LeftDropDown-nav"><a href="#">
+                    Earrings</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </li>
+                            <li class="LeftDropDown-nav"><a href="#">
+                    Necklaces</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </li>
+                            <li class="LeftDropDown-nav"><a href="#">
+                    Rings</a>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Middle menu-->
+                    <div class="MidDropDown">
+                        <ul id="midNavBODYJEWELRY">
+                            <li><a href="#">
+                    Anklets</a>
+                            </li>
+                            <li><a href="#">
+                    Arm Bands</a>
+                            </li>
+                            <li><a href="#">
+                    Barbells</a>
+                            </li>
+                            <li><a href="#">
+                    Hats & Caps</a>
+                            </li>
+                            <li><a href="#">
+                    Belly Chains</a>
+                            </li>
+                            <li><a href="#">
+                    Belly Rings</a>
+                            </li>
+                            <li><a href="#">
+                    Gauge & Plug Earrings</a>
+                            </li>
+                            <li><a href="#">
+                    Hair Jewelry</a>
+                            </li>
+                            <li><a href="#">
+                    Lip Rings</a>
+                            </li>
+                            <li><a href="#">
+                    Nipple Jewelry</a>
+                            </li>
+                            <li><a href="#">
+                    Nose Rings & Studs</a>
+                            </li>
+                            <li><a href="#">
+                    Pinchers & Spirals</a>
+                            </li>
+                            <li><a href="#">
+                    Shoulder Jewelry</a>
+                            </li>
+                            <li><a href="#">
+                    Toe Rings</a>
+                            </li>
+                        </ul>
+                        <ul id="midNavBRACELETS">
+                            <li><a href="#">
+                      Bangles</a>
+                            </li>
+                            <li><a href="#">
+                      Beaded Bracelets</a>
+                            </li>
+                            <li><a href="#">
+                      Chain & Link Bracelets</a>
+                            </li>
+                            <li><a href="#">
+                      Charm Bracelets</a>
+                            </li>
+                            <li><a href="#">
+                    Cuff Bracelets</a>
+                            </li>
+                            <li><a href="#">
+                      Id & Medical Bracelets</a>
+                            </li>
+                            <li><a href="#">
+                      Woven & Braided Bracelets</a>
+                            </li>
+                        </ul>
+                        <p><a class="navAllItems" href="#">
+                    All Bracelets</a>
+                        </p>
+                        <ul id="midNavCUFFLINKSandTIECLIPS">
+                            <li><a href="#">
+                        Cuff Links</a>
+                            </li>
+                            <li><a href="#">
+                        Shirt Studs</a>
+                            </li>
+                            <li><a href="#">
+                        Tie Clips & Tacks</a>
+                            </li>
+                        </ul>
+                        <p><a class="navAllItems" href="#">
+                      All Cuff Links & Tie Clips</a>
+                        </p>
+                        <ul id="midNavEARRINGS">
+                            <li><a href="#">
+                          Chandelier Earrings</a>
+                            </li>
+                            <li><a href="#">
+                          Clip On Earrings</a>
+                            </li>
+                            <li><a href="#">
+                          Cluster Earrings</a>
+                            </li>
+                            <li><a href="#">
+                          "Cuff & Wrap Earrings</a>
+                            </li>
+                            <li><a href="#">Dangle & Drop Earrings</a>
+                            </li>
+                            <li><a href="#">
+                          Ear Jackets & Climbers</a>
+                            </li>
+                            <li><a href="#">
+                          Ear Weights</a>
+                            </li>
+                            <li><a href="#">
+                          Gauge & Plug Earrings</a>
+                            </li>
+                            <li><a href="#">
+                          Hoop Earrings</a>
+                            </li>
+                            <li><a href="#">
+                          Screw Back Earrings</a>
+                            </li>
+                            <li><a href="#">
+                          Stud Earrings</a>
+                            </li>
+                            <li><a href="#">
+                          Threader Earrings</a>
+                            </li>
+                        </ul>
+                        <p><a class="navAllItems" href="#">
+                        All Earrings</a>
+                        </p>
+                        <ul id="midNavNECKLACES">
+                            <li><a href="#">
+                            Beaded Necklaces</a>
+                            </li>
+                            <li><a href="#">
+                            Bib Necklaces</a>
+                            </li>
+                            <li><a href="#">
+                            Cameo Necklaces</a>
+                            </li>
+                            <li><a href="#">
+                            "Chains</a>
+                            </li>
+                            <li><a href="#">
+                            Charm Necklaces</a>
+                            </li>
+                            <li><a href="#">
+                            Chokers</a>
+                            </li>
+                            <li><a href="#">
+                            Crystal Necklaces</a>
+                            </li>
+                            <li><a href="#">
+                            Lariat & Y Necklaces</a>
+                            </li>
+                            <li><a href="#">
+                            Lockets</a>
+                            </li>
+                            <li><a href="#">
+                            Monogram & Name Necklaces</a>
+                            </li>
+                            <li><a href="#">
+                            Multi Strand Necklaces</a>
+                            </li>
+                            <li><a href="#">
+                            Pendants</a>
+                            </li>
+                            <li><a href="#">
+                            Tassel Necklaces</a>
+                            </li>
+                        </ul>
+                        <p><a class="navAllItems" href="#">
+                          All Necklaces</a>
+                        </p>
+                        <ul id="midNavRINGS">
+                            <li><a href="#">
+                              Bands</a>
+                            </li>
+                            <li><a href="#">
+                              Midi Rings</a>
+                            </li>
+                            <li><a href="#">
+                              Multistone Rings</a>
+                            </li>
+                            <li><a href="#">
+                              "Ring Guards & Spacers</a>
+                            </li>
+                            <li><a href="#">
+                              Signet Rings</a>
+                            </li>
+                            <li><a href="#">
+                              Solitaire Rings</a>
+                            </li>
+                            <li><a href="#">
+                              Stackable Rings</a>
+                            </li>
+                            <li><a href="#">
+                              Statement Rings</a>
+                            </li>
+                            <li><a href="#">
+                          Wedding & Engagement</a>
+                            </li>
+                            <ul id="midNavJEWELRYsub">
+                                <li><a class="midNavSubItem" href="#">
+                          Anniversary Rings</a>
+                                </li>
+                                <li><a class="midNavSubItem" href="#">
+                          "Bridal Sets</a>
+                                </li>
+                                <li><a class="midNavSubItem" href="#">
+                          Claddagh Rings</a>
+                                </li>
+                                <li><a class="midNavSubItem" href="#">
+                          Engagement Rings</a>
+                                </li>
+                                <li><a class="midNavSubItem" href="#">
+                          Promise Rings</a>
+                                </li>
+                                <li><a class="midNavSubItem" href="#">
+                          Wedding Bands</a>
+                                </li>
+                            </ul>
+                        </ul>
+                        <p><a class="navAllItems" href="#">
+                            All Rings</a>
+                        </p>
+                    </div>
+
+                    <!--Right menu-->
+                    <div class="RightDropDown">
+                        <img id="editorsPicks-img" src="assets/images/rightMenu_img.png">
+                        </>
+                        <ul id="rightNavLIST">
+                            <li><a id="editorsPicks" href="#">
+          EDITORS' PICKS</a>
+                            </li>
+                            <li><a id="editorsPicks-item" href="#">
+          July's birthstone: Ruby</a>
+                            </li>
+                    </div>
+                </div>
+
+                <!-- <li class='navbarItems'>Craft Supplies & Tools</li>
+                <li class='navbarItems'>Weddings</li>
+                <li class='navbarItems'>Entertainment</li>
+                <li class='navbarItems'>Home & Living</li>
+                <li class='navbarItems'>Kids & Baby</li>
+                <li class='navbarItems'>Vintage</li>
+                <li class='navbarItems moreNavbar'>More</li> -->
+                </ul>
+        </div>
     </div>
-  </div>
 </div>
 
-
+<!--/////////////////////////////////////
+///////////CRAFT SUPPLIES & TOOLS /////////
+/////////////////////////////////////////// -->
 
 <!--Menu Wrap-->
 <div class="DropDownWrap">
     <!--Left menu-->
     <div class="LeftDropDown">
-        <ul id="navCLOTHINGandACCESSORIES">
-            <li><a class="navHighlight" href="https://www.etsy.com/c/accessories">
-              Accessories <i class="fa fa-angle-right" id = "angleRightHighlight" aria-hidden="true"></i></a>
+        <ul id="navCRAFTSUPPLIESandTOOLS">
+            <li><a class="navHighlight" href="#">
+              Craft Supplies & Tools <i class="fa fa-angle-right" id = "angleRightHighlight" aria-hidden="true"></i></a>
             </li>
-            <li class="LeftDropDown-nav"><a href="https://www.etsy.com/c/bags-and-purses">
-              Bags & Purses</a>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <li class="LeftDropDown-nav"><a href="#">
+              Fiber & Textile Art</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
             </li>
-            <li class="LeftDropDown-nav"><a href="https://www.etsy.com/c/clothing">
-              Clothing</a>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <li class="LeftDropDown-nav"><a href="#">
+              Food Craft Supplies</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
             </li>
-            <li class="LeftDropDown-nav"><a href="https://www.etsy.com/c/shoes">
-              Shoes</a>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <li class="LeftDropDown-nav"><a href="#">
+              General Supplies</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </li>
+            <li class="LeftDropDown-nav"><a href="#">
+              Jewelry & Beading</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </li>
+            <li class="LeftDropDown-nav"><a href="#">
+              Patterns & Tutorials</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </li>
+            <li class="LeftDropDown-nav"><a href="#">
+              Scrapbooking Supplies</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </li>
+            <li class="LeftDropDown-nav"><a href="#">
+              Sewing & Needlecraft</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
             </li>
         </ul>
     </div>
 
     <!--Middle menu-->
     <div class="MidDropDown">
-        <ul id="midNavACCESSORIES">
+        <ul id="midNavFIBERandTEXTILEART">
             <li><a href="#">
-              Belts & Suspenders</a>
+              Batik</a>
             </li>
             <li><a href="#">
-              Gloves & Mittens</a>
+              Felting</a>
             </li>
             <li><a href="#">
-              Hair Accessories</a>
+              Knitting & Crocheting</a>
             </li>
-            <ul id="midNavACCESSORIESsub">
-                <li><a class = "midNavSubItem" href="#">
-                  Fascinators & Mini Hats</a>
+            <ul id="midNavFIBERandTEXTILEARTsub">
+                <li><a class="midNavSubItem" href="#">
+                  Crochet Kits</a>
                 </li>
-                <li><a class = "midNavSubItem" href="#">
-                  Headbands</a>
+                <li><a class="midNavSubItem" href="#">
+                  Crochet Patterns</a>
                 </li>
-                <li><a class = "midNavSubItem" href="#">
-                  Ties & Elastics</a>
+                <li><a class="midNavSubItem" href="#">
+                  Knitting Kits</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Knitting Machines & Looms</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Knitting Patterns</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Stitch Markers</a>
                 </li>
             </ul>
             <li><a href="#">
-              Hats & Caps</a>
+              Macrame</a>
             </li>
             <li><a href="#">
-            Keychains & Lanyards</a>
+            Rugmaking</a>
             </li>
             <li><a href="#">
-              Patches & Pins</a>
+              Spinning</a>
+            </li>
+            <ul id="midNavFIBERandTEXTILEARTsub">
+                <li><a class="midNavSubItem" href="#">
+                  Spindles</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Spinning Wheels</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Upholstery</a>
             </li>
             <li><a href="#">
-              Scarves & Wraps</a>
+              Weaving</a>
             </li>
             <li><a href="#">
-              Suit & Tie Accessories</a>
+              Yarn & Roving</a>
             </li>
+        </ul>
+        <p><a class="navAllItems" href="#">
+              All Fiber & Textile Art</a>
+        </p>
+        <ul id="midNavFOODCRAFTSUPPLIES">
             <li><a href="#">
-              Sunglasses & Eyewear</a>
+              Bakeware</a>
             </li>
+            <ul id="midNavFOODCRAFTSUPPLIESsub">
+                <li><a class="midNavSubItem" href="#">
+                  Cake Pans</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Cookie Sheets</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Muffin & Cupcake Tins</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Pie Plates</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Pizza Stones & Paddles</a>
+                </li>
+            </ul>
             <li><a href="#">
-              Umbrellas & Rain Accessories</a>
+              Baking & Candy</a>
             </li>
-          </ul>
-            <p><a class= "navAllItems" href="#">
-              All Accessories</a>
-            </p>
+            <ul id="midNavFOODCRAFTSUPPLIESsub">
+                <li><a class="midNavSubItem" href="#">
+                  Baking & Candy Molds</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Baking Recipes</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Cake Toppers & Picks</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Cookie Cutters</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Cupcake Liners</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Decorating</a>
+                </li>
+                <li><a href="#">
+                  Canning</a>
+                </li>
+                <ul id="midNavFOODCRAFTSUPPLIESsub">
+                    <li><a class="midNavSubItem" href="#">
+                      Baking & Candy Molds</a>
+                    </li>
+                    <li><a class="midNavSubItem" href="#">
+                      Baking Recipes</a>
+                    </li>
+                    <li><a class="midNavSubItem" href="#">
+                      Cake Toppers & Picks</a>
+                    </li>
+                    <li><a class="midNavSubItem" href="#">
+                      Cookie Cutters</a>
+                    </li>
+                    <li><a class="midNavSubItem" href="#">
+                      Cupcake Liners</a>
+                    </li>
+            </ul>
+            <li><a href="#">
+              Canning</a>
+            </li>
+            <ul id="midNavFOODCRAFTSUPPLIESsub">
+                <li><a class="midNavSubItem" href="#">
+                  Jars</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Labels</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Lids, Rings & Caps</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Pressure Cookers</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Spices & Recipes</a>
+                </li>
+                <li><a href="#">
+                  Fermentation</a>
+                </li>
+              </ul>
+                <ul id="midNavFOODCRAFTSUPPLIESsub">
+                    <li><a class="midNavSubItem" href="#">
+                      Brewing</a>
+                    </li>
+                    <li><a class="midNavSubItem" href="#">
+                      Dairy & Kombucha</a>
+                    </li>
+                    <li><a class="midNavSubItem" href="#">
+                      Winemaking</a>
+                    </li>
+                </ul>
+                <p><a class="navAllItems" href="#">
+                      All Food Craft Supplies</a>
+                </p>
+                <!-- Below closes class="MidDropDown -->
     </div>
 
     <!--Right menu-->
@@ -158,6 +655,7 @@
     EDITORS' PICKS</a>
             </li>
             <li><a id="editorsPicks-item" href="#">
-    Women's fashion shop</a>
+    DIY trends: Cactus & Succulents</a>
             </li>
     </div>
+</div>
