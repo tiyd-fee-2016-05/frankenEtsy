@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Bitter:400,700|Lato:300,400,700";
+@import url(assets/fontawesome/scss/font-awesome.css);
 body {
   background: #efefeb;
   color: #222; }
@@ -466,12 +467,13 @@ body {
     border-radius: .7%; }
     #categories .shop-list li img {
       height: 225px;
-      width: 100%;
+      width: 101.5%;
       padding-right: 4em;
       padding-top: 22px; }
     #categories .shop-list li h3 {
       font-family: "Lato", sans-serif;
       font-size: 15px;
+      font-weight: 100;
       height: 50px;
       width: 285px;
       background: #FFFFFF;
@@ -498,6 +500,26 @@ body {
       width: 285px;
       background: #FFFFFF;
       padding-left: 5px; }
+    #categories .shop-list li .heartbtn {
+      position: absolute;
+      margin-left: 16%;
+      margin-top: -17.5%;
+      height: 26px;
+      width: 32px;
+      color: #a09c98;
+      font-size: 1em;
+      border-radius: 13%;
+      border: 1px solid #aaa; }
+    #categories .shop-list li .burgerbtn {
+      position: absolute;
+      margin-left: 19%;
+      margin-top: -17.5%;
+      height: 26px;
+      width: 44px;
+      color: #a09c98;
+      font-size: 1em;
+      border-radius: 13%;
+      border: 1px solid #aaa; }
 #categories .see-all {
   font-family: "Lato", sans-serif;
   font-size: 1em;

@@ -220,87 +220,98 @@
     <h1 class="shop-more">Shop all items</h1>
     <ul class="shop-list" ng-repeat="listing in listings | limitTo: 1">
     <li ng-click="goToProduct( listings[0] )">
-      <img src={{listings[0].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;top: 2%;left: 16.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
-      <button class="burgerbtn" style="position: absolute;top: 2%;left: 19.9%;height: 26px;width: 40px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+      <img src={{listings[0].MainImage.url_fullxfull}}>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
 
       <h3>{{listings[0].title}}</h3>
       <h1>{{listings[0].Shop.shop_name}}</h1>
       <h2>{{listings[0].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[1] )">
-      <img src={{listings[1].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;top: 2%;left: 45.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <img src={{listings[1].MainImage.url_fullxfull}}>
+      <button class="heartbtn" ><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[1].title}}</h3>
       <h1>{{listings[1].Shop.shop_name}}</h1>
       <h2>{{listings[1].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[2] )">
       <img src={{listings[2].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;top: 2%;left: 76.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[2].title}}</h3>
       <h1>{{listings[2].Shop.shop_name}}</h1>
       <h2>{{listings[2].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[3] )">
       <img src={{listings[3].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;bottom: 71.3%;left: 17.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[3].title}}</h3>
       <h1>{{listings[3].Shop.shop_name}}</h1>
       <h2>{{listings[3].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[4] )">
       <img src={{listings[4].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;bottom: 71.3%;left: 45.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[4].title}}</h3>
       <h1>{{listings[4].Shop.shop_name}}</h1>
       <h2>{{listings[4].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[5] )">
       <img src={{listings[5].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;bottom: 71.3%;left: 76.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[5].title}}</h3>
       <h1>{{listings[5].Shop.shop_name}}</h1>
       <h2>{{listings[5].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[6] )">
       <img src={{listings[6].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;bottom: 47%;left: 16.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[6].title}}</h3>
       <h1>{{listings[6].Shop.shop_name}}</h1>
       <h2>{{listings[6].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[7] )">
       <img src={{listings[7].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;bottom: 47%;left: 45.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[7].title}}</h3>
       <h1>{{listings[7].Shop.shop_name}}</h1>
       <h2>{{listings[7].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[8] )">
       <img src={{listings[8].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;bottom: 47%;left: 76.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[8].title}}</h3>
       <h1>{{listings[8].Shop.shop_name}}</h1>
       <h2>{{listings[8].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[9] )">
       <img src={{listings[9].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;bottom: 22.5%;left: 16.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[9].title}}</h3>
       <h1>{{listings[9].Shop.shop_name}}</h1>
       <h2>{{listings[9].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[10] )">
       <img src={{listings[10].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;bottom: 22.5%;left: 46.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[10].title}}</h3>
       <h1>{{listings[10].Shop.shop_name}}</h1>
       <h2>{{listings[10].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[11] )">
       <img src={{listings[11].MainImage.url_570xN}}>
-      <button class="heartbtn" style="position: absolute;bottom: 22.5%;left: 76.7%;height: 26px;width: 32px;color: #a09c98;font-size: 1em;border-radius: 13%;border: 1px solid $Light-Grey;"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+      <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       <h3>{{listings[11].title}}</h3>
       <h1>{{listings[11].Shop.shop_name}}</h1>
       <h2>{{listings[11].price | currency}}</h2>
