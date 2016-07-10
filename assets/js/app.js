@@ -2,7 +2,7 @@ var mainApp = angular.module('mainApp', ['ngRoute']);
   mainApp.config(function($routeProvider){
     $routeProvider
     .when('/trending', {
-      templateUrl: 'pages/header/home_header.html'
+      templateUrl: 'pages/trending.html'
     })
     .otherwise({
       redirectTo: '/trending'
