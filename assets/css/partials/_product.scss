@@ -4,6 +4,8 @@ body {
 // .angular-with-newlines {
 //     white-space: pre-wrap;
 // }
+.product-body {
+
 
 #container {
   width: 1050px;
@@ -430,6 +432,7 @@ body {
   margin-left: 110px;
   vertical-align: top;
   margin-top: 5px;
+  cursor: pointer;
   p {
     margin-left: 12px
   }
@@ -802,4 +805,5 @@ body {
     // margin-right: auto;
     padding: 15px 15px 15px 15px;
   }
+}
 }
