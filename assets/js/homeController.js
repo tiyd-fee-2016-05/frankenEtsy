@@ -31,14 +31,6 @@ console.log("Hello!");
       $scope.jewelryInfo = response.data.results;
       console.log($scope.jewelryInfo[0].Images[0].url_fullxfull);
     });
-<<<<<<< HEAD:assets/js/controller.js
-
-
-
-    
-
-=======
->>>>>>> 959be859b09c14ab5f2eff1dcd2654b8e7b959f2:assets/js/homeController.js
 }]);
 
 
