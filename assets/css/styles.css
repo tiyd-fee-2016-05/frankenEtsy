@@ -124,7 +124,7 @@ body {
 .DropDownWrap {
   background-color: white;
   position: relative;
-  display: block;
+  display: none;
   width: 80%;
   margin: 0 auto;
   font-family: Lato, sans-serif;
@@ -142,15 +142,15 @@ body {
       padding: 0.45em 0;
       font-size: 0.9em;
       letter-spacing: 0.025em; }
+      .DropDownWrap .LeftDropDown li:hover, .DropDownWrap .RightDropDown li:hover {
+        background-color: #E4F3F7; }
     .DropDownWrap .LeftDropDown .navHighlight, .DropDownWrap .RightDropDown .navHighlight {
       color: #0192B5;
-      background-color: #E4F3F7;
       padding: 0.5em 6em 0.2em 1.7em; }
       .DropDownWrap .LeftDropDown .navHighlight #angleRightHighlight, .DropDownWrap .RightDropDown .navHighlight #angleRightHighlight {
         margin: -.65em -.3em -.65em 0;
         position: relative;
         vertical-align: middle;
-        background-color: #E4F3F7;
         font-weight: 900;
         padding: 0.5em 0.38em 0.4em 2em; }
     .DropDownWrap .LeftDropDown .LeftDropDown-nav, .DropDownWrap .RightDropDown .LeftDropDown-nav {
@@ -171,6 +171,8 @@ body {
         font-size: 0.89em;
         color: #aaa;
         padding-left: 1em; }
+      .DropDownWrap .MidDropDown li:hover {
+        text-decoration: underline; }
     .DropDownWrap .MidDropDown p {
       position: absolute;
       right: 1em;
