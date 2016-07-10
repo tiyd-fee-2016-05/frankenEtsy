@@ -5,7 +5,7 @@ console.log("Hello!");
     $http.get("https://openapi.etsy.com/v2/listings/active?api_key=nsh3xdn1xlab8cak8wsrh8f6&keywords=clothing&includes=Images,Shop&limit=3&offset=0").then(function(response){
       $scope.clothingInfo = response.data.results;
       console.log($scope.clothingInfo[0].Images[0].url_fullxfull);
-      // $scope.clothingInfo.Images[0].url_fullxfull);
+
     });
     $http.get("https://openapi.etsy.com/v2/listings/active?api_key=nsh3xdn1xlab8cak8wsrh8f6&keywords=children&includes=Images,Shop&limit=3&offset=0").then(function(response){
       $scope.childrenInfo = response.data.results;
