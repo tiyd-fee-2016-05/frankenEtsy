@@ -26,3 +26,20 @@ July 7, 2016
     * We began creating app.js and controller.js page.
     * We began making calls to our etsy api.  "It is working!"
     * We laughed, sang and ate snacks when appropriate.
+
+July 8, 2016
+
+* Nastassia was the team lead.
+* Rhonda and Sinovia continued to work on getting accurate api calls         specific to getting images to populate on the page.  Had more success toward the end of the day.
+
+    * It was all about talking to etsy today.
+
+
+July 9, 2016
+
+* Rhonda worked on creating get request using factory, to no avail.
+* Sinovia continued to work with creating specific get request from the etsy.
+* Nastassia finished up the home page with spectacular success!
+
+    * We finished up Saturday evening with the homepage looking great and getting api calls from etsy.  We even installed routing to the category page.    
+    * Monday we will work out the routing with the class.
