@@ -23,7 +23,6 @@ mainApp.controller('productCtrl', function($scope, $http, $sce) {
     $scope.shippingPolicy = response.data.results[0].Shop.policy_shipping;
 
 
-
     // }
     console.log($scope.desc);
     console.log(response);
@@ -83,6 +82,7 @@ mainApp.controller('productCtrl', function($scope, $http, $sce) {
         console.log($scope.thumbnail);
       }
       var imgCount = 0;
+
       $scope.imgFuncUp = function(){
         imgCount++;
         if(imgCount <= response.data.results.length - 1){
@@ -114,10 +114,14 @@ mainApp.controller('productCtrl', function($scope, $http, $sce) {
         console.log($scope.selected);
         imgCount = $scope.selected;
         $scope.loadImage = response.data.results[imgCount].url_570xN;
+      }
+      $scope.bigImg = response.data.results[imgCount].url_fullxfull;
+      $scope.zoomFunc = function(){
+        $scope.zoomModal = !$scope.zoomModal;
+        $scope.bigImg = response.data.results[imgCount].url_fullxfull;
 
-
-
-
+        console.log(imgCount)
+        console.log("Zoome")
       }
 
 

@@ -145,6 +145,7 @@
                 </li>
             </ul>
 
+
             <div class="more-images">
               <div class="thumbnail" id={{thumbId}} ng-repeat="thumb in thumbnail" ng-click="thumbImgFunc(thumb)">
                 <img src="{{thumb}}"/>
@@ -158,7 +159,7 @@
               <div class="thumbnail">
               </div> -->
             </div>
-            <div class="zoom">
+            <div class="zoom" ng-click="zoomFunc()">
               <p> <i class="fa fa-search" aria-hidden="true"></i> zoom </p>
             </div>
 
@@ -330,4 +331,8 @@
     <a href="#"><li>Add item to treasury</li></a>
     <a href="#"><li class="right-side">Report this item to Etsy</li></a>
   </ul>
+  <div class="zoom-modal" ng-show="zoomModal">
+    <button class="exit" ng-click="zoomFunc()">X</button>
+    <img src='{{bigImg}}'/>
+  </div>
 </div>
