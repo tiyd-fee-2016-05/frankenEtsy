@@ -221,144 +221,180 @@
     <ul class="shop-list" ng-repeat="listing in listings | limitTo: 1">
     <li ng-click="goToProduct( listings[0] )">
       <!-- thank you, http://www.scriptscoop.site/t/b92dc29e1d80/javascript-angularjs-override-ng-show-ng-hide-on-hover.html for help in show/hide -->
-      <div ng-mouseover="options0=true" ng-mouseleave="options0=false">
+      <div ng-mouseenter="options0=true" ng-mouseleave="options0=false">
         <img src={{listings[0].MainImage.url_fullxfull}}>
       <div>
       <span ng-show="options0">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[0].title}}</h3>
       <h1>{{listings[0].Shop.shop_name}}</h1>
       <h2>{{listings[0].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[1] )">
-      <div ng-mouseover="options1=true" ng-mouseleave="options1=false">
+      <div ng-mouseenter="options1=true" ng-mouseleave="options1=false">
         <img src={{listings[1].MainImage.url_fullxfull}}>
       </div>
       <span ng-show="options1">
         <button class="heartbtn" ><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn"><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[1].title}}</h3>
       <h1>{{listings[1].Shop.shop_name}}</h1>
       <h2>{{listings[1].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[2] )">
-      <div ng-mouseover="options2=true" ng-mouseleave="options2=false">
+      <div ng-mouseenter="options2=true" ng-mouseleave="options2=false">
         <img src={{listings[2].MainImage.url_570xN}}>
       </div>
       <span ng-show="options2">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[2].title}}</h3>
       <h1>{{listings[2].Shop.shop_name}}</h1>
       <h2>{{listings[2].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[3] )">
-      <div ng-mouseover="options3=true" ng-mouseleave="options3=false">
+      <div ng-mouseenter="options3=true" ng-mouseleave="options3=false">
         <img src={{listings[3].MainImage.url_570xN}}>
       </div>
       <span ng-show="options3">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[3].title}}</h3>
       <h1>{{listings[3].Shop.shop_name}}</h1>
       <h2>{{listings[3].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[4] )">
-      <div ng-mouseover="options4=true" ng-mouseleave="options4=false">
+      <div ng-mouseenter="options4=true" ng-mouseleave="options4=false">
         <img src={{listings[4].MainImage.url_570xN}}>
       </div>
       <span ng-show="options4">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[4].title}}</h3>
       <h1>{{listings[4].Shop.shop_name}}</h1>
       <h2>{{listings[4].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[5] )">
-      <div ng-mouseover="options5=true" ng-mouseleave="options5=false">
+      <div ng-mouseenter="options5=true" ng-mouseleave="options5=false">
         <img src={{listings[5].MainImage.url_570xN}}>
       </div>
       <span ng-show="options5">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[5].title}}</h3>
       <h1>{{listings[5].Shop.shop_name}}</h1>
       <h2>{{listings[5].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[6] )">
-      <div ng-mouseover="options6=true" ng-mouseleave="options6=false">
+      <div ng-mouseenter="options6=true" ng-mouseleave="options6=false">
         <img src={{listings[6].MainImage.url_570xN}}>
       </div>
       <span ng-show="options6">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[6].title}}</h3>
       <h1>{{listings[6].Shop.shop_name}}</h1>
       <h2>{{listings[6].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[7] )">
-      <div ng-mouseover="options7=true" ng-mouseleave="options7=false">
+      <div ng-mouseenter="options7=true" ng-mouseleave="options7=false">
         <img src={{listings[7].MainImage.url_570xN}}>
       </div>
       <span ng-show="options7">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[7].title}}</h3>
       <h1>{{listings[7].Shop.shop_name}}</h1>
       <h2>{{listings[7].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[8] )">
-      <div ng-mouseover="options8=true" ng-mouseleave="options8=false">
+      <div ng-mouseenter="options8=true" ng-mouseleave="options8=false">
         <img src={{listings[8].MainImage.url_570xN}}>
       </div>
       <span ng-show="options8">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[8].title}}</h3>
       <h1>{{listings[8].Shop.shop_name}}</h1>
       <h2>{{listings[8].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[9] )">
-      <div ng-mouseover="options9=true" ng-mouseleave="options9=false">
+      <div ng-mouseenter="options9=true" ng-mouseleave="options9=false">
         <img src={{listings[9].MainImage.url_570xN}}>
       </div>
       <span ng-show="options9">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[9].title}}</h3>
       <h1>{{listings[9].Shop.shop_name}}</h1>
       <h2>{{listings[9].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[10] )">
-      <div ng-mouseover="options10=true" ng-mouseleave="options10=false">
+      <div ng-mouseenter="options10=true" ng-mouseleave="options10=false">
         <img src={{listings[10].MainImage.url_570xN}}>
       </div>
       <span ng-show="options10">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[10].title}}</h3>
       <h1>{{listings[10].Shop.shop_name}}</h1>
       <h2>{{listings[10].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[11] )">
-      <div ng-mouseover="options11=true" ng-mouseleave="options11=false">
+      <div ng-mouseenter="options11=true" ng-mouseleave="options11=false">
         <img src={{listings[11].MainImage.url_570xN}}>
       </div>
       <span ng-show="options11">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <form id="urlist">
+        <p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
+      </form>
       </span>
       <h3>{{listings[11].title}}</h3>
       <h1>{{listings[11].Shop.shop_name}}</h1>
