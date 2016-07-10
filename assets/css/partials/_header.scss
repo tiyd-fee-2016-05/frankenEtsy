@@ -7,7 +7,7 @@
     .pagePaddingWrap {
         margin: 0 auto;
         position: relative;
-        width: 85%;
+        width: 75%;
         .rightHead {
             position: absolute;
             display: inline-block;
@@ -123,7 +123,7 @@
         display: block;
         margin: 0 auto;
         position: relative;
-        width: 85%;
+        width: 70%;
     }
     .navbarItems {
         font-family: $Font-Lato;
@@ -145,10 +145,11 @@
     }
 }
 .DropDownWrap {
+    z-index: 2;
     background-color: white;
     position: relative;
-    display: block;
-    width: 80%;
+    display: none;
+    width: 70%;
     margin: 0 auto;
     font-family: Lato, sans-serif;
     box-shadow: 1px 5px 20px $Light-Grey;
@@ -166,16 +167,17 @@
             padding: 0.45em 0;
             font-size: 0.9em;
             letter-spacing: 0.025em;
+            &:hover{
+              background-color: #E4F3F7;
+            }
         }
         .navHighlight {
             color: $Blue;
-            background-color: #E4F3F7;
             padding: 0.5em 6em 0.2em 1.7em;
             #angleRightHighlight {
                 margin: -.65em -.3em -.65em 0;
                 position: relative;
                 vertical-align: middle;
-                background-color: #E4F3F7;
                 font-weight: 900;
                 padding: 0.5em 0.38em 0.4em 2em;
             }
@@ -191,6 +193,16 @@
         width: 47%;
         display: inline-block;
         position: relative;
+        #midNavACCESSORIES_l{
+          width: 49%;
+          display: inline-block;
+        }
+        #midNavACCESSORIES_r{
+          position: absolute;
+          top: 0;
+          width: 49%;
+          display: inline-block;
+        }
         li {
             padding: 0.45em 1.5em;
             font-size: 0.9em;
@@ -201,6 +213,9 @@
                 font-size: 0.89em;
                 color: $Light-Grey;
                 padding-left: 1em;
+            }
+            &:hover{
+              text-decoration: underline;
             }
         }
         p {
@@ -218,11 +233,54 @@
                 padding-right: 2.5em;
             }
         }
+        .ALLL{
+          color: $Black;
+          letter-spacing: 0.03em;
+          font-size: 0.92em;
+          font-weight: 600;
+          .navAllItems {
+              display: inline-block;
+              color: $Black;
+              letter-spacing: 0.03em;
+              font-size: 0.92em;
+              font-weight: 600;
+              padding-right: 2.5em;
+          }
+        }
+    }
+    .vintageArt{
+      @extend .MidDropDown;
+      display: none;
+    }
+    .vintageBags{
+      @extend .MidDropDown;
+      display: none;
+    }
+    .vintageCloth{
+      @extend .MidDropDown;
+      display: none;
+    }
+    .vintageCraft{
+      @extend .MidDropDown;
+      display: none;
+    }
+    .vintageHome{
+      @extend .MidDropDown;
+      display: none;
+    }
+    .vintageJewel{
+      @extend .MidDropDown;
+      display: none;
+    }
+    .vintageToy{
+      @extend .MidDropDown;
+      display: none;
     }
     .RightDropDown {
         display: inline-block;
         @extend .LeftDropDown;
         padding-left: 1.5em;
+        width: 15%;
         li {
             bottom: 1;
         }
