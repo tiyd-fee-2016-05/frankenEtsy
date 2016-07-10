@@ -467,7 +467,7 @@ body {
     border-radius: .7%; }
     #categories .shop-list li img {
       height: 225px;
-      width: 101.5%;
+      width: 100%;
       padding-right: 4em;
       padding-top: 22px; }
     #categories .shop-list li h3 {
@@ -509,7 +509,8 @@ body {
       color: #a09c98;
       font-size: 1em;
       border-radius: 13%;
-      border: 1px solid #aaa; }
+      border: 1px solid #aaa;
+      z-index: 9999; }
     #categories .shop-list li .burgerbtn {
       position: absolute;
       margin-left: 19%;
@@ -519,7 +520,8 @@ body {
       color: #a09c98;
       font-size: 1em;
       border-radius: 13%;
-      border: 1px solid #aaa; }
+      border: 1px solid #aaa;
+      z-index: 9999; }
     #categories .shop-list li form {
       display: block;
       position: absolute;
@@ -532,7 +534,8 @@ body {
       padding-top: 1%;
       border-radius: 3%;
       line-height: 1.5;
-      border: .5px solid #cccccc; }
+      border: .5px solid #cccccc;
+      z-index: 9999; }
       #categories .shop-list li form p {
         font-family: "Lato", sans-serif;
         font-size: 12px;
@@ -540,6 +543,12 @@ body {
         color: #cccccc; }
       #categories .shop-list li form input {
         width: 150px; }
+      #categories .shop-list li form i {
+        position: absolute;
+        margin-left: 23%;
+        margin-top: -14.2%;
+        font-size: 1.5em;
+        color: #ffffff; }
 #categories .see-all {
   font-family: "Lato", sans-serif;
   font-size: 1em;

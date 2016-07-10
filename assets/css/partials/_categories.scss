@@ -287,7 +287,7 @@ display: inline-block;
 
     img{
       height: 225px;
-      width: 101.5%;
+      width: 100%;
       padding-right: 4em;
       padding-top: 22px;
     }
@@ -335,6 +335,8 @@ display: inline-block;
 	font-size: 1em;
 	border-radius: 13%;
 	border: 1px solid $Light-Grey;
+	z-index: 9999;
+
 
 }
 .burgerbtn{
@@ -347,6 +349,7 @@ display: inline-block;
 	font-size: 1em;
 	border-radius: 13%;
 	border: 1px solid #aaa;
+	z-index: 9999;
 }
 
 form{
@@ -362,6 +365,9 @@ form{
 	    border-radius: 3%;
 	    line-height: 1.5;
 			border: .5px solid #cccccc;
+			z-index: 9999;
+
+
 	p{
 		font-family: $Font-Lato;
 		font-size: 12px;
@@ -371,10 +377,19 @@ form{
 	input{
 		width: 150px;
 	}
+	i{
+		position: absolute;
+margin-left: 23%;
+margin-top: -14.2%;
+font-size: 1.5em;
+color: #ffffff;
+	}
 
 }
 }
 }
+
+
 
 
 .see-all{
