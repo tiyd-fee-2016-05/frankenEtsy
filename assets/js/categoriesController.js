@@ -165,5 +165,140 @@ function getEarrings() {
 
   }; // end goToProduct()
 
-
 }]); // end mainApp.controller( "CategoriesController" );
+
+// thank you, https://github.com/tiyd-fee-2016-05/demos/blob/master/angularjs-click-event/index.html for helping with this controller
+mainApp.controller("Menu", function( $scope ) {
+    $scope.showMenu0 = false;
+    $scope.showMenu1 = false;
+    $scope.showMenu2 = false;
+    $scope.showMenu3 = false;
+    $scope.showMenu4 = false;
+    $scope.showMenu5 = false;
+    $scope.showMenu6 = false;
+    $scope.showMenu7 = false;
+    $scope.showMenu8 = false;
+    $scope.showMenu9 = false;
+    $scope.showMenu10 = false;
+    $scope.showMenu11 = false;
+
+    $scope.revealMenu0 = function( listing ) {
+      $scope.showMenu0 = !$scope.showMenu0;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu0 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu0 = function( listing ) {
+      $scope.showMenu0 = !$scope.showMenu0;
+    }
+
+    $scope.revealMenu1 = function( listing ) {
+      $scope.showMenu1 = !$scope.showMenu1;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu1 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu1 = function( listing ) {
+      $scope.showMenu1 = !$scope.showMenu1;
+    }
+
+    $scope.revealMenu2 = function( listing ) {
+      $scope.showMenu2 = !$scope.showMenu2;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu2 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu2 = function( listing ) {
+      $scope.showMenu2 = !$scope.showMenu2;
+    }
+
+    $scope.revealMenu3 = function( listing ) {
+      $scope.showMenu3 = !$scope.showMenu3;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu3 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu3 = function( listing ) {
+      $scope.showMenu3 = !$scope.showMenu3;
+    }
+
+    $scope.revealMenu4 = function( listing ) {
+      $scope.showMenu4 = !$scope.showMenu4;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu4 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu4 = function( listing ) {
+      $scope.showMenu4 = !$scope.showMenu4;
+    }
+
+    $scope.revealMenu5 = function( listing ) {
+      $scope.showMenu5 = !$scope.showMenu5;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu5 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu5 = function( listing ) {
+      $scope.showMenu5 = !$scope.showMenu5;
+    }
+
+    $scope.revealMenu6 = function( listing ) {
+      $scope.showMenu6 = !$scope.showMenu6;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu6 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu6 = function( listing ) {
+      $scope.showMenu6 = !$scope.showMenu6;
+    }
+
+    $scope.revealMenu7 = function( listing ) {
+      $scope.showMenu7 = !$scope.showMenu7;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu7 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu7 = function( listing ) {
+      $scope.showMenu7 = !$scope.showMenu7;
+    }
+
+    $scope.revealMenu8 = function( listing ) {
+      $scope.showMenu8 = !$scope.showMenu8;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu8 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu8 = function( listing ) {
+      $scope.showMenu8 = !$scope.showMenu8;
+    }
+
+    $scope.revealMenu9 = function( listing ) {
+      $scope.showMenu9 = !$scope.showMenu9;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu9 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu9 = function( listing ) {
+      $scope.showMenu9 = !$scope.showMenu9;
+    }
+
+    $scope.revealMenu10 = function( listing ) {
+      $scope.showMenu10 = !$scope.showMenu10;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu10 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu10 = function( listing ) {
+      $scope.showMenu10 = !$scope.showMenu1011
+    }
+
+    $scope.revealMenu11 = function( listing ) {
+      $scope.showMenu11 = !$scope.showMenu11;
+      console.log( "Show menu is working.  Status: " + $scope.showMenu11 );
+        // $scope.showMenu = true;
+    }
+
+    $scope.hideMenu11 = function( listing ) {
+      $scope.showMenu11 = !$scope.showMenu11;
+    }
+}); // end controller( "Menu" )
