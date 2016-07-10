@@ -218,12 +218,13 @@
 
     </ul>
     <h1 class="shop-more">Shop all items</h1>
-    <ul ng-controller="Menu" class="shop-list" ng-repeat="listing in listings | limitTo: 1">
+    <ul class="shop-list" ng-repeat="listing in listings | limitTo: 1">
     <li ng-click="goToProduct( listings[0] )">
-      <div ng-mouseover="revealMenu0()" ng-mouseleave="hideMenu0()">
+      <!-- thank you, http://www.scriptscoop.site/t/b92dc29e1d80/javascript-angularjs-override-ng-show-ng-hide-on-hover.html for help in show/hide -->
+      <div ng-mouseover="options0=true" ng-mouseleave="options0=false">
         <img src={{listings[0].MainImage.url_fullxfull}}>
       <div>
-      <span ng-show="showMenu0">
+      <span ng-show="options0">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -232,10 +233,10 @@
       <h2>{{listings[0].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[1] )">
-      <div ng-mouseover="revealMenu1()" ng-mouseleave="hideMenu1()">
+      <div ng-mouseover="options1=true" ng-mouseleave="options1=false">
         <img src={{listings[1].MainImage.url_fullxfull}}>
       </div>
-      <span ng-show="showMenu1">
+      <span ng-show="options1">
         <button class="heartbtn" ><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn"><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -244,10 +245,10 @@
       <h2>{{listings[1].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[2] )">
-      <div ng-mouseover="revealMenu2()" ng-mouseleave="hideMenu2()">
+      <div ng-mouseover="options2=true" ng-mouseleave="options2=false">
         <img src={{listings[2].MainImage.url_570xN}}>
       </div>
-      <span ng-show="showMenu2">
+      <span ng-show="options2">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -256,10 +257,10 @@
       <h2>{{listings[2].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[3] )">
-      <div ng-mouseover="revealMenu3()" ng-mouseleave="hideMenu3()">
+      <div ng-mouseover="options3=true" ng-mouseleave="options3=false">
         <img src={{listings[3].MainImage.url_570xN}}>
       </div>
-      <span ng-show="showMenu3">
+      <span ng-show="options3">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -268,10 +269,10 @@
       <h2>{{listings[3].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[4] )">
-      <div ng-mouseover="revealMenu4()" ng-mouseleave="hideMenu4()">
+      <div ng-mouseover="options4=true" ng-mouseleave="options4=false">
         <img src={{listings[4].MainImage.url_570xN}}>
       </div>
-      <span ng-show="showMenu4">
+      <span ng-show="options4">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -280,10 +281,10 @@
       <h2>{{listings[4].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[5] )">
-      <div ng-mouseover="revealMenu5()" ng-mouseleave="hideMenu5()">
+      <div ng-mouseover="options5=true" ng-mouseleave="options5=false">
         <img src={{listings[5].MainImage.url_570xN}}>
       </div>
-      <span ng-show="showMenu5">
+      <span ng-show="options5">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -292,10 +293,10 @@
       <h2>{{listings[5].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[6] )">
-      <div ng-mouseover="revealMenu6()" ng-mouseleave="hideMenu6()">
+      <div ng-mouseover="options6=true" ng-mouseleave="options6=false">
         <img src={{listings[6].MainImage.url_570xN}}>
       </div>
-      <span ng-show="showMenu6">
+      <span ng-show="options6">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -304,10 +305,10 @@
       <h2>{{listings[6].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[7] )">
-      <div ng-mouseover="revealMenu7()" ng-mouseleave="hideMenu7()">
+      <div ng-mouseover="options7=true" ng-mouseleave="options7=false">
         <img src={{listings[7].MainImage.url_570xN}}>
       </div>
-      <span ng-show="showMenu7">
+      <span ng-show="options7">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -316,10 +317,10 @@
       <h2>{{listings[7].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[8] )">
-      <div ng-mouseover="revealMenu8()" ng-mouseleave="hideMenu8()">
+      <div ng-mouseover="options8=true" ng-mouseleave="options8=false">
         <img src={{listings[8].MainImage.url_570xN}}>
       </div>
-      <span ng-show="showMenu8">
+      <span ng-show="options8">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -328,10 +329,10 @@
       <h2>{{listings[8].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[9] )">
-      <div ng-mouseover="revealMenu9()" ng-mouseleave="hideMenu9()">
+      <div ng-mouseover="options9=true" ng-mouseleave="options9=false">
         <img src={{listings[9].MainImage.url_570xN}}>
       </div>
-      <span ng-show="showMenu9">
+      <span ng-show="options9">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -340,10 +341,10 @@
       <h2>{{listings[9].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[10] )">
-      <div ng-mouseover="revealMenu10()" ng-mouseleave="hideMenu10()">
+      <div ng-mouseover="options10=true" ng-mouseleave="options10=false">
         <img src={{listings[10].MainImage.url_570xN}}>
       </div>
-      <span ng-show="showMenu10">
+      <span ng-show="options10">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
@@ -352,10 +353,10 @@
       <h2>{{listings[10].price | currency}}</h2>
     </li>
     <li ng-click="goToProduct( listings[11] )">
-      <div ng-mouseover="revealMenu11()" ng-mouseleave="hideMenu11()">
+      <div ng-mouseover="options11=true" ng-mouseleave="options11=false">
         <img src={{listings[11].MainImage.url_570xN}}>
       </div>
-      <span ng-show="showMenu11">
+      <span ng-show="options11">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
       </span>
