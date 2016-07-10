@@ -20,9 +20,17 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
         $scope.callOne = first.data.results;
         console.log(first); //returns the entire response as an object
 
+
         first40 = first.data.results; //first40 now is assigned the ARRAY OF OBJECTS (aka first 40 results)
         console.log(first40);
 
+        // var first40 = first.data.results;          //first40 now is assigned the ARRAY OF OBJECTS (aka first 40 results)
+        // console.log(first40[0].listing_id);
+
+        $scope.catchId = function(click){
+          localStorage.setItem('listing_id',click);
+          console.log(click);
+        };
     });
 
 
@@ -51,6 +59,8 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
                     $scope.callTwo = second.data.results;
                     console.log(second);
                 });
+
+
                 break;
             case 2:
             console.log(count);
@@ -62,6 +72,12 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
                     $scope.callThree = third.data.results;
                     console.log(third);
                 });
+
+                $scope.catchId = function(click){
+                  localStorage.setItem('listing_id',click);
+                  console.log(click);
+                };
+
                 break;
             case 3:
             console.log(count);
@@ -73,6 +89,7 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
                     $scope.callFour = fourth.data.results;
                     console.log(fourth);
                 });
+
                 break;
         };
 };
@@ -84,5 +101,14 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
     //
     // }
 
+
+
+                $scope.catchId = function(click){
+                  localStorage.setItem('listing_id',click);
+                  console.log(click);
+                };
+                break;
+        }
+}
 
 }]);
