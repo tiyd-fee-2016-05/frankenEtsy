@@ -3,11 +3,15 @@
 $Font-Lato: 'Lato', sans-serif;
 $Font-Bitter: 'Bitter', serif;
 
+$Yellow: #ffdc1e; 
+$Light-Orange1: #FFAC62;
+$Light-Orange2: #FF883E;
 $Orange: #f56400;
 $Orange-Hover: #ff6905;
 $BackgroundGrey: #efefeb;
 $Black: #222;
 $Dark-Grey: #666;
+$Mid-Grey: #777;
 $Light-Grey: #aaa;
 $Darker-Blue: #34A8C4;
 $Blue: #0192B5;
@@ -19,6 +23,7 @@ $Cart-Green-Hover: #86c651;
 body {
   background: $BackgroundGrey;
   color: $Black;
+  -webkit-font-smoothing: antialiased;
 }
 
 
