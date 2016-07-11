@@ -321,6 +321,26 @@ body {
     font-size: 0.9em;
     font-weight: 600; }
 
+#loadMore {
+  position: relative;
+  left: 44%;
+  border-radius: .19em;
+  outline: none;
+  border: none;
+  padding: .5em 1em;
+  font: Lato, sans-serif;
+  color: white;
+  background-color: #0192B5;
+  font-size: .9em;
+  font-weight: 600; }
+
+.seeItemsHover {
+  font-family: Lato, sans-serif;
+  color: #0192B5;
+  size: .6em;
+  position: relative;
+  bottom: 3em; }
+
 /*  SECTIONS  */
 .section {
   clear: both;

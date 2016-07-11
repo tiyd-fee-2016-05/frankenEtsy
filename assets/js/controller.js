@@ -60,8 +60,8 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
                     console.log(second);
                 });
 
-
                 break;
+
             case 2:
             console.log(count);
 
@@ -79,6 +79,7 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
                 };
 
                 break;
+
             case 3:
             console.log(count);
 
@@ -103,12 +104,11 @@ mainApp.controller('trendingController', ['$http', '$scope', function($http, $sc
 
 
 
-                $scope.catchId = function(click){
-                  localStorage.setItem('listing_id',click);
-                  console.log(click);
-                };
-                break;
-        }
-}
+                // $scope.catchId = function(click){
+                //   localStorage.setItem('listing_id',click);
+                //   console.log(click);
+                // };
+                // // break;
+
 
 }]);
