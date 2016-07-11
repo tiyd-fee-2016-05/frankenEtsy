@@ -1,154 +1,741 @@
 <!-- TOP ETSY BAR -->
-<div class="homeHeaderWrap">
-  <div class="pagePaddingWrap">
+<div class="homeHeaderWrap" ng-controller="headerController">
+    <div class="pagePaddingWrap">
 
-    <div class="rightHead">
-        <h1>Etsy</h1>
+        <div class="rightHead">
+            <h1>Etsy</h1>
 
-        <input id="searchBar" type="text" name="search" value="" placeholder="Search for frends or trends">
-        <button id="searchButton" type="button" name="button">Search</button>
+            <input id="searchBar" type="text" name="search" value="" placeholder="Search for frends or trends">
+            <button id="searchButton" type="button" name="button">Search</button>
+        </div>
+
+
+        <div class="leftHead">
+
+            <ul>
+                <li>
+                    <div>
+                        <a id="sellLink" href="https://www.etsy.com/sell">Sell on Etsy</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="homeLink">
+                        <a href="https://www.etsy.com/">
+                            <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                            <h4>Home</h4>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="headerLinks">
+                        <a href="#">
+                            <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                            <h4>Favorites</h4>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="headerLinks">
+                        <a href="#">
+                            <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                            <h4>You</h4>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="cart">
+                        <a href="#">
+                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                            <h4>Cart</h4>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-
-
-    <div class="leftHead">
-
-        <ul>
-          <li>
-            <div>
-              <a id="sellLink" href="https://www.etsy.com/sell">Sell on Etsy</a>
-            </div>
-          </li>
-            <li>
-                <div id="homeLink">
-                  <a href="https://www.etsy.com/">
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                    <h4>Home</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div class="headerLinks">
-                  <a href="#">
-                    <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                    <h4>Favorites</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div class="headerLinks">
-                  <a href="#">
-                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-                    <h4>You</h4>
-                  </a>
-                </div>
-            </li>
-            <li>
-                <div id="cart">
-                  <a href="#">
-                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                    <h4>Cart</h4>
-                  </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
 </div>
 
 <!-- SUBHEADER -->
 <div>
-  <div class='subHeaderWrap'>
-    <div class="subNavBar">
-    <ul>
-      <li class='navbarItems clothingNavBar'>Clothing & Accessories</li>
-      <li class='navbarItems'>Jewelry</li>
-      <li class='navbarItems'>Craft Supplies & Tools</li>
-      <li class='navbarItems'>Weddings</li>
-      <li class='navbarItems'>Entertainment</li>
-      <li class='navbarItems'>Home & Living</li>
-      <li class='navbarItems'>Kids & Baby</li>
-      <li class='navbarItems'>Vintage</li>
-      <li class='navbarItems moreNavbar'>More</li>
-    </ul>
+    <div class='subHeaderWrap'>
+        <div class="subNavBar">
+            <ul>
+                <li class='navbarItems vintageNavBar'>Clothing & Accessories</li>
+                <li class='navbarItems vintageNavBar'>Jewelry</li>
+                <li class='navbarItems vintageNavBar'>Craft Supplies & Tools</li>
+                <li class='navbarItems vintageNavBar'>Weddings</li>
+                <li class='navbarItems vintageNavBar'>Entertainment</li>
+                <li class='navbarItems vintageNavBar'>Home & Living</li>
+                <li class='navbarItems vintageNavBar'>Kids & Baby</li>
+                <li class='navbarItems vintageNavBar'>Vintage</li>
+                <li class='navbarItems moreNavbar'>More</li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
 
 
 
+
+
+<!--////////////////////////////
+   //////////VINTAGE///////////
+  ////////////////////////////-->
 <!--Menu Wrap-->
 <div class="DropDownWrap">
     <!--Left menu-->
     <div class="LeftDropDown">
-        <ul id="navCLOTHINGandACCESSORIES">
-            <li><a class="navHighlight" href="https://www.etsy.com/c/accessories">
+        <ul id="navVINTAGE">
+            <li id="vinOne"><a class="navHighlight" href="https://www.etsy.com/c/accessories">
               Accessories <i class="fa fa-angle-right" id = "angleRightHighlight" aria-hidden="true"></i></a>
             </li>
-            <li class="LeftDropDown-nav"><a href="https://www.etsy.com/c/bags-and-purses">
+            <li id="vinTwo" class="LeftDropDown-nav"><a href="https://www.etsy.com/c/art-and-collectibles">
+              Art & Collectibles</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </li>
+            <li id="vinThree" class="LeftDropDown-nav"><a href="https://www.etsy.com/c/bags-and-purses">
               Bags & Purses</a>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
             </li>
-            <li class="LeftDropDown-nav"><a href="https://www.etsy.com/c/clothing">
+            <li id="vinFour" class="LeftDropDown-nav"><a href="https://www.etsy.com/c/clothing">
               Clothing</a>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
             </li>
-            <li class="LeftDropDown-nav"><a href="https://www.etsy.com/c/shoes">
-              Shoes</a>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <li id="vinFive" class="LeftDropDown-nav"><a href="https://www.etsy.com/c/craft-supplies-and-tools">
+              Craft Supplies & Tools</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </li>
+            <li id="vinSix" class="LeftDropDown-nav"><a href="https://www.etsy.com/c/home-and-living">
+              Home & Living</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </li>
+            <li id="vinSeven" class="LeftDropDown-nav"><a href="https://www.etsy.com/c/jewelry">
+              Jewelry</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </li>
+            <li id="vinEight" class="LeftDropDown-nav"><a href="https://www.etsy.com/c/toy-and-games">
+              Toys & Games</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
             </li>
         </ul>
     </div>
 
+    <!--////////////////////////////
+       ////////Accessories/////////
+      ////////////////////////////-->
     <!--Middle menu-->
-    <div class="MidDropDown">
-        <ul id="midNavACCESSORIES">
+    <div class="MidDropDown vintageAccessories">
+        <ul id="midNavACCESSORIES_l">
             <li><a href="#">
               Belts & Suspenders</a>
             </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                    Belt Buckles</a>
+                </li>
+            </ul>
             <li><a href="#">
               Gloves & Mittens</a>
             </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                    Evening & Formal Gloves</a>
+                </li>
+            </ul>
             <li><a href="#">
               Hair Accessories</a>
             </li>
             <ul id="midNavACCESSORIESsub">
-                <li><a class = "midNavSubItem" href="#">
-                  Fascinators & Mini Hats</a>
+                <li><a class="midNavSubItem" href="#">
+                  Barrettes & Clips</a>
                 </li>
-                <li><a class = "midNavSubItem" href="#">
-                  Headbands</a>
-                </li>
-                <li><a class = "midNavSubItem" href="#">
-                  Ties & Elastics</a>
+                <li><a class="midNavSubItem" href="#">
+                  Decorative Combs</a>
                 </li>
             </ul>
             <li><a href="#">
               Hats & Caps</a>
             </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                  Baseball & Trucker Caps</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Fedoras</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Formal Hats</a>
+                </li>
+            </ul>
             <li><a href="#">
             Keychains & Lanyards</a>
             </li>
             <li><a href="#">
               Patches & Pins</a>
             </li>
-            <li><a href="#">
-              Scarves & Wraps</a>
-            </li>
-            <li><a href="#">
-              Suit & Tie Accessories</a>
-            </li>
-            <li><a href="#">
-              Sunglasses & Eyewear</a>
-            </li>
-            <li><a href="#">
-              Umbrellas & Rain Accessories</a>
-            </li>
+
+        </ul>
+
+
+        <ul id="midNavACCESSORIES_r">
+          <li><a href="#">
+            Scarves & Wraps</a>
+          </li>
+          <ul id="midNavACCESSORIESsub">
+              <li><a class="midNavSubItem" href="#">
+                Collars & Bibs</a>
+              </li>
+              <li><a class="midNavSubItem" href="#">
+                Handkerchiefs</a>
+              </li>
+              <li><a class="midNavSubItem" href="#">
+                Scarves</a>
+              </li>
+              <li><a class="midNavSubItem" href="#">
+                Shawls & Wraps</a>
+              </li>
           </ul>
-            <p><a class= "navAllItems" href="#">
-              All Accessories</a>
+          <li><a href="#">
+            Suit & Tie Accessories</a>
+          </li>
+          <ul id="midNavACCESSORIESsub">
+              <li><a class="midNavSubItem" href="#">
+                Bolo Ties</a>
+              </li>
+              <li><a class="midNavSubItem" href="#">
+                Cufflinks & Tie Clips</a>
+              </li>
+              <li><a class="midNavSubItem" href="#">
+                Neckties</a>
+              </li>
+          </ul>
+          <li><a href="#">
+            Sunglasses & Eyewear</a>
+          </li>
+          <ul id="midNavACCESSORIESsub">
+              <li><a class="midNavSubItem" href="#">
+                Glasses</a>
+              </li>
+              <li><a class="midNavSubItem" href="#">
+                Sunglasses</a>
+              </li>
+          </ul>
+          <li class="ALLL"><a class="navAllItems" href="#">
+                All Accessories</a>
+          </li>
+        </ul>
+
+    </div>
+
+    <!--////////////////////////////
+       ////////Art & Collectibles/////////
+      ////////////////////////////-->
+    <!--Middle menu-->
+    <div class="MidDropDown vintageArt">
+        <ul id="midNavARTCOLLECTIBLES">
+            <li><a href="#">
+              Artist Trading Cards</a>
+            </li>
+            <li><a href="#">
+              Collectibles</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                    Coins & Money</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                    Collectible Glass</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                    Collectible Plates</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                    Dolls & Miniatures</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                    Figurines</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                    Music Boxes</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                    Postage Stamps</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Drawing & Illustration</a>
+            </li>
+            <li><a href="#">
+              Fiber Arts</a>
+            </li>
+            <li><a href="#">
+              Glass Arts</a>
+            </li>
+            <li><a href="#">
+              Mixed Media & Collage</a>
+            </li>
+            <li><a href="#">
+              Painting</a>
+            </li>
+            <li><a href="#">
+              Photography</a>
+            </li>
+            <li><a href="#">
+              Prints</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                    Music & Movie Posters</a>
+                </li>
+            </ul>
+
+            <p><a class="navAllItems" href="#">
+              All Art & Collectibles</a>
             </p>
     </div>
 
+    <!--////////////////////////////
+       ////////Bags & Purses/////////
+      ////////////////////////////-->
+    <!--Middle menu-->
+    <div class="MidDropDown vintageBags">
+        <ul id="midNavACCESSORIES">
+            <li><a href="#">
+              Accessory Cases</a>
+            </li>
+            <li><a href="#">
+              Backpacks</a>
+            </li>
+            <li><a href="#">
+              Cosmetic & Toiletry Storage</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                  Vanity Storage</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Handbags</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                    Clutches & Evening Bags</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                    Crossbody Bags</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                    Hobo Bags</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                    Shoulder Bags</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                    Top Handle Bags</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Luggage & Travel</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Briefcases & Attaches</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Duffel Bags</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Overnight Bags</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Suitcases Bags</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Train Cases</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Messenger Bages</a>
+            </li>
+            <li><a href="#">
+              Pouches & Coin Purses</a>
+            </li>
+            <li><a href="#">
+              Totes</a>
+            </li>
+            <li><a href="#">
+              Wallets & Money Clips</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                    Wallets</a>
+                </li>
+            </ul>
+
+            <p><a class="navAllItems" href="#">
+              All Bags & Purses</a>
+            </p>
+    </div>
+
+    <!--////////////////////////////
+       /////////CLOTHING///////////
+      ////////////////////////////-->
+    <!--Middle menu-->
+    <div class="MidDropDown vintageCloth">
+        <ul id="midNavACCESSORIES">
+            <li><a href="#">
+              Boys' Clothing</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Baby Boys' Clothing</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Pants</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Tops</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Girls' Clothing</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Baby Girls' Clothing</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Dresses</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Jackets & Coats</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Men's Clothing</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Jackets & Coats</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Pants</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Shirts</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Suits & Sport Coats</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Sweaters</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Women's Clothing</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Dresses</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Jackets & Coats</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Lingerie</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Pants & Capirs</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Shorts & Skorts</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Skirts</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Sweaters</a>
+                </li>
+            </ul>
+    </div>
+
+    <!--////////////////////////////
+       ///CRAFT SUPPLIES & TOOLS///
+      ////////////////////////////-->
+    <!--Middle menu-->
+    <div class="MidDropDown vintageCraft">
+        <ul id="midNavACCESSORIES">
+            <li><a href="#">
+              Fabric</a>
+            </li>
+            <li><a href="#">
+              Framing</a>
+            </li>
+            <li><a href="#">
+              Jewelry & Beading</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Beads</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Charms</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Findings & Hardware</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Pendants</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Knitting & Crocheting</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Crochet Patterns</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Knitting Patterns</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Patterns & Tutorials</a>
+            </li>
+            <li><a href="#">
+              Scrapbooking</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Scrapbooking Paper</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Sewing & Needlecraft</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Buttons & Fasteners</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Sewing Machines</a>
+                </li>
+            </ul>
+            <p><a class="navAllItems" href="#">
+              All Craft Supplies & Tools</a>
+            </p>
+    </div>
+
+    <!--////////////////////////////
+       //////HOME & LIVING/////////
+      ////////////////////////////-->
+    <!--Middle menu-->
+    <div class="MidDropDown vintageHome">
+        <ul id="midNavACCESSORIES">
+            <li><a href="#">
+              Bathroom</a>
+            </li>
+            <li><a href="#">
+              Bedding</a>
+            </li>
+            <li><a href="#">
+              Curtains & Window Treatments</a>
+            </li>
+            <li><a href="#">
+              Floor & Rugs</a>
+            </li>
+            <li><a href="#">
+              Furniture</a>
+            </li>
+            <li><a href="#">
+              Home Décor</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Clocks</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Decorative Pillows</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Globes & Maps</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Mirros</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Ornaments & Accents</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Picture Frames & Displays</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Vases</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Kitchen & Dining</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Dining & Serving</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Lighting</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Chandeliers & Pendant Lights</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Lamps</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Storage & Organization</a>
+            </li>
+
+            <p><a class="navAllItems" href="#">
+              All Home & Living</a>
+            </p>
+    </div>
+
+    <!--////////////////////////////
+       //////////JEWELRY///////////
+      ////////////////////////////-->
+    <!--Middle menu-->
+    <div class="MidDropDown vintageJewel">
+        <ul id="midNavACCESSORIES">
+            <li><a href="#">
+              Bracelets</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                  Bangles</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Charm Bracelets</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Cuff Bracelets</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Brooches</a>
+            </li>
+            <li><a href="#">
+              Cuff Links & Tie Tacks</a>
+            </li>
+            <li><a href="#">
+              Earrings</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                  Chandelier Earrings</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Clip On Earrings</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Dangle & Drop Earrings</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Stud Earrings</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Jewelry Sets</a>
+            </li>
+            <li><a href="#">
+              Necklaces</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Lockets</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Pendants</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Rings</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Solitaire Rings</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Statement Rings</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Wedding & Engagement</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Watches</a>
+            </li>
+
+            <p><a class="navAllItems" href="#">
+              All Jewelry</a>
+            </p>
+    </div>
+    <!--////////////////////////////
+       ///////TOYS & GAMES/////////
+      ////////////////////////////-->
+    <!--Middle menu-->
+    <div class="MidDropDown vintageToy">
+        <ul id="midNavACCESSORIES">
+            <li><a href="#">
+              Games & Puzzles</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                  Board Games</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Dice & Tile Games</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Marbles</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Video Games</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Sports & Outdoor Games</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                  Bikes & Cycling</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                  Kites & Pinwheels</a>
+                </li>
+            </ul>
+            <li><a href="#">
+              Toys</a>
+            </li>
+            <ul id="midNavACCESSORIESsub">
+                <li><a class="midNavSubItem" href="#">
+                      Dolls & Action Figures</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Puppets</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Ride On & Rocking Toys</a>
+                </li>
+                <li><a class="midNavSubItem" href="#">
+                      Stuffed Animals & Plushies</a>
+                </li>
+            </ul>
+
+            <p><a class="navAllItems" href="#">
+              All Toys & Games</a>
+            </p>
+    </div>
     <!--Right menu-->
     <div class="RightDropDown">
         <img id="editorsPicks-img" src="assets/images/rightMenu_img.png">
@@ -158,6 +745,7 @@
     EDITORS' PICKS</a>
             </li>
             <li><a id="editorsPicks-item" href="#">
-    Women's fashion shop</a>
+    Vintage fashion: Island tropics</a>
             </li>
     </div>
+</div>

@@ -1,8 +1,13 @@
 .trendingItems {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 8.7em;
     display: block;
     font-family: $Font-Bitter;
-    padding: 1.5em 0;
+    padding: 1.6em 0;
     box-shadow: 0 1px 3px 1px #d0d0d0 inset;
+    background-color: #efefeb;
     #trendingHeader {
         font-size: 28px;
         width: 70%;
@@ -30,7 +35,9 @@
     width: 100%;
 }
 .productGridWrapper {
-    width: 80%;
+    z-index: -1;
+    top: 0;
+    position: absolute;
     margin: 0 auto;
     ul {
         // break-inside: avoid-column;
@@ -80,6 +87,20 @@
                   border: 1px solid rgba(170,170,170,.7);
 
                 }
+            }
+
+          }
+          .seeItemsHover{
+            font-family: Lato, sans-serif;
+            color: #0192B5;
+            font-size: .8em;
+            bottom: -1.5em;
+            display: inline-block;
+            position: absolute;
+            left: 5em;
+            text-decoration: none;
+            &:hover{
+              text-decoration: underline;
             }
           }
         }
@@ -147,7 +168,8 @@
 .section {
     clear: both;
     padding: 0;
-    margin: 1em 4em;
+    width: 70%;
+    margin: 16em auto 1em;
 }
 /*  COLUMN SETUP  */
 .col {
