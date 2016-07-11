@@ -336,7 +336,11 @@ display: inline-block;
 	border-radius: 13%;
 	border: 1px solid $Light-Grey;
 	z-index: 9999;
-
+i{
+	&:active{
+		color:red;
+	}
+}
 
 }
 .burgerbtn{
@@ -353,6 +357,9 @@ display: inline-block;
 }
 
 form{
+	&:active{
+		display: block;
+	}
 			display: block;
 	    position: absolute;
 	    margin-top: -14.5%;
@@ -379,16 +386,15 @@ form{
 	}
 	i{
 		position: absolute;
-margin-left: 23%;
-margin-top: -14.2%;
-font-size: 1.5em;
-color: #ffffff;
+		margin-left: 23%;
+		margin-top: -14.2%;
+		font-size: 1.5em;
+		color: #ffffff;
 	}
 
 }
 }
 }
-
 
 
 

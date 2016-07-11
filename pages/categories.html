@@ -231,6 +231,7 @@
         <i class="fa fa-caret-up" aria-hidden="true"></i><p>YOUR LISTS</p><input type="text" name="urlist" placeholder="New List">
       </form>
       </span>
+
       <h3>{{listings[0].title}}</h3>
       <h1>{{listings[0].Shop.shop_name}}</h1>
       <h2>{{listings[0].price | currency}}</h2>
@@ -238,7 +239,7 @@
     <li ng-click="goToProduct( listings[1] )">
       <div ng-mouseenter="options1=true" ng-mouseleave="options1=false">
         <img src={{listings[1].MainImage.url_fullxfull}}>
-      </div>
+      <div>
       <span ng-show="options1">
         <button class="heartbtn" ><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn"><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -253,7 +254,7 @@
     <li ng-click="goToProduct( listings[2] )">
       <div ng-mouseenter="options2=true" ng-mouseleave="options2=false">
         <img src={{listings[2].MainImage.url_570xN}}>
-      </div>
+      <div>
       <span ng-show="options2">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -268,7 +269,7 @@
     <li ng-click="goToProduct( listings[3] )">
       <div ng-mouseenter="options3=true" ng-mouseleave="options3=false">
         <img src={{listings[3].MainImage.url_570xN}}>
-      </div>
+      <div>
       <span ng-show="options3">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -283,7 +284,7 @@
     <li ng-click="goToProduct( listings[4] )">
       <div ng-mouseenter="options4=true" ng-mouseleave="options4=false">
         <img src={{listings[4].MainImage.url_570xN}}>
-      </div>
+      <div>
       <span ng-show="options4">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -298,7 +299,7 @@
     <li ng-click="goToProduct( listings[5] )">
       <div ng-mouseenter="options5=true" ng-mouseleave="options5=false">
         <img src={{listings[5].MainImage.url_570xN}}>
-      </div>
+      <div>
       <span ng-show="options5">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -313,7 +314,7 @@
     <li ng-click="goToProduct( listings[6] )">
       <div ng-mouseenter="options6=true" ng-mouseleave="options6=false">
         <img src={{listings[6].MainImage.url_570xN}}>
-      </div>
+      <div>
       <span ng-show="options6">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -328,7 +329,7 @@
     <li ng-click="goToProduct( listings[7] )">
       <div ng-mouseenter="options7=true" ng-mouseleave="options7=false">
         <img src={{listings[7].MainImage.url_570xN}}>
-      </div>
+      <div>
       <span ng-show="options7">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -343,7 +344,7 @@
     <li ng-click="goToProduct( listings[8] )">
       <div ng-mouseenter="options8=true" ng-mouseleave="options8=false">
         <img src={{listings[8].MainImage.url_570xN}}>
-      </div>
+      <div>
       <span ng-show="options8">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -358,7 +359,7 @@
     <li ng-click="goToProduct( listings[9] )">
       <div ng-mouseenter="options9=true" ng-mouseleave="options9=false">
         <img src={{listings[9].MainImage.url_570xN}}>
-      </div>
+      <div>
       <span ng-show="options9">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -373,7 +374,7 @@
     <li ng-click="goToProduct( listings[10] )">
       <div ng-mouseenter="options10=true" ng-mouseleave="options10=false">
         <img src={{listings[10].MainImage.url_570xN}}>
-      </div>
+      <div>
       <span ng-show="options10">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
@@ -388,7 +389,7 @@
     <li ng-click="goToProduct( listings[11] )">
       <div ng-mouseenter="options11=true" ng-mouseleave="options11=false">
         <img src={{listings[11].MainImage.url_570xN}}>
-      </div>
+      <div>
       <span ng-show="options11">
         <button class="heartbtn"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button class="burgerbtn" ><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></button>
