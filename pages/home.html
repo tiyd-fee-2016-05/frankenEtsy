@@ -1,186 +1,47 @@
-<body ng-app="mainApp">
-    <div class="homeHeaderWrap">
-        <div class="pagePaddingWrap">
 
-            <div class="rightHead">
-                <h1>Etsy</h1>
-
-                <input id="searchBar" type="text" name="search" value="" placeholder="Search for frends or trends">
+<div id="homepage" ng-controller="homepageController">
+    <div class="grid grid-pad">
+        <!-- Grid starts here -->
+        <!-- First row, photo banner -->
+        <div class="col-1-1">
+            <div class="content banner">
+                <h3>{{message}}<br> whatever you're into</h3>
+                <input id="searchBar" type="text" name="search" value="" placeholder="What are you shopping for?">
                 <button id="searchButton" type="button" name="button">Search</button>
-            </div>
-
-
-            <div class="leftHead">
-
-                <ul>
-                    <li>
-                        <div>
-                            <a id="sellLink" href="https://www.etsy.com/sell">Sell on Etsy</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="homeLink">
-                            <a href="https://www.etsy.com/">
-                                <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                                <h4>Home</h4>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="headerLinks">
-                            <a href="#">
-                                <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                                <h4>Favorites</h4>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="headerLinks">
-                            <a href="#">
-                                <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-                                <h4>You</h4>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="cart">
-                            <a href="#">
-                                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                                <h4>Cart</h4>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+                <p>From the shop...</p>
             </div>
         </div>
-    </div>
 
-    <!-- SUBHEADER -->
-    <div>
-        <div class='subHeaderWrap'>
-            <div class="subNavBar">
-                <ul>
-                    <li class='navbarItems clothingNavBar'>Clothing & Accessories</li>
-                    <li class='navbarItems'>Jewelry</li>
-                    <li class='navbarItems'>Craft Supplies & Tools</li>
-                    <li class='navbarItems'>Weddings</li>
-                    <li class='navbarItems'>Entertainment</li>
-                    <li class='navbarItems'>Home & Living</li>
-                    <li class='navbarItems'>Kids & Baby</li>
-                    <li class='navbarItems'>Vintage</li>
-                    <li class='navbarItems moreNavbar'>More</li>
-                </ul>
+        <!-- Second row, illustrations -->
+        <div class="col-1-3">
+            <div class="content illust-split illustrations">
+                <img class="split-left" src="https://www.etsy.com/assets/dist/images/homepage/vesta/how_etsy_works_1.20160609191624.png" alt="person-1" />
+                <h3 class="split-right">Get something you love</h3>
+                <p class="split-right">Our marketplace is a world of vintage and handmade goods</p>
             </div>
         </div>
-    </div>
-
-    <!-- DROP DOWN MENU -->
-    <div class="DropDownWrap">
-        <div class="LeftDropDown">
-            Trend
+        <div class="col-1-3">
+            <div class="content illust-split illustrations">
+                <img class="split-left" src="https://www.etsy.com/assets/dist/images/homepage/vesta/how_etsy_works_2.20160609191624.png" alt="person-2" />
+                <h3 class="split-right">Find your favorite shop</h3>
+                <p class="split-right">More than a million independent sellers from everywhere are right here</p>
+            </div>
         </div>
-        <div class="MidDropDown">
-            Frend
+        <div class="col-1-3">
+            <div class="content illust-split illustrations">
+                <img class="split-left" src="https://www.etsy.com/assets/dist/images/homepage/vesta/how_etsy_works_3.20160609191624.png" alt="hands" />
+                <h3 class="split-right">Buy safely and securely</h3>
+                <p class="split-right">Etsy handles and protects every transaction, so shop with confidence</p>
+            </div>
         </div>
-        <div class="RightDropDown">
-            End
+
+        <!-- Third row -->
+        <div class="col-1-1">
+            <div class="content header-link">
+                <h3>Shop by category</h3>
+            </div>
         </div>
-    </div>
 
-
-    <!-- Start of homepage -->
-
-    ​
-    <div id="homepage" ng-controller="homepageController">
-        <div class="grid grid-pad">
-            <!-- Grid starts here -->
-            <!-- First row, photo banner -->
-            <div class="col-1-1">
-                <div class="content banner">
-                    <h3>{{message}}<br> whatever you're into</h3>
-                    <input id="searchBar" type="text" name="search" value="" placeholder="What are you shopping for?">
-                    <button id="searchButton" type="button" name="button">Search</button>
-                    <p>From the shop...</p>
-                </div>
-            </div>
-
-<<<<<<< HEAD
-            <!-- Second row, illustrations -->
-            <div class="col-1-3">
-                <div class="content illust-split illustrations">
-                    <img class="split-left" src="https://www.etsy.com/assets/dist/images/homepage/vesta/how_etsy_works_1.20160609191624.png" alt="person-1" />
-                    <h3 class="split-right">Get something you love</h3>
-                    <p class="split-right">Our marketplace is a world of vintage and handmade goods</p>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="content illust-split illustrations">
-                    <img class="split-left" src="https://www.etsy.com/assets/dist/images/homepage/vesta/how_etsy_works_2.20160609191624.png" alt="person-2" />
-                    <h3 class="split-right">Find your favorite shop</h3>
-                    <p class="split-right">More than a million independent sellers from everywhere are right here</p>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="content illust-split illustrations">
-                    <img class="split-left" src="https://www.etsy.com/assets/dist/images/homepage/vesta/how_etsy_works_3.20160609191624.png" alt="hands" />
-                    <h3 class="split-right">Buy safely and securely</h3>
-                    <p class="split-right">Etsy handles and protects every transaction, so shop with confidence</p>
-                </div>
-            </div>
-
-            <!-- Third row -->
-            <div class="col-1-1">
-                <div class="content header-link">
-                    <h3>Shop by category</h3>
-                </div>
-            </div>
-
-            <!-- Fourth row -->
-            <div class="cols-6">
-              <div class="col-1-6">
-                <div class="content">
-                  <a href="#/categories">
-                  <img class="homepageImage" ng-src={{homeInfo[0].Images[0].url_fullxfull}}>
-                  <h3>Home and Living</h3></a>
-                </div>
-              </div>
-              <div class="col-1-6">
-                <div class="content">
-                  <a href="#/categories">
-                  <img class="homepageImage" ng-src={{jewelryInfo[0].Images[0].url_fullxfull}}>
-                   <h3>Jewelry</h3></a>
-                </div>
-              </div>
-              <div class="col-1-6">
-                <div class="content">
-                  <a href="#/categories">
-                  <img class="homepageImage" ng-src={{clothingInfo[3].Images[2].url_fullxfull}}>
-                  <h3>Clothing</h3></a>
-                </div>
-              </div>
-              <div class="col-1-6">
-                <div class="content">
-                  <a href="#/categories">
-                  <img class="homepageImage" ng-src={{weddingInfo[1].Images[0].url_fullxfull}}>
-                  <h3>Weddings</h3></a>
-                </div>
-              </div>
-              <div class="col-1-6">
-                <div class="content">
-                  <a href="#/categories">
-                  <img class="homepageImage" ng-src={{yarnInfo[2].Images[0].url_fullxfull}}>
-                  <h3>Craft Supplies & Tools</h3></a>
-                </div>
-              </div>
-              <div class="col-1-6">
-                <div class="content">
-                  <a href="#/categories">
-                  <img class="homepageImage" ng-src={{toyInfo[0].Images[1].url_fullxfull}}>
-                  <h3>Toys & Games</h3></a>
-                </div>
-              </div>
-            </div>
-=======
         <!-- Fourth row -->
         <div class="cols-6">
           <div class="col-1-6">
@@ -226,35 +87,14 @@
             </div>
           </div>
         </div>
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
 
-            <!-- Fifth row -->
-            <div class="col-1-1">
-                <div class="content header-link">
-                    <a href="#"><h3>Browse our latest collections</h3></a>
-                </div>
+        <!-- Fifth row -->
+        <div class="col-1-1">
+            <div class="content header-link">
+                <a href="#"><h3>Browse our latest collections</h3></a>
             </div>
+        </div>
 
-<<<<<<< HEAD
-            <!-- Sixth row -->
-            <div class="cols-2 ">
-                <div class="col-1-2">
-                    <div class="content browse-split">
-                        <img class="split-left" ng-src={{jewelryInfo[0].Images[2].url_fullxfull}}>
-                        <div class="split-right1">
-                            <p>Editors' Picks</p>
-                            <h3>Personalized & Custom Jewelry</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-2">
-                    <div class="content browse-split">
-                        <img class="split-left" ng-src={{weddingInfo[2].Images[0].url_fullxfull}}>
-                        <div class="split-right2">
-                            <p>Editors' Picks</p>
-                            <h3>Classics never get old</h3>
-                        </div>
-=======
         <!-- Sixth row -->
         <div class="cols-2 ">
             <div class="col-1-2">
@@ -272,117 +112,35 @@
                     <div class="split-right2">
                         <p>Editors' Picks</p>
                         <h3>Classics never get old</h3>
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Seventh row -->
-            <div class="col-1-1">
-                <div class="content">
-                    <a href="#">See more <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a>
-                </div>
+        <!-- Seventh row -->
+        <div class="col-1-1">
+            <div class="content">
+                <a href="#">See more <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a>
             </div>
+        </div>
 
-            <!-- Eighth row -->
-            <div class="col-1-1">
-                <div class="content header-link">
-                    <a href="#">Shop for gifts</a>
-                </div>
+        <!-- Eighth row -->
+        <div class="col-1-1">
+            <div class="content header-link">
+                <a href="#">Shop for gifts</a>
             </div>
+        </div>
 
-<<<<<<< HEAD
-            <!-- Ninth row -->
-            <div class="cols-6">
-                <div class="col-1-6">
-                    <div class="content">
-                        <img class="homepageImage" ng-src={{bikesInfo[4].Images[0].url_fullxfull}}>
-                        <h3>Gifts for Cyclists</h3>
-                    </div>
-                </div>
-                <div class="col-1-6">
-                    <div class="content">
-                        <img class="homepageImage" ng-src={{jewelryInfo[2].Images[1].url_fullxfull}}>
-                        <h3>Best of summer: Under $30</h3>
-                    </div>
-                </div>
-                <div class="col-1-6">
-                    <div class="content">
-                        <img class="homepageImage" ng-src={{accessoriesInfo[9].Images[1].url_fullxfull}}>
-                        <h3>Summer fashion accessories</h3>
-                    </div>
-                </div>
-                <div class="col-1-6">
-                    <div class="content">
-                        <img class="homepageImage" ng-src={{jewelryInfo[0].Images[1].url_fullxfull}}>
-                        <h3>Little luxuries</h3>
-                    </div>
-                </div>
-                <div class="col-1-6">
-                    <div class="content">
-                        <img class="homepageImage" ng-src={{jewelryInfo[5].Images[3].url_fullxfull}}>
-                        <h3>Birthstone jewelry</h3>
-                    </div>
-                </div>
-                <div class="col-1-6">
-                    <div class="content">
-                        <img class="homepageImage" ng-src={{babyInfo[4].Images[2].url_fullxfull}}>
-                        <h3>Baby shower gifts</h3>
-                    </div>
-=======
         <!-- Ninth row -->
         <div class="cols-6">
             <div class="col-1-6">
                 <div class="content">
                     <img class="homepageImage" ng-src={{bikesInfo[4].Images[0].url_fullxfull}}>
                     <h3>Gifts for Cyclists</h3>
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
                 </div>
             </div>
-
-            <!-- Tenth row -->
-            <div class="col-1-1">
+            <div class="col-1-6">
                 <div class="content">
-<<<<<<< HEAD
-                    <a href="#">See more <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-            <!-- Eleventh row, orange banner -->
-            <div class="col-1-1-orange">
-                <div class="content orangeBknd">
-                    <h3>Etsy keeps you safe</h3>
-
-                    <div class="cols-3">
-                        <div class="col-1-7">
-                            <img class="safe" src="assets/images/safe.png">
-                        </div>
-
-                        <div class="col-1-5-safe">
-                            <p>Trustworthy sellers</p>
-                            <span>You can read their reviews and policies, and <br>contact them with any questions</span>
-                        </div>
-                        <div class="col-1-5-safe">
-                            <p>World-class security</p>
-                            <span>Safeguarding your information is the top <br>priority of our dedicated security experts</span>
-                        </div>
-                        <div class="col-1-5-safe">
-                            <p>Purchase protection</p>
-                            <span>If anything goes wrong, our global support <br>team has got your back</span>
-                        </div>
-
-                        <div class="col-1-7">
-                            <img class="safe" src="assets/images/keys.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Twelvth row -->
-            <div class="col-1-1">
-                <div class="content header-link">
-                    <h3>Shops worth exploring</h3>
-=======
                     <img class="homepageImage" ng-src={{jewelryInfo[2].Images[1].url_fullxfull}}>
                     <h3>Best of summer: Under $30</h3>
                 </div>
@@ -397,79 +155,57 @@
                 <div class="content">
                     <img class="homepageImage" ng-src={{jewelryInfo[0].Images[1].url_fullxfull}}>
                     <h3>Little luxuries</h3>
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
                 </div>
             </div>
-
-            <!-- Thirteenth row -->
-            <div class="col-1-3-explore">
+            <div class="col-1-6">
                 <div class="content">
-<<<<<<< HEAD
-                    <img src="assets/images/15.jpg">
-                    <h3>WakeTheTree</h3>
-
-
-                    <p class="reviews"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> (324 reviews)</p>
-
-                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Cincinnati, Ohio</p>
-=======
                     <img class="homepageImage" ng-src={{jewelryInfo[5].Images[3].url_fullxfull}}>
                     <h3>Birthstone jewelry</h3>
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
                 </div>
             </div>
-            <div class="col-1-3-explore">
+            <div class="col-1-6">
                 <div class="content">
-<<<<<<< HEAD
-                    <img src="assets/images/16.jpg">
-                    <h3>Blydesign</h3>
-
-                    <p class="reviews"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> (111 reviews)</p>
-
-                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Asheville, North Carolina</p>
-=======
                     <img class="homepageImage" ng-src={{babyInfo[4].Images[2].url_fullxfull}}>
                     <h3>Baby shower gifts</h3>
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
                 </div>
             </div>
-            <div class="col-1-3-explore">
-                <div class="content">
-                    <img src="assets/images/17.jpg">
-                    <h3>ChicMonogram</h3>
+        </div>
 
-                    <p class="reviews"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> (5607 reviews)</p>
-
-                    <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Wilmington, North Carolina</p>
-                </div>
+        <!-- Tenth row -->
+        <div class="col-1-1">
+            <div class="content">
+                <a href="#">See more <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a>
             </div>
+        </div>
 
+        <!-- Eleventh row, orange banner -->
+        <div class="col-1-1-orange">
+            <div class="content orangeBknd">
+                <h3>Etsy keeps you safe</h3>
 
-            <!-- Sixteenth row, orange banner w/ illustrations -->
-            <div class="col-1-1-orange">
-                <div class="content orangeBknd-middle">
+                <div class="cols-3">
+                    <div class="col-1-7">
+                        <img class="safe" src="assets/images/safe.png">
+                    </div>
 
+                    <div class="col-1-5-safe">
+                        <p>Trustworthy sellers</p>
+                        <span>You can read their reviews and policies, and <br>contact them with any questions</span>
+                    </div>
+                    <div class="col-1-5-safe">
+                        <p>World-class security</p>
+                        <span>Safeguarding your information is the top <br>priority of our dedicated security experts</span>
+                    </div>
+                    <div class="col-1-5-safe">
+                        <p>Purchase protection</p>
+                        <span>If anything goes wrong, our global support <br>team has got your back</span>
+                    </div>
 
-                    <div class="cols-3">
-                        <div class="col-1-3">
-                            <img src="assets/images/topleft.png">
-                        </div>
-
-                            <div class="col-1-3 middle">
-                              <h3>Start selling on Etsy</h3>
-                              <p>Millions of shoppers can't wait to see what you have in store.</p>
-                              <a href="">Open a shop today <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a>
-                            </div>
-
-
-                        <div class="col-1-3">
-                            <img class="right" src="assets/images/topright.png">
-                        </div>
+                    <div class="col-1-7">
+                        <img class="safe" src="assets/images/keys.png">
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
-=======
         </div>
 
         <!-- Twelvth row -->
@@ -478,76 +214,40 @@
                 <h3>Shops worth exploring</h3>
             </div>
         </div>
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
 
+        <!-- Thirteenth row -->
+        <div class="col-1-3-explore">
+            <div class="content">
+                <img src="assets/images/15.jpg">
+                <h3>WakeTheTree</h3>
 
-<<<<<<< HEAD
-            <!-- Seventeenth row -->
-            <div class="col-1-1">
-                <div class="content header-link">
-                    <a href="#">Fresh from the blog</a>
-                </div>
-=======
 
                 <p class="reviews"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> (324 reviews)</p>
 
                 <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Cincinnati, Ohio</p>
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
             </div>
+        </div>
+        <div class="col-1-3-explore">
+            <div class="content">
+                <img src="assets/images/16.jpg">
+                <h3>Blydesign</h3>
 
-            <!-- Eigthteenth row, blog -->
-            <div class="col-1-3-blog">
-                <div class="content">
-                    <img src="assets/images/blog1.jpg">
-                    <h3>FEATURED SHOPS</h3>
-                    <a href="#">Featured Shop: Ay Mujer</a>
-                    <p>This California native uses traditional papel picado to create delightful
-                        <br> (and surprising) items for celebrations of all kinds.</p>
-                </div>
+                <p class="reviews"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> (111 reviews)</p>
+
+                <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Asheville, North Carolina</p>
             </div>
-            <div class="col-1-3-blog">
-                <div class="content">
-                    <img src="assets/images/blog2.jpg">
-                    <h3>DIY PROJECTS</h3>
-                    <a href="#">Make Ice Pops for Your Pup</a>
-                    <p>Help your dogs keep their cool with a tasty pup pop recipe from
-                        <br> Heather Baird of Sprinkebakes.</p>
-                </div>
+        </div>
+        <div class="col-1-3-explore">
+            <div class="content">
+                <img src="assets/images/17.jpg">
+                <h3>ChicMonogram</h3>
+
+                <p class="reviews"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> (5607 reviews)</p>
+
+                <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Wilmington, North Carolina</p>
             </div>
-            <div class="col-1-3-blog">
-                <div class="content">
-                    <img src="assets/images/blog3.jpg">
-                    <h3>INSPIRATION</h3>
-                    <a href="#">Jewelry for Every Astrological Sign</a>
-                    <p>With some astrological know-how, you can pick the perfect accessory
-                        <br> for every sign.</p>
-                </div>
-            </div>
+        </div>
 
-
-            <!-- Ninteenth row, "Read the blog" -->
-            <div class="col-1-1">
-                <div class="content">
-                    <a href="#">Read the blog <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-<<<<<<< HEAD
-            <!-- Twentienth row, "What is Etsy?" -->
-            <div class="col-1-1-orange">
-                <div class="content orangeBknd-last">
-
-                    <div class="cols-3">
-                        <div class="col-1-3">
-                            <img src="assets/images/bottomleft.png">
-                        </div>
-
-                        <div class="col-1-3">
-                            <h3>What is Etsy?</h3>
-                            <p>We're more than a marketplace.</p>
-                            <a href="">Read all about it <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a>
-                        </div>
-=======
 
         <!-- Sixteenth row, orange banner w/ illustrations -->
         <div class="col-1-1-orange">
@@ -565,129 +265,59 @@
                           <a href="">Open a shop today <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a>
                         </div>
 
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
 
-                        <div class="col-1-3">
-                            <img src="assets/images/bottomright.png">
-                        </div>
+                    <div class="col-1-3">
+                        <img class="right" src="assets/images/topright.png">
                     </div>
-
                 </div>
             </div>
-
         </div>
-    </div>
 
-
-
-
-
-    <!-- Footer starts here -->
-
-
-<<<<<<< HEAD
-    <footer class="grid grid-pad">
-        <!-- First row -->
-=======
 
         <!-- Seventeenth row -->
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
         <div class="col-1-1">
-            <!--gray border-->
-            <div class="content upper">
-                <h3>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</h3>
-                <button>Subscribe</button>
+            <div class="content header-link">
+                <a href="#">Fresh from the blog</a>
             </div>
         </div>
 
-        <!-- Second row -->
-
-        <div class="col-1-5">
+        <!-- Eigthteenth row, blog -->
+        <div class="col-1-3-blog">
             <div class="content">
-                <ul>
-                    <li class="footer-header">Turn your passion into a business</li>
-                    <li>
-                        <button>Open a shop</button>
-                    </li>
-                    <li></li>
-                    <li class="footer-header">Sell on Etsy</li>
-                    <li><a href="#">Seller Handbook</a></li>
-                    <li><a href="#">Etsy credit card reader</a></li>
-                    <li><a href="#">Manufacturing</a></li>
-                </ul>
+                <img src="assets/images/blog1.jpg">
+                <h3>FEATURED SHOPS</h3>
+                <a href="#">Featured Shop: Ay Mujer</a>
+                <p>This California native uses traditional papel picado to create delightful
+                    <br> (and surprising) items for celebrations of all kinds.</p>
             </div>
         </div>
-        <div class="col-1-5">
+        <div class="col-1-3-blog">
             <div class="content">
-                <ul>
-                    <li class="footer-header">Join the community</li>
-                    <li><a href="#">Teams</a></li>
-                    <li><a href="#">Forums</a></li>
-                    <li><a href="#">Upcoming events</a></li>
-                    <li><a href="#">Affiliates</a></li>
-                    <li><a href="#">Etsy Local</a></li>
-                </ul>
+                <img src="assets/images/blog2.jpg">
+                <h3>DIY PROJECTS</h3>
+                <a href="#">Make Ice Pops for Your Pup</a>
+                <p>Help your dogs keep their cool with a tasty pup pop recipe from
+                    <br> Heather Baird of Sprinkebakes.</p>
             </div>
         </div>
-        <div class="col-1-5">
+        <div class="col-1-3-blog">
             <div class="content">
-                <ul>
-                    <li class="footer-header">Discover and shop</li>
-                    <li><a href="#">Gift cards</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Treasury</a></li>
-                    <li><a href="#">Mobile apps</a></li>
-                    <li><a href="#">Gift registries</a></li>
-                    <li><a href="#">Wholesale</a></li>
-                    <li><a href="#">Search</a></li>
-                    <li><a href="#">Editors' Picks</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-1-5">
-            <div class="content">
-                <ul>
-                    <li class="footer-header">Get to know us</li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Policies</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Developers</a></li>
-                    <li><a href="#">Investors</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-1-5">
-            <div class="content">
-                <ul>
-                    <li class="footer-header">Follow Etsy</li>
-                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                    <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i> Pinterest</a></li>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-                </ul>
+                <img src="assets/images/blog3.jpg">
+                <h3>INSPIRATION</h3>
+                <a href="#">Jewelry for Every Astrological Sign</a>
+                <p>With some astrological know-how, you can pick the perfect accessory
+                    <br> for every sign.</p>
             </div>
         </div>
 
-<<<<<<< HEAD
-        <!-- Copyright -->
-        <div class="col-1-1 copyright">
+
+        <!-- Ninteenth row, "Read the blog" -->
+        <div class="col-1-1">
             <div class="content">
-                © 2016 Etsy, Inc.
-                <a href="#">Legal</a><a href="#">Privacy</a><a href="#">Interest-based ads</a>
+                <a href="#">Read the blog <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a>
             </div>
         </div>
 
-    </footer>
-    ​ ​
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
-    <script src="assets/js/homeController.js"></script>
-    <script src="assets/js/app.js"></script>
-</body>
-=======
         <!-- Twentienth row, "What is Etsy?" -->
         <div class="col-1-1-orange">
             <div class="content orangeBknd-last">
@@ -713,4 +343,97 @@
 
     </div>
 </div>
->>>>>>> 35194f7e331bdf1c2b9ad143f414018a334a29b5
+
+
+
+
+
+<!-- Footer starts here -->
+<footer class="grid grid-pad">
+    <!-- First row -->
+    <div class="col-1-1">
+        <!--gray border-->
+        <div class="content upper">
+            <h3>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</h3>
+            <button>Subscribe</button>
+        </div>
+    </div>
+
+    <!-- Second row -->
+
+    <div class="col-1-5">
+        <div class="content">
+            <ul>
+                <li class="footer-header">Turn your passion into a business</li>
+                <li>
+                    <button>Open a shop</button>
+                </li>
+                <li></li>
+                <li class="footer-header">Sell on Etsy</li>
+                <li><a href="#">Seller Handbook</a></li>
+                <li><a href="#">Etsy credit card reader</a></li>
+                <li><a href="#">Manufacturing</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-1-5">
+        <div class="content">
+            <ul>
+                <li class="footer-header">Join the community</li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Upcoming events</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Etsy Local</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-1-5">
+        <div class="content">
+            <ul>
+                <li class="footer-header">Discover and shop</li>
+                <li><a href="#">Gift cards</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Treasury</a></li>
+                <li><a href="#">Mobile apps</a></li>
+                <li><a href="#">Gift registries</a></li>
+                <li><a href="#">Wholesale</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Editors' Picks</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-1-5">
+        <div class="content">
+            <ul>
+                <li class="footer-header">Get to know us</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Policies</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Investors</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-1-5">
+        <div class="content">
+            <ul>
+                <li class="footer-header">Follow Etsy</li>
+                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i> Pinterest</a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="col-1-1 copyright">
+        <div class="content">
+            © 2016 Etsy, Inc.
+            <a href="#">Legal</a><a href="#">Privacy</a><a href="#">Interest-based ads</a>
+        </div>
+    </div>
+
+</footer>
